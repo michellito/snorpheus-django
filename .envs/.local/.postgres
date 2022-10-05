@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=snorpheus
+POSTGRES_USER=FTDWWqWMaCixMeatlcBawYwGkqQDMQhp
+POSTGRES_PASSWORD=RHGHrgPf2IqTIQidCYAzNeV3Sfg46jJWWAkhL39HjhJFBuF8sqhvYFlQEBZRhIP9
