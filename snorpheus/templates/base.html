@@ -1,5 +1,7 @@
 {% load static i18n %}<!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
+{% load django_htmx %}
+
 <html lang="{{ LANGUAGE_CODE }}">
   <head>
     <meta charset="utf-8">
@@ -31,6 +33,9 @@
       <script defer src="{% static 'js/project.js' %}"></script>
 
     {% endblock javascript %}
+
+    <script src="{% static 'js/htmx.min.js' %}" defer></script>
+    {% django_htmx_script %}
 
   </head>
 
