@@ -7,4 +7,29 @@
     <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
   </svg>
 
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for person in page.object_list %}
+          <tr>
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="2">
+              No people on this page.
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
 {% endblock content %}
