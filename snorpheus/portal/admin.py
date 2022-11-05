@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Clinician, CollectionPeriod, Patient
+from .models import Clinician, CollectionPeriod, Patient, SleepSession
 
 
 class PatientAdmin(admin.ModelAdmin):
@@ -25,6 +25,12 @@ class CollectionPeriodAdmin(admin.ModelAdmin):
     search_fields = ("patient", "start_date", "end_date")
 
 
+class SleepSessionAdmin(admin.ModelAdmin):
+    list_display = ("collection_period", "start_time", "end_time", "true_start_time")
+    search_fields = ("collection_period", "start_time", "end_time", "true_start_time")
+
+
 admin.site.register(Patient, PatientAdmin)
 admin.site.register(Clinician, ClinicianAdmin)
 admin.site.register(CollectionPeriod, CollectionPeriodAdmin)
+admin.site.register(SleepSession, SleepSessionAdmin)
