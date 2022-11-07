@@ -1,9 +1,6 @@
-# from django.core.files.storage import FileSystemStorage
 from django.db import models
 
 from snorpheus.portal.models import SleepSession
-
-# fs = FileSystemStorage(location='/media/audio')
 
 
 class SleepSessionAudio(models.Model):
@@ -12,7 +9,7 @@ class SleepSessionAudio(models.Model):
     """
 
     sleep_session = models.ForeignKey(
-        SleepSession, on_delete=models.CASCADE, related_name="sleep_session"
+        SleepSession, on_delete=models.CASCADE, related_name="sleep_session_audio"
     )
 
     start_time = models.DateTimeField()
@@ -20,8 +17,25 @@ class SleepSessionAudio(models.Model):
 
     class Meta:
         ordering = ("-pk",)
-        verbose_name = "Sleep Session Audio"
+        verbose_name = "Sleep Session Audio File"
         app_label = "data"
 
     def __str__(self):
         return self.sleep_session.__str__()
+
+
+class SnoringEpisode(models.Model):
+
+    sleep_session = models.ForeignKey(
+        SleepSession, on_delete=models.CASCADE, related_name="snoring_episode"
+    )
+
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
+
+    class Meta:
+        verbose_name = "Snoring Episode"
+        app_label = "data"
+
+    def __str__(self):
+        return f"{self.sleep_session.__str__()}: Episode {self.id}"
