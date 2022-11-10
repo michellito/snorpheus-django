@@ -1,5 +1,31 @@
 {% extends "base.html" %}
+{% load static %}
 
+{% block extra_js %}
+    <!-- <script src="{% static "javascript/week.js" %}" type="text/javascript"></script> -->
+    <script>
+      console.log('hi')
+      function data() {
+        return {
+          positionEvents: [],
+          getPositionEvents(sleepSessionId) {
+            let self = this;
+            axios.get('/data/sessions/1/position')
+              .then(function (response) {
+                // handle success
+                console.log(response)
+                self.positionEvents = response.data;
+
+              })
+              .catch(function (error) {
+                // handle error
+                console.log(error);
+              })
+          }
+        }
+      }
+    </script>
+{% endblock %}
 {% block content %}
   <p>Welcome to snorpheus.</p>
 
@@ -7,29 +33,20 @@
     <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
   </svg>
 
-  <section>
-    <table>
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>name</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for person in page.object_list %}
-          <tr>
-            <td>{{ person.id }}</td>
-            <td>{{ person.name }}</td>
-          </tr>
-        {% empty %}
-          <tr>
-            <td colspan="2">
-              No people on this page.
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </section>
+  <!-- <section> -->
+    <div x-data="data()" x-init="getPositionEvents(1)" >
+      <div id="position-list">
+        <template x-for="p in positionEvents">
+            <div>
+                <p x-text="p.x"></p>
+                <p x-text="p.y"></p>
+                <p x-text="p.z"></p>
+            </div>
+        </template>
+      </div>
+    </div>
+  <!-- </section> -->
+
+
 
 {% endblock content %}
