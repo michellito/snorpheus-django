@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n %}
 
 {% block extra_js %}
     <!-- <script src="{% static "javascript/week.js" %}" type="text/javascript"></script> -->
@@ -26,47 +26,104 @@
       }
     </script>
 {% endblock %}
+
 {% block content %}
 
+  {% if request.user.is_authenticated %}
+    <div class="flex">
 
-  <p>Welcome to snorpheus.</p>
+      <!-- start sidebar -->
+      <div
+        x-data="state()"
+        class="bg-dark-purple h-screen p-5 pt-8 relative duration-300"
+        :class="sidebarOpen ? 'w-72' : 'w-20'"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-6 h-6 bg-white text-dark-purple rounded-full absolute -right-3 top-9 border border-dark-purple cursor-pointer p-1"
+          :class="sidebarOpen && 'rotate-180 duration-300'"
+          x-on:click="toggleSidebar()"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
 
+        <div
+          class="flex items-center rounded-md bg-light-white mt-6 px-2.5"
+          :class="sidebarOpen ? 'py-0' : 'py-2'"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white block cursor-pointer"
+            :class=""
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+          </svg>
+          <input
+            type="search"
+            placeholder="Patient ID"
+            class="text-base bg-transparent w-full text-white border-none focus:ring-0"
+            :class="sidebarOpen ? '' : 'hidden p-1'"
+          />
+        </div>
+      </div>
+      <!-- end sidebar -->
 
-<div class="inline-flex rounded-md shadow-sm" role="group">
-  <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-    Profile
-  </button>
-  <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-    Settings
-  </button>
-  <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-    Messages
-  </button>
-</div>
+      <div class="p-7">
+        <p>Welcome to snorpheus.</p>
 
+        <div class="inline-flex rounded-md shadow-sm" role="group">
+          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            Profile
+          </button>
+          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            Settings
+          </button>
+          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            Messages
+          </button>
+        </div>
 
-  <svg>
-    <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
-  </svg>
+        <svg>
+          <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
+        </svg>
 
-  <h1 class="text-4xl font-bold underline">
-    Hello world!
-  </h1>
+        <h1 class="text-4xl font-bold underline">
+          Hello world!
+        </h1>
 
-  <!-- <section> -->
-    <div x-data="data()" x-init="getPositionEvents(1)" >
-      <div id="position-list">
-        <template x-for="p in positionEvents">
-            <div>
-                <p x-text="p.x"></p>
-                <p x-text="p.y"></p>
-                <p x-text="p.z"></p>
+        <!-- <section> -->
+          <div x-data="data()" x-init="getPositionEvents(1)" >
+            <div id="position-list">
+              <template x-for="p in positionEvents">
+                  <div>
+                      <p x-text="p.x"></p>
+                      <p x-text="p.y"></p>
+                      <p x-text="p.z"></p>
+                  </div>
+              </template>
             </div>
-        </template>
+          </div>
+
+          <a class="nav-link" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
+        <!-- </section> -->
       </div>
     </div>
-  <!-- </section> -->
 
+  {% else %}
 
+    <div class="flex">
+      <div class="p-7">
+        <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% translate "Sign In" %}</a>
+      </div>
+    </div>
+
+  {% endif %}
 
 {% endblock content %}
