@@ -120,7 +120,29 @@
 
     <div class="flex">
       <div class="p-7">
-        <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% translate "Sign In" %}</a>
+        <section class="bg-white dark:bg-gray-900">
+          <div class="grid max-w-screen-xl px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+              <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                Understand your patients' snoring behavior
+              </h1>
+              <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                Collect data using the Snorpheus system and visualize the results in an easy to use online portal.
+              </p>
+
+              <a
+                href="{% url 'account_login' %}"
+                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              >
+                {% translate "Sign In" %}
+              </a>
+            </div>
+            <div class="lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="{% static 'images/snoring-blue.png' %}" alt="mockup">
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
 
