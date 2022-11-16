@@ -32,23 +32,6 @@
 
       <!-- place project specific Javascript in this file -->
       <script type="module" src="{% static 'js/project.js' %}"></script>
-
-      <script>
-        function state() {
-          return {
-            sidebarOpen: true,
-            clientId: null,
-
-            toggleSidebar() {
-              let self = this;
-              self.sidebarOpen = !self.sidebarOpen;
-            },
-            getClient(id) {
-              console.log('search')
-            }
-          }
-        }
-      </script>
     {% endblock javascript %}
 
   </head>

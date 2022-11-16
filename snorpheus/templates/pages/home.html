@@ -2,13 +2,20 @@
 {% load static i18n %}
 
 {% block extra_js %}
-    <!-- <script src="{% static "javascript/week.js" %}" type="text/javascript"></script> -->
+
     <script>
-      console.log('hi')
-      function data() {
+      function state() {
         return {
+          sidebarOpen: true,
+          patientId: "",
           positionEvents: [],
-          getPositionEvents(sleepSessionId) {
+
+          toggleSidebar() {
+            let self = this;
+            self.sidebarOpen = !self.sidebarOpen;
+          },
+
+          getPositionEvents(clientId) {
             let self = this;
             axios.get('/data/sessions/1/position')
               .then(function (response) {
@@ -25,16 +32,17 @@
         }
       }
     </script>
+
 {% endblock %}
 
 {% block content %}
 
   {% if request.user.is_authenticated %}
-    <div class="flex">
+    <div class="flex" x-data="state()">
 
       <!-- start sidebar -->
       <div
-        x-data="state()"
+        id="sidebar"
         class="bg-dark-purple h-screen p-5 pt-8 relative duration-300"
         :class="sidebarOpen ? 'w-72' : 'w-20'"
       >
@@ -51,6 +59,7 @@
         </svg>
 
         <div
+          id="search-container"
           class="flex items-center rounded-md bg-light-white mt-6 px-2.5"
           :class="sidebarOpen ? 'py-0' : 'py-2'"
         >
@@ -68,6 +77,8 @@
           <input
             type="search"
             placeholder="Patient ID"
+            x-model="patientId"
+            @keyup.enter="getPositionEvents(patientId)"
             class="text-base bg-transparent w-full text-white border-none focus:ring-0"
             :class="sidebarOpen ? '' : 'hidden p-1'"
           />
@@ -99,7 +110,7 @@
         </h1>
 
         <!-- <section> -->
-          <div x-data="data()" x-init="getPositionEvents(1)" >
+          <div rrrx-init="getPositionEvents(1)" >
             <div id="position-list">
               <template x-for="p in positionEvents">
                   <div>
