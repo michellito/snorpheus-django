@@ -3,35 +3,67 @@
 
 {% block extra_js %}
 
-    <script>
-      function state() {
-        return {
-          sidebarOpen: true,
-          patientId: "",
-          positionEvents: [],
+  <script>
 
-          toggleSidebar() {
-            let self = this;
-            self.sidebarOpen = !self.sidebarOpen;
-          },
+    function toggleSidebar() {
+      let self = this;
+      self.sidebarOpen = !self.sidebarOpen;
+    }
 
-          getPositionEvents(clientId) {
-            let self = this;
-            axios.get('/data/sessions/1/position')
-              .then(function (response) {
-                // handle success
-                console.log(response)
-                self.positionEvents = response.data;
+    function getPositionEvents(clientId) {
+      let self = this;
+      axios.get('/data/sessions/1/position')
+        .then(function (response) {
+          // handle success
+          console.log(response)
+          self.positionEvents = response.data;
 
-              })
-              .catch(function (error) {
-                // handle error
-                console.log(error);
-              })
-          }
-        }
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        })
+    }
+
+    function state() {
+
+      return {
+        // vars
+        sidebarOpen: true,
+        patientId: "",
+        positionEvents: [],
+        // functions
+        toggleSidebar,
+        getPositionEvents,
       }
-    </script>
+    }
+
+    let width = 1100;
+    let height = window.innerWidth;
+    let paddingLeft = 120;
+    let paddingRight = 75;
+
+    // set up svg canvas
+    let svg = d3.select("#main")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+
+    let timelineGroup = d3.select("#main").select("svg")
+      .append("g")
+      .attr("id", "timeline")
+      .attr("transform", `translate (${0}, ${20})`);
+
+    timelineGroup.append("rect")
+      .attr("x", paddingLeft)
+      .attr("y", 0)
+      .attr("height", 30)
+      .attr("width", width - paddingLeft - paddingRight)
+      .style("stroke", d3.rgb(169,169,169))
+      .style("stroke-width", "2")
+      .style("fill", d3.rgb(211,211,211))
+
+  </script>
 
 {% endblock %}
 
@@ -70,7 +102,6 @@
             stroke-width="1.5"
             stroke="currentColor"
             class="w-6 h-6 text-white block cursor-pointer"
-            :class=""
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
           </svg>
@@ -83,47 +114,12 @@
             :class="sidebarOpen ? '' : 'hidden p-1'"
           />
         </div>
+        <div><a class="nav-link" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a></div>
       </div>
       <!-- end sidebar -->
 
-      <div class="p-7">
-        <p>Welcome to snorpheus.</p>
-
-        <div class="inline-flex rounded-md shadow-sm" role="group">
-          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-            Profile
-          </button>
-          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-            Settings
-          </button>
-          <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-            Messages
-          </button>
-        </div>
-
-        <svg>
-          <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
-        </svg>
-
-        <h1 class="text-4xl font-bold underline">
-          Hello world!
-        </h1>
-
-        <!-- <section> -->
-          <div rrrx-init="getPositionEvents(1)" >
-            <div id="position-list">
-              <template x-for="p in positionEvents">
-                  <div>
-                      <p x-text="p.x"></p>
-                      <p x-text="p.y"></p>
-                      <p x-text="p.z"></p>
-                  </div>
-              </template>
-            </div>
-          </div>
-
-          <a class="nav-link" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
-        <!-- </section> -->
+      <!-- d3 container -->
+      <div class="p-7" id="main" style="overflow:scroll;">
       </div>
     </div>
 
