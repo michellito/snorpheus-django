@@ -21,6 +21,9 @@ class CollectionPeriod(models.Model):
         verbose_name = "Collection Period"
         app_label = "portal"
 
+    def get_sleep_sessions(self):
+        return self.sleep_sessions.all()
+
     def __unicode__(self):
         return "{} {}: {} - {}".format(
             self.patient.first_name,

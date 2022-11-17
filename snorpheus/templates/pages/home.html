@@ -12,7 +12,7 @@
 
     function getPositionEvents(clientId) {
       let self = this;
-      axios.get('/data/sessions/1/position')
+      axios.get('/patient/' + clientId)
         .then(function (response) {
           // handle success
           console.log(response)

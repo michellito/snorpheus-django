@@ -10,6 +10,11 @@ urlpatterns = [
         views.get_session_position,
         name="get_session_position",
     ),
+    path(
+        "patients/<int:patient_id>",
+        views.get_patient_sessions,
+        name="get_patient_sessions",
+    ),
 ]
 
 if settings.DEBUG:
