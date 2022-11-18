@@ -34,7 +34,7 @@
 
         <div
           id="search-container"
-          class="flex items-center rounded-md bg-light-white mt-6 px-2.5"
+          class="flex items-center rounded-md bg-light-white px-2.5"
           :class="sidebarOpen ? 'py-0' : 'py-2'"
         >
           <svg
@@ -61,25 +61,48 @@
           id="session-list"
           class="max-w-md mx-auto grid grid-cols-1 gap-2 mt-6"
         >
-          <template x-for="period in patientPeriods">
-              <!-- <div class="p-4"> -->
-                <div class="flex items-center mb-4">
-                  <input
-                    id="default-checkbox"
-                    type="checkbox"
-                    value=""
-                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  >
-                  <label
-                    for="default-checkbox"
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    <span x-text="period.start_date"></span> - <span x-text="period.end_date"></span>
-                  </label>
-                </div>
 
-              <!-- </div> -->
+          <template x-if="patientPeriods.length > 0">
+            <h4 x-text="patientName"></h4>
           </template>
+
+          <div x-show="patientPeriods.length > 0">
+            <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700">
+          </div>
+
+
+          <template x-if="patientPeriods.length > 0">
+            <span>Collection Periods</span>
+          </template>
+
+          <div class="pt-4">
+            <template x-for="period in patientPeriods">
+
+              <div class="flex-row pt-4">
+                <span x-text="period.start_date"></span> - <span x-text="period.end_date"></span>
+
+                <div>
+                  <template x-for="session in period.sleep_sessions">
+                    <div class="flex mb-4">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        @click="getSessionPosition(session.session_id)"
+                        value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      >
+                      <label
+                        for="default-checkbox"
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        <span x-text="session.start_time"></span>
+                      </label>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </template>
+          </div>
         </div>
 
 
