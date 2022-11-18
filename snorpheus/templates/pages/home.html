@@ -1,76 +1,18 @@
 {% extends "base.html" %}
 {% load static i18n %}
 
-{% block extra_js %}
-
-  <script>
-
-    function toggleSidebar() {
-      let self = this;
-      self.sidebarOpen = !self.sidebarOpen;
-    }
-
-    function getPositionEvents(clientId) {
-      let self = this;
-      axios.get('/patient/' + clientId)
-        .then(function (response) {
-          // handle success
-          console.log(response)
-          self.positionEvents = response.data;
-
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
-    }
-
-    function state() {
-
-      return {
-        // vars
-        sidebarOpen: true,
-        patientId: "",
-        positionEvents: [],
-        // functions
-        toggleSidebar,
-        getPositionEvents,
-      }
-    }
-
-    let width = 1100;
-    let height = window.innerWidth;
-    let paddingLeft = 120;
-    let paddingRight = 75;
-
-    // set up svg canvas
-    let svg = d3.select("#main")
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height)
-
-    let timelineGroup = d3.select("#main").select("svg")
-      .append("g")
-      .attr("id", "timeline")
-      .attr("transform", `translate (${0}, ${20})`);
-
-    timelineGroup.append("rect")
-      .attr("x", paddingLeft)
-      .attr("y", 0)
-      .attr("height", 30)
-      .attr("width", width - paddingLeft - paddingRight)
-      .style("stroke", d3.rgb(169,169,169))
-      .style("stroke-width", "2")
-      .style("fill", d3.rgb(211,211,211))
-
-  </script>
-
+{% block inline_javascript %}
+  <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
 {% endblock %}
 
 {% block content %}
 
   {% if request.user.is_authenticated %}
-    <div class="flex" x-data="state()">
+    <div
+      class="flex"
+      x-data="state()"
+      x-init="$watch('patientId', value => watchPatientId(value))"
+    >
 
       <!-- start sidebar -->
       <div
@@ -109,12 +51,43 @@
             type="search"
             placeholder="Patient ID"
             x-model="patientId"
-            @keyup.enter="getPositionEvents(patientId)"
+            @keyup.enter="getPatientPeriods(patientId)"
             class="text-base bg-transparent w-full text-white border-none focus:ring-0"
             :class="sidebarOpen ? '' : 'hidden p-1'"
           />
         </div>
-        <div><a class="nav-link" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a></div>
+
+        <div
+          id="session-list"
+          class="max-w-md mx-auto grid grid-cols-1 gap-2 mt-6"
+        >
+          <template x-for="period in patientPeriods">
+              <!-- <div class="p-4"> -->
+                <div class="flex items-center mb-4">
+                  <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  >
+                  <label
+                    for="default-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    <span x-text="period.start_date"></span> - <span x-text="period.end_date"></span>
+                  </label>
+                </div>
+
+              <!-- </div> -->
+          </template>
+        </div>
+
+
+        <div>
+          <a class="nav-link" href="{% url 'account_logout' %}">
+            {% translate "Sign Out" %}
+          </a>
+        </div>
       </div>
       <!-- end sidebar -->
 

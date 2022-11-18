@@ -48,7 +48,7 @@ class SleepSession(models.Model):
     """
 
     collection_period = models.ForeignKey(
-        CollectionPeriod, on_delete=models.CASCADE, related_name="collection_period"
+        CollectionPeriod, on_delete=models.CASCADE, related_name="sleep_sessions"
     )
 
     # start/end time according to device
