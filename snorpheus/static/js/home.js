@@ -85,7 +85,7 @@ function setupCharts() {
             return `translate(${0}, ${100 + (i * 80)})`
           })
           .each(function(d) {
-            // drawData(d3.select(this), d)
+            drawData(d3.select(this), d)
             drawAxes(d3.select(this), d)
           })
       },
@@ -167,8 +167,9 @@ function setScales(data) {
 
   // daily steps scale
   positionScale = d3.scaleOrdinal()
-    .domain(['left', 'supine', 'right', 'other'])
-    .range([100, 0]);
+    .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
+    .range([100, 75, 50, 25, 0]);
+
 
   positionAxis = d3.axisLeft()
     .scale(positionScale)
@@ -176,7 +177,7 @@ function setScales(data) {
 
   positionColorScale = d3.scaleOrdinal(
     d3.interpolatePurples)
-    .domain(['left', 'supine', 'right', 'other'])
+    .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
 }
 
 function drawAxes(group, d) {
@@ -219,6 +220,62 @@ function drawAxes(group, d) {
     .call(axis)
     .attr("transform", `translate(${paddingLeft}, ${0})`)
 }
+
+function drawData(group, d) {
+
+  console.log(d)
+  // console.log(sleepSessions[d.id])
+
+  let scale, colorScale, tooltip;
+
+  scale = positionScale;
+  colorScale = positionColorScale;
+  // tooltip = stepsTooltip;
+  attrib_name = 'position';
+  dataLocation = 'position_data';
+  chartType = 'line'
+  lineColor = 'darkslateblue';
+
+
+  let data = d[dataLocation];
+
+  console.log(data)
+
+  drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
+
+}
+
+function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor) {
+
+  console.log('line chart: ', data)
+
+  let line = d3.line()
+    // .defined(d => !isNaN(d[attrib_name]))
+    .x(function(d) {
+      console.log(timeScale(d.timestamp))
+      return timeScale(d.timestamp)
+    })
+    .y(function(d) {
+      console.log(scale(d[attrib_name]))
+      return scale(d[attrib_name]);
+    })
+
+  // group.append("path")
+  //   .datum(data.filter(line.defined()))
+  //   .attr("class", "missingPath")
+  //   .attr("stroke", "#ccc")
+  //   .attr("fill", "none")
+  //   .attr("d", line);
+
+  group.append("path")
+    .datum(data)
+    .attr("class", "dataPath")
+    .attr("fill", "none")
+    .attr("stroke", lineColor)
+    .attr("stroke-width", 2)
+    .attr("d", line);
+}
+
 
 function state() {
 
