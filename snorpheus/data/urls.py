@@ -7,8 +7,8 @@ from . import views
 urlpatterns = [
     path(
         "sessions/<int:session_id>/position",
-        views.get_session_position,
-        name="get_session_position",
+        views.get_session_data,
+        name="get_session_data",
     ),
     path(
         "patients/<int:patient_id>",

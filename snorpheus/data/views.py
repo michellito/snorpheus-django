@@ -1,7 +1,8 @@
+from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 
 from snorpheus.data.models import Position
-from snorpheus.portal.models import CollectionPeriod, SleepSession
+from snorpheus.portal.models import CollectionPeriod, Patient, SleepSession
 
 # from django.shortcuts import get_object_or_404, render
 # from django.views.decorators.csrf import csrf_exempt
@@ -28,6 +29,13 @@ def get_session_position(request, session_id):
 
 def get_patient_sessions(request, patient_id):
 
+    try:
+        patient = Patient.objects.get(patient_id=patient_id)
+    except ObjectDoesNotExist:
+        return JsonResponse(
+            status=500, data={"error": "No patient found with this ID."}, safe=False
+        )
+
     collection_periods = CollectionPeriod.objects.filter(patient_id=patient_id)
     period_data = []
 
@@ -37,25 +45,39 @@ def get_patient_sessions(request, patient_id):
                 "start_date": period.start_date,
                 "end_date": period.end_date,
                 "sleep_sessions": [
-                    {"start_time": session.start_time, "end_time": session.end_time}
+                    {
+                        "session_id": session.id,
+                        "start_time": session.start_time,
+                        "end_time": session.end_time,
+                    }
                     for session in period.get_sleep_sessions()
                 ],
             }
         )
 
-    return JsonResponse(status=200, data=period_data, safe=False)
+    response = {
+        "patient_name": patient.first_name + " " + patient.last_name,
+        "collection_periods": period_data,
+    }
+
+    return JsonResponse(status=200, data=response, safe=False)
 
 
-def get_session_data(request, period_id):
+def get_session_data(request, session_id):
 
-    sleep_sessions = SleepSession.objects.filter(collection_period_id=period_id)
+    sleep_session = SleepSession.objects.get(id=session_id)
 
-    session_data = []
-
-    for session in sleep_sessions:
-        session_data.append(
+    session_data = {
+        "id": sleep_session.id,
+        "start_time": sleep_session.start_time,
+        "end_time": sleep_session.end_time,
+        "position_data": [
             {
-                "start_time": session.start_time,
-                "end_time": session.end_time,
+                "timestamp": event.timestamp,
+                "position": event.position,
             }
-        )
+            for event in sleep_session.positions.all()
+        ],
+    }
+
+    return JsonResponse(status=200, data=session_data, safe=False)

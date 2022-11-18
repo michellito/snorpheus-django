@@ -22,11 +22,11 @@ class Position(models.Model):
     )
 
     timestamp = models.DateTimeField()
-    x = models.DecimalField(max_digits=5, decimal_places=2)
-    y = models.DecimalField(max_digits=5, decimal_places=2)
-    z = models.DecimalField(max_digits=5, decimal_places=2)
+    x = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
+    y = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
+    z = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
 
-    angle = models.DecimalField(max_digits=5, decimal_places=2)
+    angle = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
     position = models.CharField(max_length=8, choices=POSITION_CHOICES, blank=True)
 
     class Meta:
