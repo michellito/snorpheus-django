@@ -134,7 +134,7 @@ function getExtents(sleepSessions) {
     timeExtents.push(
       d3.extent(session.position_data.map(
         function(d) {
-          return d.timestamp;
+          return new Date(d.timestamp);
         }
       ))
     )
@@ -155,7 +155,7 @@ function setScales(data) {
   console.log(extents)
   let timeDomain = extents.time;
 
-  console.log(extents)
+  console.log(timeDomain)
 
   // time scales
   timeScale = d3.scaleTime()
@@ -253,12 +253,12 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     // .defined(d => !isNaN(d[attrib_name]))
     .x(function(d) {
       console.log(timeScale(d.timestamp))
-      return timeScale(d.timestamp)
+      return timeScale(new Date(d.timestamp))
     })
     .y(function(d) {
       console.log(scale(d[attrib_name]))
       return scale(d[attrib_name]);
-    })
+    }).curve(d3.curveStepBefore)
 
   // group.append("path")
   //   .datum(data.filter(line.defined()))
