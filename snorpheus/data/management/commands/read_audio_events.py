@@ -3,6 +3,7 @@ import csv
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.management.base import BaseCommand, CommandError
 
+from snorpheus.data.models import AudioLabel
 from snorpheus.portal.models import Patient, SleepSession
 
 
@@ -38,7 +39,7 @@ class Command(BaseCommand):
             audio_id = audio_files.first().id
 
         print(audio_files)
-        print(audio_id)
+        print("SleepSessionAudio id: ", audio_id)
         print(patient)
         print(sleep_session)
 
@@ -69,3 +70,22 @@ class Command(BaseCommand):
                 )
 
             print(audio_events[0])
+
+        print("File was read successfully, creating AudioLabel objects...")
+
+        created_count = 0
+
+        for event in audio_events:
+            AudioLabel.objects.create(
+                audio_file_id=audio_id,
+                timestamp=event["timestamp"],
+                label_1=event["label_1"],
+                label_2=event["label_2"],
+                label_3=event["label_3"],
+                score_1=event["score_1"],
+                score_2=event["score_2"],
+                score_3=event["score_3"],
+            )
+            created_count += 1
+
+        print("%s AudioLabel objects created" % str(created_count))
