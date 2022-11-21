@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 
@@ -68,7 +70,23 @@ def get_session_data(request, session_id):
     sleep_session = SleepSession.objects.get(id=session_id)
     audio_files = sleep_session.audio_files.all()
 
-    print(audio_files[0].__dict__)
+    audio_labels_response = []
+
+    for audio_file in audio_files:
+        labels = audio_file.labels.all()
+        start_time = audio_file.start_time
+        for label in labels:
+            audio_labels_response.append(
+                {
+                    "timestamp": start_time + timedelta(seconds=float(label.timestamp)),
+                    "label_1": label.label_1,
+                    "label_2": label.label_2,
+                    "label_3": label.label_3,
+                    "score_1": label.score_1,
+                    "score_2": label.score_2,
+                    "score_3": label.score_3,
+                }
+            )
 
     session_data = {
         "id": sleep_session.id,
@@ -81,10 +99,11 @@ def get_session_data(request, session_id):
             }
             for event in sleep_session.positions.all()
         ],
-        "audio_data": [
+        "audio_files": [
             {"start_time": audio.start_time, "audio_file": audio.audio_file.name}
-            for audio in sleep_session.audio_files.all()
+            for audio in audio_files
         ],
+        "audio_labels": audio_labels_response,
     }
 
     return JsonResponse(status=200, data=session_data, safe=False)
