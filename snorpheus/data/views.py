@@ -75,6 +75,7 @@ def get_session_data(request, session_id):
     for audio_file in audio_files:
         labels = audio_file.labels.all()
         start_time = audio_file.start_time
+        print(start_time)
         for label in labels:
             audio_labels_response.append(
                 {

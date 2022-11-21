@@ -149,13 +149,8 @@ function getExtents(sleepSessions) {
 
 function setScales(data) {
 
-  console.log(data)
-
   let extents = getExtents(data);
-  console.log(extents)
   let timeDomain = extents.time;
-
-  console.log(timeDomain)
 
   // time scales
   timeScale = d3.scaleTime()
@@ -170,7 +165,6 @@ function setScales(data) {
     .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
     .range([100, 75, 50, 25, 0]);
 
-
   positionAxis = d3.axisLeft()
     .scale(positionScale)
     .ticks(3);
@@ -178,6 +172,10 @@ function setScales(data) {
   positionColorScale = d3.scaleOrdinal(
     d3.interpolatePurples)
     .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
+
+
+
+
 }
 
 function drawAxes(group, d) {
@@ -223,9 +221,6 @@ function drawAxes(group, d) {
 
 function drawData(group, d) {
 
-  console.log(d)
-  // console.log(sleepSessions[d.id])
-
   let scale, colorScale, tooltip;
 
   scale = positionScale;
@@ -236,27 +231,56 @@ function drawData(group, d) {
   chartType = 'line'
   lineColor = 'darkslateblue';
 
-
   let data = d[dataLocation];
 
-  console.log(data)
-
   drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
+  drawAudioLabels(group, d['audio_labels'])
 
+}
+
+function drawAudioLabels(group, data) {
+  let rects = group.selectAll("rect")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("x", function(d, i) {
+      // console.log(timeScale(new Date(d.timestamp)))
+      return timeScale(new Date(d.timestamp));
+    })
+    .attr("y", function(d, i) {
+      return 15;
+    })
+    .attr("width", 2)
+    .attr("height", function(d, i) {
+      return 10;
+    })
+    .attr("fill", function(d, i) {
+      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? 'red' : 'blue'
+    });
+
+  // call tooltip only if data exists for participant (other throws error)
+  // if (data.length) {
+  //   rects.call(tooltip)
+  //   .on('mouseover', function(event,d) {
+  //     tooltip.show(event, d)
+  //   })
+  //   .on('mouseout', tooltip.hide)
+  // }
 }
 
 function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor) {
 
-  console.log('line chart: ', data)
+  // console.log('line chart: ', data)
 
   let line = d3.line()
     // .defined(d => !isNaN(d[attrib_name]))
     .x(function(d) {
-      console.log(timeScale(d.timestamp))
+      // console.log(d.timestamp)
+      // console.log(timeScale(d.timestamp))
       return timeScale(new Date(d.timestamp))
     })
     .y(function(d) {
-      console.log(scale(d[attrib_name]))
+      // console.log(scale(d[attrib_name]))
       return scale(d[attrib_name]);
     }).curve(d3.curveStepBefore)
 

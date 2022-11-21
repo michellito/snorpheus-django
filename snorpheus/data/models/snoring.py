@@ -38,7 +38,7 @@ class SnoringEpisode(models.Model):
         app_label = "data"
 
     def __str__(self):
-        return f"{self.sleep_session.__str__()}: Episode {self.id}"
+        return f"{self.sleep_session.__str__()}: Episode {self.id} - {self.start_time}"
 
 
 class AudioLabel(models.Model):
