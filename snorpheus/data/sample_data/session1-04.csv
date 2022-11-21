@@ -1,0 +1,1875 @@
+timestamp,class1,class2,class3,score1,score2,score3
+0.0,Breathing,Snoring,Snort,0.9235118,0.9116222,0.19194578
+0.48,Breathing,Snoring,Snort,0.9793448,0.9697127,0.13055721
+0.96,Breathing,Snoring,Snort,0.95113534,0.93014675,0.32204416
+1.44,"Inside, small room",Breathing,Snoring,0.2906775,0.15133464,0.12467278
+1.92,Silence,"Inside, small room","Boat, Water vehicle",0.24070688,0.12403625,0.038487487
+2.4,Silence,"Inside, small room",Speech,0.74363077,0.06959395,0.005767425
+2.88,Silence,"Inside, small room",Speech,0.9075588,0.01693497,0.0010068819
+3.36,Breathing,Snoring,Snort,0.6694283,0.6639313,0.32926738
+3.84,Breathing,Snoring,Snort,0.5082268,0.45647663,0.19831073
+4.32,Spray,Liquid,White noise,0.2802513,0.27558336,0.09641357
+4.8,Breathing,Snoring,Snort,0.8715614,0.81672657,0.54387116
+5.279999999999999,Breathing,Snoring,Snort,0.88335425,0.8770609,0.10789745
+5.76,"Inside, small room",Silence,Breathing,0.19730596,0.18255557,0.05487088
+6.24,Silence,"Inside, small room",Tick,0.71783376,0.10969842,0.00916027
+6.72,Silence,"Inside, small room",Speech,0.79772913,0.06872108,0.0023249523
+7.199999999999999,"Inside, small room",Silence,Speech,0.17777285,0.118000984,0.029319214
+7.68,Breathing,Snoring,Silence,0.98855996,0.98196375,0.04025725
+8.16,Breathing,Snoring,Snort,0.98459405,0.97118264,0.24704891
+8.64,Snoring,Breathing,Snort,0.9854374,0.98525596,0.032947697
+9.12,Breathing,Snoring,"Inside, small room",0.9943156,0.9926397,0.0038519409
+9.6,Speech,"Inside, small room","Child speech, kid speaking",0.67694795,0.0707004,0.009984833
+10.08,Silence,"Inside, small room",Television,0.682065,0.11720091,0.004952254
+10.559999999999999,Silence,"Inside, small room",Clicking,0.8691326,0.073633894,0.003890145
+11.04,Silence,"Inside, small room",Speech,0.78406596,0.042615578,0.0016765487
+11.52,Snoring,Breathing,"Inside, small room",0.47695714,0.42931134,0.20886672
+12.0,Breathing,Snoring,"Inside, small room",0.998385,0.9977187,0.0035773169
+12.48,Breathing,Snoring,Silence,0.9997329,0.9988208,0.0013638365
+12.959999999999999,Breathing,Snoring,Animal,0.99100536,0.9841296,0.0059617697
+13.44,Breathing,Snoring,Silence,0.995811,0.9942473,0.0063495925
+13.92,Speech,"Inside, small room",Silence,0.20141739,0.11359403,0.028706074
+14.399999999999999,Silence,"Inside, small room",White noise,0.6117561,0.054139085,0.045486104
+14.879999999999999,Silence,"Inside, small room",Speech,0.9580778,0.005472824,0.00022424143
+15.36,"Inside, small room",Silence,Mechanical fan,0.26643336,0.25487107,0.03824831
+15.84,Breathing,Snoring,Snort,0.9964184,0.99016243,0.04789792
+16.32,Breathing,Snoring,"Inside, small room",0.9995515,0.99938756,0.0014397949
+16.8,Breathing,Snoring,"Inside, small room",0.9997442,0.99949867,0.0005944783
+17.28,Breathing,Snoring,Silence,0.99970007,0.99939364,0.0019198257
+17.759999999999998,Breathing,Snoring,Silence,0.99581164,0.9944911,0.013156902
+18.24,Silence,"Inside, small room",Breathing,0.86887056,0.03432446,0.0015621843
+18.72,Silence,"Inside, small room",Tick,0.5523036,0.17637564,0.017823605
+19.2,Silence,"Inside, small room",Television,0.87691295,0.01305345,0.0014607711
+19.68,Breathing,Snoring,Silence,0.9759231,0.96875364,0.04270194
+20.16,Breathing,Snoring,Silence,0.9999866,0.9999574,0.00024634672
+20.64,Breathing,Snoring,Silence,0.9997067,0.99939746,0.0010656558
+21.119999999999997,Breathing,Snoring,"Inside, small room",0.9938045,0.99346423,0.0058283694
+21.599999999999998,Breathing,Snoring,"Inside, small room",0.99883705,0.99831706,0.001450843
+22.08,Speech,"Inside, small room","Narration, monologue",0.88376147,0.030995121,0.0053106686
+22.56,Silence,"Inside, small room",White noise,0.61522776,0.09806271,0.025565358
+23.04,Silence,"Inside, small room",Tick,0.93158966,0.012942872,0.001074687
+23.52,Snoring,Breathing,Silence,0.9991469,0.9991083,0.0038895058
+24.0,Breathing,Snoring,Silence,0.9999734,0.9999508,0.0005540235
+24.48,Snoring,Breathing,"Inside, small room",0.998282,0.9981164,0.0039793113
+24.96,Breathing,Snoring,"Inside, small room",0.99944746,0.9992228,0.00084421027
+25.439999999999998,Snoring,Breathing,Mantra,0.98521465,0.9801144,0.025711488
+25.919999999999998,Silence,"Inside, small room",Snoring,0.31628042,0.15857057,0.0890782
+26.4,Silence,"Inside, small room",Mechanical fan,0.73067445,0.057524756,0.013157176
+26.88,Silence,"Inside, small room",Television,0.9611747,0.0060964124,0.00021838777
+27.36,Breathing,Snoring,Snort,0.32856545,0.20451996,0.20133325
+27.84,Breathing,Snoring,Silence,0.9999636,0.99994344,0.0003716998
+28.32,Breathing,Snoring,Mantra,0.9996933,0.9995494,0.0009336785
+28.799999999999997,Breathing,Snoring,"Inside, small room",0.9891724,0.98878664,0.017040022
+29.279999999999998,Breathing,Snoring,"Inside, small room",0.9995776,0.9994599,0.0015097233
+29.759999999999998,Snoring,Breathing,Silence,0.9928346,0.990404,0.0065787276
+30.24,Silence,"Inside, small room",Speech,0.45382717,0.11229828,0.013131321
+30.72,Silence,"Inside, small room",Tick,0.8759129,0.021139083,0.0030190744
+31.2,Silence,"Inside, small room",Musical instrument,0.75972176,0.08099391,0.004226469
+31.68,Snoring,Breathing,Silence,0.992583,0.99171287,0.009833677
+32.16,Breathing,Snoring,Silence,0.9996008,0.9992731,0.0006782212
+32.64,Breathing,Snoring,Silence,0.9993284,0.9990376,0.0011039706
+33.12,Breathing,Snoring,Mantra,0.61929667,0.5985733,0.09168661
+33.6,Snoring,Breathing,Mantra,0.9728275,0.96986383,0.009891944
+34.08,Speech,"Inside, small room",Breathing,0.8988865,0.012788743,0.006835622
+34.56,Silence,"Inside, small room",Television,0.9343656,0.0071870894,0.00068504916
+35.04,Silence,"Inside, small room",Musical instrument,0.98145074,0.0024457497,0.00024026827
+35.519999999999996,Snoring,Breathing,Silence,0.91582996,0.91235244,0.05263433
+36.0,Breathing,Snoring,Silence,0.99968714,0.9995967,0.0019694702
+36.48,Breathing,Snoring,Mantra,0.99964225,0.99948996,0.006855796
+36.96,Breathing,Snoring,Mantra,0.9946359,0.99416226,0.012205321
+37.44,Breathing,Snoring,Mantra,0.9997572,0.99952924,0.001724176
+37.92,Breathing,Snoring,"Inside, small room",0.9996664,0.99957895,0.0008733943
+38.4,Snoring,Breathing,Speech,0.92003876,0.90346956,0.04780069
+38.879999999999995,Silence,"Inside, small room",Mechanisms,0.90055144,0.034026127,0.0015104928
+39.36,Silence,"Inside, small room",Television,0.8363458,0.039973803,0.0017628387
+39.839999999999996,"Inside, small room",Silence,Breathing,0.18301682,0.11082423,0.030006908
+40.32,Snoring,Breathing,Silence,0.9983219,0.9983049,0.005791485
+40.8,Breathing,Snoring,Silence,0.99988866,0.9998177,0.0003911953
+41.28,Breathing,Snoring,Speech,0.9981156,0.9979079,0.0011330066
+41.76,Snoring,Breathing,Vehicle,0.96951294,0.96385485,0.01044799
+42.239999999999995,Breathing,Snoring,Silence,0.9999568,0.99993145,0.00021767805
+42.72,Speech,Breathing,Snoring,0.27166286,0.20892096,0.19694169
+43.199999999999996,Silence,"Inside, small room",Television,0.6096079,0.15612298,0.0075380933
+43.68,Silence,"Inside, small room",Mechanical fan,0.50231344,0.2155342,0.0072473884
+44.16,Snoring,Breathing,Silence,0.9966938,0.99573696,0.01589752
+44.64,Breathing,Snoring,Silence,0.99999446,0.9999894,0.0001122326
+45.12,Breathing,Snoring,Silence,0.99991566,0.99976045,0.00054593896
+45.6,Breathing,Snoring,Speech,0.99706584,0.9934359,0.0005803312
+46.08,Breathing,Snoring,"Inside, small room",0.9996438,0.9995144,0.00066987856
+46.559999999999995,Snoring,Breathing,"Domestic animals, pets",0.99932575,0.9992346,0.001978368
+47.04,Silence,"Inside, small room",Clicking,0.6753024,0.138545,0.034579087
+47.519999999999996,"Inside, small room",Silence,Tick,0.33314568,0.19897833,0.054475185
+48.0,Breathing,Snoring,Silence,0.9999233,0.9999027,0.0006589973
+48.48,Breathing,Snoring,Silence,0.9999673,0.9999583,0.00055243494
+48.96,Snoring,Breathing,"Inside, small room",0.9990199,0.9987372,0.0026531932
+49.44,Snoring,Breathing,"Domestic animals, pets",0.9970586,0.9970157,0.0076983785
+49.92,Breathing,Snoring,Dog,0.9999332,0.9999178,0.00025073887
+50.4,Snoring,Breathing,"Inside, small room",0.9997469,0.9996718,0.0014559848
+50.879999999999995,Silence,Breathing,Snoring,0.9033345,0.023979366,0.022359205
+51.36,"Inside, small room",Silence,Television,0.36996874,0.20036605,0.016334686
+51.839999999999996,Snort,Breathing,Snoring,0.81584316,0.7714865,0.40127075
+52.32,Breathing,Snoring,Silence,0.99785763,0.9970899,0.011049185
+52.8,Snoring,Breathing,Silence,0.9993515,0.9993121,0.0016677062
+53.28,Snoring,Breathing,"Domestic animals, pets",0.9973373,0.99697477,0.0059786886
+53.76,Breathing,Snoring,"Inside, small room",0.99998695,0.99998087,6.910002e-05
+54.239999999999995,Snoring,Breathing,Dog,0.9986254,0.99775887,0.0056285034
+54.72,Silence,"Inside, small room",Breathing,0.33507943,0.13770045,0.0988946
+55.199999999999996,Silence,"Inside, small room",Television,0.2502348,0.23702918,0.030224863
+55.68,Silence,"Inside, small room",Television,0.44679308,0.13558272,0.021174807
+56.16,Breathing,Snoring,Silence,0.992086,0.9882725,0.016546154
+56.64,Breathing,Snoring,Silence,0.99998033,0.99995816,0.00035801303
+57.12,Breathing,Snoring,"Inside, large room or hall",0.9999913,0.99998856,4.3923126e-05
+57.599999999999994,Breathing,Snoring,Snort,0.9817609,0.97833455,0.045452114
+58.08,Breathing,Snoring,"Inside, small room",0.99968004,0.99960893,0.0005782926
+58.559999999999995,Breathing,Snoring,"Inside, small room",0.9998004,0.9997773,0.0005179751
+59.04,Silence,"Inside, small room",Television,0.43824232,0.24695946,0.008944885
+59.519999999999996,Silence,"Inside, small room",White noise,0.89285046,0.010730464,0.00073242513
+60.0,"Inside, small room",Silence,Breathing,0.20283024,0.17285898,0.09258862
+60.48,Breathing,Snoring,Silence,0.99989337,0.99985516,0.001745271
+60.96,Breathing,Snoring,Silence,0.99999934,0.99999833,2.0411888e-05
+61.44,Snoring,Breathing,"Outside, rural or natural",0.9981236,0.9979992,0.0016105967
+61.919999999999995,Breathing,Snoring,"Inside, small room",0.9943057,0.9936913,0.010028339
+62.4,Snoring,Breathing,"Inside, small room",0.9645965,0.9584764,0.022249486
+62.879999999999995,Silence,"Inside, small room",Tick,0.65467113,0.04487884,0.005769938
+63.36,Silence,"Inside, small room",Speech,0.91361904,0.012350464,0.0007711316
+63.839999999999996,Silence,"Inside, small room",White noise,0.8074927,0.032812446,0.0021896667
+64.32,Breathing,Snoring,Snort,0.8892627,0.8148838,0.45734936
+64.8,Breathing,Snoring,Silence,0.9994833,0.9987094,0.005009847
+65.28,Breathing,Snoring,"Inside, small room",0.99765825,0.9970661,0.0021437735
+65.75999999999999,Breathing,Snoring,Snort,0.94603366,0.9266562,0.11719068
+66.24,Snoring,Breathing,Silence,0.3722648,0.36707908,0.2239478
+66.72,Silence,"Inside, small room",Television,0.15557,0.1390191,0.017467624
+67.2,Silence,"Inside, small room",Television,0.7520702,0.024529556,0.0027106649
+67.67999999999999,Breathing,Snoring,Silence,0.7072669,0.66876894,0.15292072
+68.16,Breathing,Snoring,Silence,0.9942878,0.9940381,0.014098122
+68.64,Breathing,Snoring,Silence,0.9983629,0.99819165,0.0025453207
+69.12,Snoring,Breathing,Silence,0.98583835,0.9840374,0.009661362
+69.6,Speech,Breathing,Snoring,0.15187207,0.1152449,0.08862568
+70.08,Silence,Snoring,Breathing,0.2813353,0.120544136,0.11124259
+70.56,Silence,"Inside, small room",Musical instrument,0.9018992,0.0137493275,0.0030902044
+71.03999999999999,Silence,"Inside, small room",Mechanical fan,0.5835128,0.07237506,0.014652752
+71.52,Breathing,Snoring,Snort,0.7856198,0.77891546,0.37935233
+72.0,Breathing,Snoring,Snort,0.9873716,0.9791994,0.089795776
+72.48,Breathing,Snoring,Silence,0.9984589,0.997729,0.0031625754
+72.96,Breathing,Snoring,Silence,0.99977064,0.9997481,0.0012545646
+73.44,Breathing,Snoring,Snort,0.73010266,0.6679745,0.15985718
+73.92,Silence,"Inside, small room",Snoring,0.21425094,0.203246,0.09143824
+74.39999999999999,Silence,"Inside, small room",White noise,0.6592003,0.060739566,0.005814221
+74.88,Silence,"Inside, small room",Speech,0.9735959,0.0057073464,0.00011390212
+75.36,Breathing,Snoring,Snort,0.981968,0.974302,0.091594994
+75.84,Breathing,Snoring,Snort,0.8985102,0.8179587,0.51941943
+76.32,Breathing,Snoring,Snort,0.9928999,0.9907265,0.01825849
+76.8,Snoring,Breathing,"Inside, small room",0.9989615,0.9983324,0.0034363542
+77.28,Speech,"Inside, small room",Silence,0.36483154,0.047690842,0.038046643
+77.75999999999999,Breathing,Snoring,"Inside, small room",0.17646107,0.16549332,0.16111635
+78.24,Silence,"Inside, small room",Television,0.94293386,0.023512699,0.0007762534
+78.72,Silence,"Inside, small room",Speech,0.7014194,0.05622373,0.003851716
+79.2,Silence,"Inside, small room",Television,0.90433466,0.007732688,0.0007909276
+79.67999999999999,Silence,Snoring,"Inside, small room",0.3808994,0.15676957,0.15560368
+80.16,Breathing,Snoring,Snort,0.9930219,0.98813415,0.033883717
+80.64,Breathing,Snoring,Speech,0.9992878,0.9986868,0.0011436114
+81.11999999999999,Breathing,Snoring,Speech,0.99958676,0.99943995,0.0012685093
+81.6,Speech,"Inside, small room",Breathing,0.81137294,0.022538211,0.00573772
+82.08,Silence,"Inside, small room",Clicking,0.5222025,0.1258802,0.008324823
+82.56,Silence,"Inside, small room",Speech,0.70937824,0.06814316,0.00492238
+83.03999999999999,Silence,"Inside, small room",Speech,0.9415658,0.0076419353,0.00033108512
+83.52,Silence,"Inside, small room",Television,0.83381665,0.038955502,0.0021992852
+84.0,"Inside, small room",Silence,Speech,0.1846959,0.16787915,0.018262582
+84.47999999999999,Breathing,Snoring,Silence,0.97727454,0.96642935,0.05081733
+84.96,Breathing,Snoring,Snort,0.99628365,0.99279535,0.03322058
+85.44,Breathing,Snoring,Silence,0.99984014,0.9997596,0.0016670172
+85.92,Speech,Breathing,Snoring,0.32905117,0.12221876,0.11382956
+86.39999999999999,Silence,"Inside, small room",Television,0.55379885,0.11359449,0.009088739
+86.88,Silence,"Inside, small room",Tick,0.69659144,0.16364178,0.018221088
+87.36,Silence,"Inside, small room",White noise,0.66759527,0.18432675,0.015473618
+87.84,Silence,"Inside, small room",Television,0.88135725,0.032868464,0.0013082616
+88.32,Silence,"Inside, small room",Mechanical fan,0.4079828,0.09846469,0.08924853
+88.8,Breathing,Snoring,Snort,0.95058125,0.9232031,0.28272942
+89.28,Breathing,Snoring,Snort,0.98324233,0.96133924,0.20137951
+89.75999999999999,Snoring,Breathing,Silence,0.98707277,0.9814727,0.025565334
+90.24,Silence,"Inside, small room",Breathing,0.16762522,0.15477844,0.051958192
+90.72,Silence,"Inside, small room",Mechanical fan,0.7310028,0.06276798,0.008912293
+91.2,Silence,"Inside, small room",Clicking,0.92123854,0.011237936,0.0010024594
+91.67999999999999,Silence,"Inside, small room",Television,0.8849239,0.019188598,0.0007962389
+92.16,Silence,"Inside, small room",Television,0.9546307,0.004870199,0.00033985343
+92.64,Silence,"Inside, small room",Mechanical fan,0.38525996,0.14660394,0.11675089
+93.11999999999999,Silence,"Inside, small room",Breathing,0.17286739,0.10007012,0.07051477
+93.6,Snoring,Breathing,"Inside, small room",0.7640833,0.74720764,0.14273237
+94.08,Snoring,Breathing,Silence,0.4195701,0.38503566,0.24244724
+94.56,Silence,"Inside, small room",Writing,0.58910364,0.08727067,0.014971082
+95.03999999999999,Silence,"Inside, small room",Television,0.5613857,0.15246125,0.013433006
+95.52,Silence,"Inside, small room",Television,0.8924716,0.016215913,0.0015601314
+96.0,Silence,"Inside, small room",Television,0.94919914,0.006296343,0.0006818213
+96.47999999999999,Silence,"Inside, small room",Hum,0.75854707,0.026532607,0.0024079368
+96.96,Silence,"Inside, small room",Breathing,0.25118643,0.12422311,0.027578697
+97.44,Breathing,Snoring,Snort,0.9926052,0.9865765,0.035013676
+97.92,Breathing,Snoring,Silence,0.37212235,0.24544193,0.047103774
+98.39999999999999,"Inside, small room",Snoring,Breathing,0.24860129,0.24510667,0.21567565
+98.88,Silence,"Inside, small room",Television,0.42424214,0.14502326,0.011251838
+99.36,Silence,"Inside, small room",Speech,0.6721521,0.07897638,0.00949488
+99.84,Silence,"Inside, small room",Television,0.4480818,0.08292419,0.0060963198
+100.32,Silence,"Inside, small room",Mechanisms,0.9203165,0.017787587,0.00049539306
+100.8,Silence,"Inside, small room",Speech,0.6846389,0.05577761,0.0048925118
+101.28,Silence,"Inside, small room","Electric shaver, electric razor",0.38531238,0.14050587,0.045887765
+101.75999999999999,Breathing,"Inside, small room",Snoring,0.19475338,0.11673264,0.079211466
+102.24,Breathing,Snoring,Snake,0.28692693,0.16633414,0.1097668
+102.72,Breathing,Snoring,"Inside, small room",0.6671281,0.6290451,0.15872867
+103.2,Silence,"Inside, small room",Speech,0.22334346,0.11762622,0.019950222
+103.67999999999999,Silence,"Inside, small room",Mechanical fan,0.61200356,0.14296573,0.015049696
+104.16,Silence,"Inside, small room",Tick,0.8048838,0.026262488,0.010366547
+104.64,Silence,"Inside, small room",Musical instrument,0.78167826,0.05519888,0.010323118
+105.11999999999999,Silence,"Inside, small room",Musical instrument,0.85651946,0.028503058,0.0023319067
+105.6,Silence,"Inside, small room",Breathing,0.5218834,0.11086281,0.008614762
+106.08,Breathing,Snoring,Silence,0.99238515,0.98919374,0.020134455
+106.56,Breathing,Snoring,Silence,0.99632597,0.99395174,0.025650619
+107.03999999999999,Breathing,Snoring,"Inside, small room",0.86093646,0.8478203,0.059556767
+107.52,Silence,"Inside, small room",Television,0.45034167,0.10440935,0.00836683
+108.0,"Inside, small room",Silence,Mechanical fan,0.26849955,0.2479339,0.059023585
+108.47999999999999,Silence,"Inside, small room",Television,0.7155827,0.0394082,0.0032774035
+108.96,Silence,"Inside, small room",Musical instrument,0.95191056,0.0075906203,0.0006658657
+109.44,Silence,"Inside, small room",Breathing,0.4107761,0.11462137,0.06745811
+109.92,Breathing,Snoring,"Inside, small room",0.52981657,0.45490643,0.1963748
+110.39999999999999,Breathing,Snoring,Snort,0.6297395,0.55043626,0.13224348
+110.88,Breathing,Snoring,"Inside, small room",0.3576703,0.35100126,0.19880767
+111.36,Silence,"Inside, small room",Television,0.58158875,0.07563136,0.005618827
+111.83999999999999,Silence,"Inside, small room",Television,0.84511757,0.03564996,0.0021544562
+112.32,Silence,"Inside, small room",Musical instrument,0.9558186,0.0066121663,0.0002727916
+112.8,Silence,"Inside, small room",Musical instrument,0.96999806,0.002071501,0.00035570015
+113.28,Silence,"Inside, small room",Mechanical fan,0.21135461,0.19854197,0.033937953
+113.75999999999999,Breathing,Snoring,"Inside, small room",0.21015984,0.18720123,0.13388807
+114.24,Breathing,Snoring,Silence,0.97172344,0.96637416,0.04726003
+114.72,Breathing,Snoring,"Inside, small room",0.7374708,0.7312919,0.10576913
+115.19999999999999,Silence,"Inside, small room",Mechanisms,0.5139621,0.086324945,0.009886314
+115.67999999999999,Silence,"Inside, small room",Tick,0.7019865,0.07394613,0.025890466
+116.16,Silence,"Inside, small room",Television,0.8686995,0.02332965,0.00109796
+116.64,Silence,"Inside, small room",Musical instrument,0.89015156,0.013767134,0.0013096114
+117.11999999999999,Silence,"Inside, small room",Speech,0.94894826,0.008683487,0.00032796618
+117.6,"Inside, small room",Silence,Tick,0.21123305,0.20407404,0.034943506
+118.08,Breathing,Snoring,"Inside, small room",0.2676498,0.2613758,0.20983008
+118.56,Breathing,Snoring,Silence,0.5427891,0.4863725,0.21869493
+119.03999999999999,"Inside, small room",Silence,Breathing,0.27795848,0.18657427,0.1850552
+119.52,Silence,"Inside, small room",Hum,0.7779329,0.025914527,0.0053597055
+120.0,Silence,"Inside, small room",Tick,0.75509965,0.08691853,0.00632638
+120.47999999999999,Silence,"Inside, small room",Television,0.90337515,0.013442401,0.0006339258
+120.96,Silence,"Inside, small room",Television,0.771887,0.040830962,0.0034821797
+121.44,Silence,"Inside, small room",Mechanical fan,0.4267451,0.16850157,0.028587686
+121.92,Snoring,Breathing,Snort,0.8860643,0.8731797,0.12191738
+122.39999999999999,Breathing,Snoring,Snort,0.99267685,0.98925847,0.051334973
+122.88,Snoring,Breathing,Silence,0.71588266,0.6889673,0.08070723
+123.36,Silence,"Inside, small room",Television,0.81889284,0.057279207,0.00373514
+123.83999999999999,Silence,"Inside, small room",Television,0.69224757,0.07163763,0.004589061
+124.32,Silence,"Inside, small room",Television,0.84801054,0.018854937,0.0010465886
+124.8,Silence,"Inside, small room",Television,0.8863696,0.024034867,0.0020845165
+125.28,Silence,"Inside, small room",Breathing,0.42441398,0.14033945,0.069895715
+125.75999999999999,Breathing,Snoring,Snort,0.9692471,0.9577405,0.112936564
+126.24,Breathing,Snoring,Snort,0.9440022,0.92342395,0.2531121
+126.72,Breathing,Snoring,"Inside, small room",0.8353093,0.8344004,0.09092844
+127.19999999999999,Silence,"Inside, small room",Television,0.64024055,0.102325596,0.0053160214
+127.67999999999999,Silence,"Inside, small room",Tick,0.85314757,0.03955371,0.0029052582
+128.16,Silence,"Inside, small room",Speech,0.93615645,0.017308665,0.0007836553
+128.64,Silence,"Inside, small room",Television,0.82285064,0.025203124,0.0013454574
+129.12,Silence,"Inside, small room",Television,0.9345571,0.022588303,0.0011047266
+129.6,Silence,"Inside, small room",Writing,0.28534085,0.21785514,0.027899329
+130.07999999999998,Snoring,Breathing,Snort,0.5790538,0.56904596,0.19883646
+130.56,Breathing,Snoring,Snort,0.9682026,0.9575946,0.20572303
+131.04,"Inside, small room",Breathing,Snoring,0.2775908,0.20071776,0.14196154
+131.51999999999998,"Inside, small room",Silence,Writing,0.26953855,0.18458709,0.077721454
+132.0,Silence,"Inside, small room",Mechanisms,0.48661554,0.12864847,0.030445646
+132.48,Silence,"Inside, small room",Clicking,0.89917576,0.027614566,0.003154215
+132.96,Silence,"Inside, small room",Television,0.7632227,0.038279664,0.0022159787
+133.44,Silence,"Inside, small room",White noise,0.5505794,0.15220763,0.02303544
+133.92,Silence,"Inside, small room",Mechanical fan,0.20340252,0.14358523,0.018883176
+134.4,Snoring,Silence,Breathing,0.37164968,0.35650343,0.32969677
+134.88,Breathing,"Inside, small room",Snoring,0.28517485,0.24990048,0.24019288
+135.35999999999999,"Inside, small room",Breathing,Snoring,0.29615557,0.15586774,0.122291915
+135.84,Silence,"Inside, small room",Musical instrument,0.50024176,0.088820815,0.0047419854
+136.32,Silence,"Inside, small room",Mechanisms,0.7921509,0.05859446,0.005202908
+136.79999999999998,Silence,"Inside, small room",White noise,0.46960786,0.15434176,0.021777987
+137.28,Silence,"Inside, small room",Musical instrument,0.6423872,0.05049637,0.0062584183
+137.76,Silence,"Inside, small room",Television,0.9235229,0.009664062,0.0006968959
+138.24,Silence,"Inside, small room",Television,0.8599889,0.04945232,0.0023180663
+138.72,Silence,"Inside, small room",Breathing,0.23299153,0.20983402,0.10239949
+139.2,Snoring,Breathing,"Inside, small room",0.6781189,0.6687184,0.13044961
+139.68,Snoring,Breathing,"Inside, small room",0.7898274,0.771104,0.089433044
+140.16,"Inside, small room",Silence,Breathing,0.342124,0.27807102,0.023159992
+140.64,Silence,"Inside, small room",Breathing,0.680127,0.0882785,0.0060220864
+141.12,Silence,"Inside, small room",Television,0.8696774,0.052794132,0.0016647633
+141.6,Silence,"Inside, small room",White noise,0.848244,0.04077406,0.0017922582
+142.07999999999998,Silence,"Inside, small room",Writing,0.6438294,0.10497711,0.010995873
+142.56,Breathing,Snoring,Snort,0.7403342,0.6554591,0.6431428
+143.04,Breathing,Snort,Snoring,0.34707007,0.29470286,0.25177166
+143.51999999999998,Breathing,"Inside, small room",Snoring,0.25090897,0.18514217,0.17524403
+144.0,Snoring,Breathing,Silence,0.6971794,0.6409161,0.12919943
+144.48,Silence,"Inside, small room",Musical instrument,0.40942037,0.13715519,0.009919246
+144.96,Silence,"Inside, small room",Clicking,0.9121291,0.019094735,0.0026098855
+145.44,Silence,"Inside, small room",Speech,0.9394701,0.0067325933,0.0005594725
+145.92,Silence,"Inside, small room",White noise,0.75513077,0.021664584,0.002713131
+146.4,Silence,"Inside, small room",Television,0.73108375,0.03484574,0.0048242034
+146.88,"Inside, small room",Silence,Breathing,0.22717373,0.20776857,0.113444865
+147.35999999999999,Breathing,Snoring,Snort,0.8900213,0.852496,0.3113646
+147.84,Breathing,Snoring,"Inside, small room",0.40454733,0.26588824,0.17262101
+148.32,Snoring,Breathing,"Inside, small room",0.76875806,0.75289536,0.17343873
+148.79999999999998,"Inside, small room",Silence,Speech,0.24470277,0.078296006,0.044997472
+149.28,Silence,"Inside, small room",Television,0.6872367,0.086870365,0.0071859015
+149.76,Silence,"Inside, small room",Speech,0.8886472,0.027436795,0.002258099
+150.23999999999998,Silence,"Inside, small room",Speech,0.75809556,0.05809324,0.003995059
+150.72,Silence,"Inside, small room",Television,0.60016674,0.07922636,0.009632724
+151.2,Silence,"Inside, small room",Mechanical fan,0.39620116,0.09781454,0.022099385
+151.68,Breathing,Snoring,Snort,0.86422825,0.8302964,0.18429168
+152.16,Breathing,Snoring,Snort,0.87838066,0.83904874,0.16421147
+152.64,Snoring,Breathing,Silence,0.8334175,0.79464215,0.096364126
+153.12,Silence,"Inside, small room",Speech,0.5605432,0.11461222,0.0091542555
+153.6,Silence,"Inside, small room",Tick,0.5663669,0.14188297,0.02431668
+154.07999999999998,Silence,"Inside, small room",White noise,0.8656958,0.044104885,0.002345065
+154.56,Silence,"Inside, small room",Clicking,0.9317375,0.02332494,0.0007852427
+155.04,"Inside, small room",Silence,Mechanical fan,0.2789474,0.17759915,0.04975557
+155.51999999999998,Breathing,Snoring,Snort,0.9619768,0.9437965,0.14660582
+156.0,Breathing,Snoring,Snort,0.9635147,0.954848,0.054474723
+156.48,Snoring,Breathing,Silence,0.9720517,0.967845,0.05002445
+156.96,Silence,"Inside, small room",Speech,0.1291242,0.115441665,0.054572612
+157.44,Silence,"Inside, small room",Mechanisms,0.8052179,0.030085012,0.003056763
+157.92,Silence,"Inside, small room",White noise,0.9121282,0.009446101,0.0009769133
+158.4,Silence,"Inside, small room",Speech,0.87595403,0.017613068,0.00086787966
+158.88,Silence,"Inside, small room",White noise,0.5799509,0.046442054,0.0057312604
+159.35999999999999,Silence,"Inside, small room",Mechanical fan,0.32806572,0.19758964,0.18360838
+159.84,Breathing,Snoring,Snort,0.9271196,0.87787324,0.29225326
+160.32,Snoring,Breathing,Snort,0.7660314,0.74625975,0.21676199
+160.79999999999998,Snoring,Breathing,Silence,0.78533155,0.7266626,0.09749753
+161.28,Silence,"Inside, small room",Speech,0.17932595,0.14517777,0.011242885
+161.76,Silence,"Inside, small room",Speech,0.7704912,0.03965976,0.0023239385
+162.23999999999998,Silence,"Inside, small room",Clicking,0.9280153,0.016416995,0.0011805587
+162.72,Silence,"Inside, small room",Television,0.91264623,0.010504722,0.0005523789
+163.2,Silence,"Inside, small room",Mechanical fan,0.20171638,0.15387578,0.04791803
+163.68,Silence,"Inside, small room",Breathing,0.18381633,0.18043317,0.09299653
+164.16,Breathing,Snoring,"Inside, small room",0.31740782,0.16196047,0.14210206
+164.64,Breathing,Snoring,Snort,0.870442,0.84035933,0.4574187
+165.12,Snoring,Breathing,"Inside, small room",0.3285199,0.31518885,0.28517136
+165.6,"Inside, small room",Silence,Tick,0.38049322,0.11547942,0.017359553
+166.07999999999998,"Inside, small room",Silence,Tick,0.38613933,0.11469471,0.08835376
+166.56,Silence,"Inside, small room",Speech,0.78553,0.016307656,0.006094647
+167.04,Silence,"Inside, small room",Television,0.5253249,0.16353609,0.0067668976
+167.51999999999998,"Inside, small room",Silence,Breathing,0.25031832,0.14696768,0.10278626
+168.0,Snoring,Breathing,"Inside, small room",0.40995538,0.38036692,0.18546394
+168.48,Breathing,Snoring,Snort,0.92199224,0.91630477,0.25735465
+168.95999999999998,Breathing,Silence,Snoring,0.20403594,0.1764687,0.16344064
+169.44,Silence,"Inside, small room",White noise,0.74685687,0.018965324,0.004533185
+169.92,Silence,"Inside, small room",Television,0.6932099,0.06413057,0.007026848
+170.4,Silence,"Inside, small room",Television,0.70792073,0.059171546,0.004339806
+170.88,Silence,"Inside, small room",White noise,0.8893369,0.025931124,0.0016419503
+171.35999999999999,Breathing,Snoring,"Inside, small room",0.35079622,0.3255103,0.23669422
+171.84,Breathing,Snoring,Snort,0.8485324,0.8250295,0.24601352
+172.32,Breathing,Snoring,"Inside, small room",0.23161538,0.17287877,0.14850536
+172.79999999999998,Snoring,Breathing,Silence,0.8678396,0.8139072,0.14354886
+173.28,Silence,"Inside, small room",Speech,0.4249928,0.04641868,0.02367231
+173.76,Silence,"Inside, small room",Speech,0.91834563,0.017752206,0.0016052932
+174.23999999999998,Silence,"Inside, small room",White noise,0.90154064,0.011523792,0.0010406515
+174.72,Silence,"Inside, small room",Television,0.7732004,0.036341548,0.0029759195
+175.2,Silence,"Inside, small room",Television,0.7126045,0.030098772,0.0025218967
+175.68,Silence,"Inside, small room",Writing,0.50162715,0.14880605,0.032007482
+176.16,"Inside, small room",Snoring,Breathing,0.3408093,0.2908171,0.26062527
+176.64,Breathing,Snoring,Snort,0.92959493,0.8937207,0.2847736
+177.12,Snoring,Breathing,Silence,0.939147,0.9242357,0.047940265
+177.6,Silence,"Inside, small room",Writing,0.6262949,0.1885881,0.010143244
+178.07999999999998,Silence,"Inside, small room",Speech,0.6072776,0.096905544,0.0054653566
+178.56,Silence,"Inside, small room",White noise,0.6588455,0.0687173,0.019106401
+179.04,Silence,"Inside, small room",Musical instrument,0.9612275,0.0038070688,0.0004095306
+179.51999999999998,Silence,"Inside, small room",Writing,0.43336415,0.19555868,0.008945666
+180.0,Breathing,Snoring,Snort,0.9107038,0.88235533,0.20067205
+180.48,Breathing,Snoring,Snort,0.835387,0.7994245,0.5191049
+180.95999999999998,Breathing,Snoring,Silence,0.9840181,0.9825222,0.020361062
+181.44,"Inside, small room",Silence,Speech,0.24226111,0.17965674,0.018974455
+181.92,Silence,"Inside, small room",Writing,0.6911219,0.088697925,0.006563587
+182.4,Silence,"Inside, small room",Television,0.77102005,0.07700655,0.003601515
+182.88,Silence,"Inside, small room",White noise,0.7132117,0.05356933,0.0067190737
+183.35999999999999,Silence,"Inside, small room",Tick,0.95746017,0.02141566,0.00069153466
+183.84,Silence,"Inside, small room",Tick,0.44101784,0.14637753,0.008279148
+184.32,"Inside, small room",Silence,Breathing,0.24603148,0.13813464,0.12973954
+184.79999999999998,Breathing,Snoring,"Inside, small room",0.33987442,0.22638416,0.13718094
+185.28,Snoring,Breathing,Silence,0.5987804,0.4938226,0.18312909
+185.76,"Inside, small room",Silence,Writing,0.44709295,0.18281704,0.022815475
+186.23999999999998,Silence,"Inside, small room",Breathing,0.78862315,0.05007541,0.0033795084
+186.72,Silence,"Inside, small room",Tick,0.73920023,0.06822877,0.0049416064
+187.2,Silence,"Inside, small room",Television,0.54869,0.0909663,0.005226739
+187.68,Silence,"Inside, small room",Tick,0.8817622,0.029602706,0.0035652507
+188.16,Breathing,Snoring,"Inside, small room",0.35173932,0.32866004,0.1748963
+188.64,Breathing,Snoring,Snort,0.74208766,0.6128384,0.34282696
+189.12,Breathing,Snoring,Snort,0.98751646,0.97379756,0.14727451
+189.6,Breathing,Snoring,"Inside, small room",0.7896776,0.754186,0.080268614
+190.07999999999998,Silence,"Inside, small room",White noise,0.51656365,0.09931178,0.015877359
+190.56,Silence,"Inside, small room",Speech,0.8398078,0.031905867,0.0015538589
+191.04,Silence,"Inside, small room",Tick,0.79051745,0.073488794,0.0047511803
+191.51999999999998,Silence,"Inside, small room",Tick,0.59596545,0.16951336,0.0086272
+192.0,Breathing,Snoring,Snort,0.3002737,0.26132154,0.23283869
+192.48,Breathing,Snoring,Silence,0.99623704,0.99449867,0.013492024
+192.95999999999998,Breathing,Snoring,Silence,0.9931554,0.99180514,0.015385129
+193.44,Snoring,Breathing,"Inside, small room",0.8894661,0.8663446,0.090229355
+193.92,Silence,"Inside, small room",Breathing,0.21430327,0.15585718,0.031900868
+194.4,Silence,"Inside, small room",Tick,0.810173,0.07477921,0.0054023457
+194.88,Silence,"Inside, small room",Tick,0.8606327,0.027572412,0.00588369
+195.35999999999999,Silence,"Inside, small room",Mechanisms,0.9520688,0.011739498,0.0011679996
+195.84,Breathing,Snoring,Silence,0.7911691,0.7718726,0.13131145
+196.32,Breathing,Snoring,Snort,0.9415032,0.9179483,0.2124157
+196.79999999999998,Snoring,Breathing,Snort,0.8084578,0.7643347,0.101844236
+197.28,Snoring,Breathing,"Inside, small room",0.9120012,0.8783023,0.059303176
+197.76,"Inside, small room",Silence,Speech,0.17562649,0.16099685,0.034964625
+198.23999999999998,Silence,"Inside, small room",Clicking,0.8823279,0.064734094,0.0047383276
+198.72,Silence,"Inside, small room",Writing,0.71476316,0.092758924,0.0041344236
+199.2,Silence,"Inside, small room",Musical instrument,0.794888,0.014822852,0.0024826215
+199.68,Silence,"Inside, small room",Breathing,0.22232172,0.19485816,0.096791714
+200.16,Breathing,Snoring,Snort,0.969031,0.9562352,0.10822185
+200.64,Breathing,Snoring,Snort,0.8578173,0.838723,0.35478446
+201.12,Snoring,Breathing,Snort,0.8200975,0.7944023,0.23107928
+201.6,"Inside, small room",Breathing,Silence,0.2931541,0.14171767,0.124909334
+202.07999999999998,Silence,"Inside, small room",Mechanisms,0.5716581,0.102424815,0.007932165
+202.56,Silence,"Inside, small room",Television,0.5422919,0.07614212,0.008591397
+203.04,Silence,"Inside, small room",White noise,0.7459397,0.038283996,0.0034104441
+203.51999999999998,Silence,"Inside, small room",Tick,0.89796036,0.026274526,0.004142221
+204.0,Breathing,Snoring,"Inside, small room",0.4750586,0.39813775,0.1843759
+204.48,Breathing,Snort,Snoring,0.7632538,0.65828866,0.6083316
+204.95999999999998,Breathing,Snoring,Snort,0.57418305,0.47270793,0.27244484
+205.44,Snoring,Breathing,"Inside, small room",0.8936926,0.8553585,0.07925105
+205.92,Silence,"Inside, small room",Breathing,0.4006625,0.17108434,0.054576427
+206.4,Silence,"Inside, small room",Breathing,0.42114672,0.20211506,0.06763221
+206.88,Silence,"Inside, small room",White noise,0.58500266,0.096761286,0.039135873
+207.35999999999999,Silence,"Inside, small room",Tick,0.80107594,0.066765435,0.0056216726
+207.84,Silence,"Inside, small room",Tick,0.9096673,0.024906836,0.0019266264
+208.32,Snoring,Breathing,"Inside, small room",0.5462936,0.49004748,0.20658518
+208.79999999999998,Breathing,Snoring,Snort,0.9643544,0.9417964,0.23851632
+209.28,Breathing,Snoring,Snort,0.9088768,0.901707,0.101824
+209.76,Snoring,Breathing,"Inside, small room",0.47116932,0.4129883,0.13923563
+210.23999999999998,Silence,"Inside, small room",Clicking,0.7004848,0.08164018,0.0028455078
+210.72,Silence,"Inside, small room",Television,0.7001101,0.15076722,0.0068379045
+211.2,Silence,"Inside, small room",Tick,0.72206265,0.03377237,0.004472452
+211.67999999999998,Silence,"Inside, small room",Television,0.77584726,0.028564455,0.0039473786
+212.16,Silence,"Inside, small room",Breathing,0.44918773,0.11509629,0.025771013
+212.64,Breathing,Snoring,Snort,0.8380887,0.7906602,0.4586079
+213.12,Breathing,"Inside, small room",Silence,0.17274244,0.13439074,0.095120266
+213.6,Silence,"Inside, small room",Writing,0.29412386,0.25305524,0.038710114
+214.07999999999998,Silence,"Inside, small room",Writing,0.29898,0.24386266,0.014846559
+214.56,Silence,"Inside, small room",Clicking,0.78222,0.063747644,0.008499191
+215.04,Silence,"Inside, small room",Tick,0.6377381,0.028630197,0.0062470473
+215.51999999999998,Silence,"Inside, small room",Clicking,0.75136113,0.04948177,0.004362678
+216.0,Silence,"Inside, small room",Television,0.4875112,0.16404586,0.008189618
+216.48,Silence,"Inside, small room",Writing,0.25086364,0.24384843,0.028190868
+216.95999999999998,Breathing,Snoring,"Inside, small room",0.2596723,0.22177973,0.16489479
+217.44,Breathing,Snoring,Snort,0.7702864,0.76659423,0.35970813
+217.92,Silence,"Inside, small room",Writing,0.40415728,0.27999842,0.049267992
+218.4,Silence,"Inside, small room",Mechanical fan,0.7289274,0.09881471,0.0103745395
+218.88,Silence,"Inside, small room",White noise,0.7538543,0.03394961,0.006964129
+219.35999999999999,Silence,"Inside, small room",Speech,0.92862123,0.014679586,0.0008098562
+219.84,Silence,"Inside, small room",Speech,0.30766517,0.0785893,0.015265228
+220.32,"Inside, small room",Breathing,Snoring,0.2644846,0.13210507,0.102814294
+220.79999999999998,"Inside, small room",Breathing,Silence,0.13110048,0.115224324,0.08575861
+221.28,Breathing,Snoring,Snort,0.71682113,0.6857083,0.3762103
+221.76,"Inside, small room",Silence,Breathing,0.20816031,0.08406661,0.04227791
+222.23999999999998,Silence,"Inside, small room",Television,0.4789336,0.120750204,0.010292424
+222.72,Silence,"Inside, small room",Television,0.7629947,0.050989415,0.002794564
+223.2,Silence,"Inside, small room",Tick,0.91084427,0.019377202,0.0011276326
+223.67999999999998,Silence,"Inside, small room",Tick,0.5738646,0.06161267,0.004475583
+224.16,Silence,"Inside, small room",Breathing,0.21229896,0.16967992,0.09615405
+224.64,Silence,"Inside, small room",Breathing,0.18379314,0.16071257,0.09000965
+225.12,Breathing,Snoring,Snort,0.78814083,0.78805757,0.06698291
+225.6,Snoring,Breathing,"Inside, small room",0.61016643,0.5985966,0.10890737
+226.07999999999998,Silence,"Inside, small room",Tick,0.4259662,0.15749128,0.01597517
+226.56,Silence,"Inside, small room",Tick,0.66377693,0.10269631,0.02426983
+227.04,Silence,"Inside, small room",Noise,0.91816217,0.004360815,0.00040234101
+227.51999999999998,Silence,"Inside, small room",White noise,0.8797442,0.012929818,0.0017765642
+228.0,Silence,"Inside, small room",Musical instrument,0.9737241,0.0020237137,0.00022880797
+228.48,Silence,"Inside, small room",Speech,0.87039965,0.037777234,0.0016253702
+228.95999999999998,Silence,"Inside, small room",Mechanical fan,0.2957083,0.26405394,0.041181594
+229.44,"Inside, small room",White noise,Camera,0.13156699,0.12761357,0.11928754
+229.92,Breathing,"Inside, small room",Spray,0.13359222,0.10921305,0.089457534
+230.39999999999998,"Inside, small room",Silence,Writing,0.3354181,0.2258235,0.13384345
+230.88,Silence,"Inside, small room",Tick,0.7931508,0.06787607,0.004651978
+231.35999999999999,Silence,"Inside, small room",Television,0.70903534,0.09908982,0.0072990214
+231.84,Silence,"Inside, small room",Television,0.95069855,0.013978846,0.0007384585
+232.32,Silence,"Inside, small room",White noise,0.85649186,0.022764836,0.002255051
+232.79999999999998,Silence,"Inside, small room",Mechanisms,0.6891751,0.0436507,0.004923139
+233.28,"Inside, small room",Breathing,Snoring,0.27662912,0.25799963,0.19349281
+233.76,Breathing,Snoring,Snort,0.74629605,0.64135444,0.38969865
+234.23999999999998,Breathing,"Inside, small room",Snoring,0.17158057,0.075645804,0.07510665
+234.72,Snoring,Breathing,Snort,0.735684,0.7321295,0.22440988
+235.2,Silence,"Inside, small room",Writing,0.34553382,0.31532744,0.011402579
+235.67999999999998,Silence,"Inside, small room",Mechanisms,0.70540005,0.075592145,0.0059673763
+236.16,Silence,"Inside, small room",White noise,0.83381605,0.021102358,0.0027721755
+236.64,Silence,"Inside, small room",Speech,0.9508726,0.0073509677,0.0004156505
+237.12,Silence,"Inside, small room",Breathing,0.81778497,0.04607379,0.008692476
+237.6,Breathing,Snoring,Silence,0.9864392,0.9825389,0.083862364
+238.07999999999998,Breathing,Snoring,Silence,0.9991078,0.9982254,0.010253861
+238.56,Breathing,Snoring,Silence,0.99208695,0.991547,0.010733573
+239.04,Snoring,Breathing,Silence,0.76410323,0.7177207,0.13335934
+239.51999999999998,Silence,"Inside, small room",Writing,0.5417673,0.13551004,0.018393183
+240.0,Silence,"Inside, small room",Television,0.9167759,0.029975362,0.0016593831
+240.48,Silence,"Inside, small room",Tick,0.9419778,0.023310812,0.0016477793
+240.95999999999998,Silence,"Inside, small room",White noise,0.8145577,0.021841964,0.0035905119
+241.44,Silence,"Inside, small room",Mechanical fan,0.24841574,0.09072345,0.019842234
+241.92,Breathing,Snoring,Snort,0.97760797,0.96157223,0.22332029
+242.39999999999998,Breathing,Snoring,Snort,0.9874873,0.9780338,0.12476446
+242.88,Breathing,Snoring,Silence,0.9474833,0.94276637,0.050377525
+243.35999999999999,"Inside, small room",Breathing,Silence,0.16435055,0.084551215,0.07657516
+243.84,Silence,"Inside, small room",Breathing,0.7163226,0.09064634,0.008424652
+244.32,Silence,"Inside, small room",Speech,0.8762197,0.006400385,0.00096211856
+244.79999999999998,Silence,"Inside, small room",Musical instrument,0.90521,0.007776083,0.0028113844
+245.28,Silence,"Inside, small room",Speech,0.50033396,0.020384034,0.009132069
+245.76,Snoring,Breathing,Silence,0.89390635,0.88651025,0.16679356
+246.23999999999998,Breathing,Snoring,Snort,0.86762714,0.8514919,0.1942859
+246.72,Breathing,Snoring,Snort,0.967924,0.95219904,0.44417813
+247.2,Snoring,Breathing,Snort,0.91409594,0.9077013,0.08132576
+247.67999999999998,Silence,"Inside, small room",Breathing,0.4983248,0.18508898,0.041254707
+248.16,Silence,"Inside, small room",Writing,0.7165025,0.064483576,0.012012274
+248.64,Silence,"Inside, small room",Speech,0.9959095,0.000119853394,9.656485e-05
+249.12,Silence,"Inside, small room",Television,0.82403225,0.039245874,0.002930933
+249.6,Breathing,Snoring,Snort,0.745966,0.7178076,0.24520563
+250.07999999999998,Breathing,Snoring,Snort,0.9578868,0.9222084,0.44376668
+250.56,Breathing,Snoring,Snort,0.8213293,0.7454844,0.37316683
+251.04,Breathing,Snoring,Snort,0.8660162,0.84004694,0.5760966
+251.51999999999998,Breathing,Snoring,Snort,0.36321652,0.3431391,0.21502058
+252.0,Silence,"Inside, small room",Mechanisms,0.6675655,0.080778934,0.010247682
+252.48,Silence,"Inside, small room",Clicking,0.8392502,0.059327204,0.0036686605
+252.95999999999998,Silence,"Inside, small room",Television,0.917787,0.01895092,0.0010510611
+253.44,Silence,"Inside, small room",Tick,0.67858905,0.071406506,0.0065219714
+253.92,Snoring,Breathing,"Inside, small room",0.58734787,0.54892325,0.1713411
+254.39999999999998,Breathing,Snoring,Snort,0.6686814,0.6330906,0.3475127
+254.88,Breathing,Snake,Snoring,0.12982692,0.098625675,0.07708233
+255.35999999999999,Breathing,Snoring,Snort,0.95592064,0.9498303,0.06786728
+255.84,Snoring,Breathing,Silence,0.45004863,0.42607227,0.20380965
+256.32,Silence,"Inside, small room",Breathing,0.91543007,0.035607222,0.0019641633
+256.8,Silence,"Inside, small room",Television,0.92803204,0.0138261365,0.0013539522
+257.28,Silence,"Inside, small room",Speech,0.9571772,0.0077315243,0.00028269767
+257.76,Silence,"Inside, small room",Speech,0.88228536,0.021934379,0.0016097297
+258.24,Breathing,Snoring,"Inside, small room",0.8324762,0.7625885,0.08402846
+258.71999999999997,Breathing,Snoring,Snort,0.9884509,0.97830665,0.14678106
+259.2,Breathing,Snoring,Snort,0.88883835,0.8831379,0.13365118
+259.68,Snoring,Breathing,"Inside, small room",0.9571917,0.95074826,0.03305168
+260.15999999999997,Breathing,Snoring,Silence,0.9586603,0.9544559,0.021871028
+260.64,Silence,Breathing,"Inside, small room",0.77097267,0.05629368,0.0547917
+261.12,Silence,"Inside, small room",Clicking,0.9029267,0.011421176,0.00071179384
+261.59999999999997,Silence,"Inside, small room",White noise,0.87701994,0.012786257,0.001960036
+262.08,Silence,"Inside, small room",Tick,0.6396696,0.06749576,0.008266792
+262.56,Breathing,Snoring,Snort,0.9591656,0.9391941,0.3056047
+263.03999999999996,Breathing,Snoring,Snort,0.78163815,0.649079,0.41151866
+263.52,Snoring,Breathing,Snort,0.86698014,0.8545406,0.13574454
+264.0,Snoring,Breathing,Silence,0.9966133,0.99590725,0.0057828645
+264.48,Speech,"Inside, small room",Silence,0.115462705,0.04612403,0.040689804
+264.96,Silence,"Inside, small room",Breathing,0.83665997,0.042807177,0.005640063
+265.44,Silence,"Inside, small room",Television,0.80337846,0.0357479,0.0025670961
+265.92,Silence,"Inside, small room",Speech,0.9432709,0.0061575864,0.00025668685
+266.4,Silence,"Inside, small room",Musical instrument,0.9469318,0.010059992,0.0009701577
+266.88,Breathing,Snoring,"Inside, small room",0.8185438,0.81280667,0.11850103
+267.36,Breathing,Snoring,Snort,0.8800857,0.8082692,0.33966878
+267.84,Breathing,Snoring,Snort,0.9794025,0.95837176,0.1472233
+268.32,Breathing,Snoring,Snort,0.99538016,0.98907274,0.061074447
+268.8,Snoring,Breathing,Silence,0.74872595,0.70539415,0.10732356
+269.28,Silence,"Inside, small room",Tick,0.64695567,0.10972762,0.034464598
+269.76,Silence,"Inside, small room",Clicking,0.8386557,0.02198387,0.0049690967
+270.24,Silence,"Inside, small room",Speech,0.9696144,0.0032043974,0.00014677743
+270.71999999999997,Silence,"Inside, small room",Television,0.90522075,0.016082602,0.0014311002
+271.2,Breathing,Snoring,Silence,0.8949302,0.8845534,0.12516479
+271.68,Breathing,Snoring,Silence,0.9958255,0.99432486,0.018606162
+272.15999999999997,Breathing,Snoring,Animal,0.9436708,0.9333839,0.027326921
+272.64,Breathing,Snoring,Snort,0.98209274,0.9703594,0.16094054
+273.12,Breathing,Snoring,Snort,0.8956396,0.845224,0.056688625
+273.59999999999997,Silence,"Inside, small room",Mechanisms,0.43293613,0.097680345,0.021900214
+274.08,Silence,"Inside, small room",Television,0.735561,0.065783575,0.004747865
+274.56,Silence,"Inside, small room",Speech,0.92339903,0.009130355,0.00066644663
+275.03999999999996,Breathing,Snoring,Silence,0.40527588,0.38055956,0.26656762
+275.52,Breathing,Snoring,Snort,0.98838866,0.98155516,0.06701268
+276.0,Breathing,Snoring,Silence,0.96695215,0.9551016,0.096023664
+276.48,Breathing,Snoring,Snort,0.9669991,0.9507725,0.061486084
+276.96,Breathing,Snoring,"Inside, small room",0.76074404,0.714974,0.07392636
+277.44,Silence,"Inside, small room",Mechanical fan,0.5651938,0.09105733,0.060174815
+277.92,Silence,"Inside, small room",Speech,0.83047444,0.02716442,0.0035797942
+278.4,Silence,"Inside, small room",Television,0.87626266,0.038244944,0.0026434287
+278.88,Silence,"Inside, small room",Noise,0.8782839,0.009837183,0.0008063748
+279.36,"Inside, small room",Breathing,Snoring,0.26997688,0.19513135,0.15011898
+279.84,Breathing,Snoring,Snort,0.97986156,0.9577315,0.24036177
+280.32,Breathing,Snoring,Snort,0.9899831,0.9873478,0.024942128
+280.8,Snoring,Breathing,"Inside, small room",0.70046145,0.6205895,0.07745604
+281.28,"Inside, small room",Silence,Mechanisms,0.2618558,0.03528412,0.025451861
+281.76,Silence,"Inside, small room",Writing,0.7016475,0.12854098,0.012061186
+282.24,Silence,"Inside, small room",Speech,0.6928097,0.047935717,0.0068273074
+282.71999999999997,Silence,"Inside, small room",White noise,0.7636857,0.04178722,0.003654198
+283.2,Breathing,"Inside, small room",Snort,0.24149817,0.19164564,0.13653244
+283.68,Breathing,Snoring,Snort,0.7431379,0.72938675,0.21931748
+284.15999999999997,Breathing,Snoring,Snort,0.65712035,0.59398454,0.18023862
+284.64,Breathing,Snoring,Snort,0.9221575,0.89917004,0.1365315
+285.12,"Inside, small room",Silence,Speech,0.18761437,0.10619267,0.05391056
+285.59999999999997,Silence,"Inside, small room",Television,0.48523852,0.14160427,0.015902331
+286.08,Silence,"Inside, small room",White noise,0.6931195,0.07611904,0.009430551
+286.56,Silence,"Inside, small room",Tick,0.77821493,0.05400118,0.008480904
+287.03999999999996,"Inside, small room",Breathing,Snoring,0.22885604,0.19940026,0.1501884
+287.52,Breathing,Snoring,Snort,0.97051126,0.9488796,0.33919346
+288.0,Breathing,Snoring,"Inside, small room",0.7547384,0.66637224,0.08590065
+288.47999999999996,Breathing,Snoring,Snort,0.9741229,0.96579516,0.08086393
+288.96,"Inside, small room",Silence,Speech,0.27601942,0.10909521,0.021127662
+289.44,Silence,"Inside, small room",Tick,0.6369187,0.12179444,0.007255507
+289.92,Silence,Speech,"Inside, small room",0.3167118,0.076082475,0.058172613
+290.4,Silence,"Inside, small room",Television,0.8383744,0.04242945,0.0048047295
+290.88,Silence,"Inside, small room",Breathing,0.19536912,0.16736402,0.036745694
+291.36,Snoring,Breathing,"Inside, small room",0.91529363,0.9077481,0.07555909
+291.84,Breathing,Snoring,Snort,0.80798936,0.64706254,0.48530826
+292.32,Breathing,Snoring,Snort,0.978475,0.9562022,0.23787995
+292.8,Breathing,Snoring,"Inside, small room",0.68482965,0.61036724,0.0830011
+293.28,Silence,"Inside, small room",Tick,0.45749068,0.18533638,0.024435561
+293.76,Silence,"Inside, small room",Tick,0.72488016,0.06108987,0.01213767
+294.24,Silence,"Inside, small room",White noise,0.73679835,0.043452915,0.0036801628
+294.71999999999997,Silence,"Inside, small room",Musical instrument,0.48383832,0.068478175,0.011297487
+295.2,Snoring,Breathing,Silence,0.8289811,0.78816974,0.107613266
+295.68,Breathing,Snoring,Snort,0.98808956,0.97312933,0.043893777
+296.15999999999997,Breathing,Snoring,Snort,0.9191708,0.9098894,0.024707701
+296.64,Snoring,Breathing,"Inside, small room",0.9075618,0.8915879,0.08933602
+297.12,"Inside, small room",Silence,Writing,0.26145428,0.14565,0.06582686
+297.59999999999997,Silence,"Inside, small room",White noise,0.73643667,0.072087415,0.016777575
+298.08,Silence,"Inside, small room",Clicking,0.69414943,0.06984734,0.0070266686
+298.56,Silence,"Inside, small room",Television,0.7582231,0.08826093,0.0072369557
+299.03999999999996,Silence,"Inside, small room",Mechanical fan,0.53596354,0.1355291,0.015362587
+299.52,Snoring,Breathing,Silence,0.8831821,0.8787388,0.18314756
+300.0,Snoring,Breathing,Silence,0.9931285,0.99229205,0.0135935135
+300.47999999999996,Snoring,Breathing,Silence,0.91028214,0.89880764,0.030975811
+300.96,Snoring,Breathing,"Inside, small room",0.4018088,0.35281023,0.11723047
+301.44,Silence,"Inside, small room",Speech,0.29137465,0.15801238,0.010667079
+301.92,Silence,"Inside, small room",Tick,0.8626001,0.034185946,0.0023191972
+302.4,Silence,"Inside, small room",White noise,0.8329533,0.020277986,0.0018898221
+302.88,Silence,"Inside, small room",Television,0.75983024,0.041131057,0.0069151716
+303.36,Breathing,Snoring,"Inside, small room",0.25089818,0.24557419,0.23003615
+303.84,Snoring,Breathing,Snort,0.94032747,0.93852067,0.12375845
+304.32,Breathing,Snoring,Buzz,0.32184857,0.26546472,0.12620445
+304.8,Breathing,Snoring,Snort,0.9745596,0.9620267,0.14117612
+305.28,Snoring,Breathing,Silence,0.8900398,0.8865673,0.06421255
+305.76,Silence,"Inside, small room",Writing,0.8148747,0.05063027,0.0050058267
+306.24,Silence,"Inside, small room",Writing,0.6658627,0.11644479,0.0199395
+306.71999999999997,Silence,"Inside, small room",Clicking,0.9534926,0.0129256435,0.00073377107
+307.2,Silence,"Inside, small room",Speech,0.9263171,0.01410692,0.0005955308
+307.68,Silence,"Inside, small room",Breathing,0.26037133,0.18470559,0.081722274
+308.15999999999997,Breathing,Snoring,Snort,0.92725646,0.86221814,0.5908706
+308.64,Breathing,Snoring,Snort,0.94072855,0.8913458,0.5150736
+309.12,Snoring,Breathing,Silence,0.9827181,0.9824572,0.024222422
+309.59999999999997,Silence,Speech,"Inside, small room",0.52796257,0.040080037,0.030890647
+310.08,Silence,"Inside, small room",Mechanisms,0.6911665,0.040370952,0.004013256
+310.56,Silence,"Inside, small room",Television,0.8797133,0.016686385,0.0017272827
+311.03999999999996,Silence,"Inside, small room",Breathing,0.72450966,0.06565597,0.005788852
+311.52,Snoring,Breathing,Silence,0.9741946,0.9740288,0.049482964
+312.0,Breathing,Snoring,Snort,0.9958057,0.9922533,0.022782076
+312.47999999999996,Breathing,Snoring,Snort,0.98483604,0.972328,0.11502991
+312.96,Breathing,Snoring,"Inside, small room",0.3959832,0.25213757,0.23525526
+313.44,Silence,"Inside, small room",Clicking,0.9016141,0.02221602,0.0019649935
+313.92,Silence,"Inside, small room",Tick,0.75431865,0.07990592,0.009379896
+314.4,Silence,"Inside, small room",Tick,0.8108798,0.062793046,0.010771813
+314.88,"Inside, small room",Silence,Snort,0.30414593,0.13832857,0.065981634
+315.36,Breathing,Snoring,Silence,0.99734724,0.9963959,0.023252286
+315.84,Breathing,Snoring,Snort,0.98989874,0.98520094,0.10763044
+316.32,Breathing,Snoring,Silence,0.951051,0.9504257,0.04145646
+316.8,Snoring,Breathing,Silence,0.89613324,0.8934404,0.06928459
+317.28,Silence,"Inside, small room",Mechanisms,0.71551716,0.060324047,0.0035683345
+317.76,Silence,"Inside, small room",Tick,0.90880907,0.03802364,0.00087290176
+318.24,Silence,"Inside, small room",Speech,0.9847816,0.0013776014,9.3308976e-05
+318.71999999999997,Silence,"Inside, small room",Tick,0.7514936,0.07153289,0.005935375
+319.2,Breathing,Snoring,Silence,0.9943492,0.9926355,0.01043491
+319.68,Breathing,Snoring,Silence,0.99927276,0.998947,0.00485159
+320.15999999999997,Breathing,Snoring,Speech,0.989488,0.98787147,0.009652377
+320.64,Breathing,Snoring,"Inside, small room",0.5482189,0.5138752,0.10624353
+321.12,Snoring,Breathing,"Inside, small room",0.869783,0.8648719,0.05107388
+321.59999999999997,"Inside, small room",Silence,Speech,0.1763159,0.09739968,0.029920079
+322.08,Silence,"Inside, small room",Television,0.62676364,0.08595888,0.0059837014
+322.56,Silence,"Inside, small room",Clicking,0.69001055,0.042876337,0.01701567
+323.03999999999996,Silence,"Inside, small room",Writing,0.83285993,0.035008416,0.0036406973
+323.52,Breathing,Snoring,Silence,0.9997874,0.99967813,0.0042147236
+324.0,Breathing,Snoring,Silence,0.99898154,0.9981622,0.0015034648
+324.47999999999996,Breathing,Snoring,Animal,0.98236406,0.96899563,0.01724681
+324.96,Breathing,Snoring,Silence,0.9978271,0.9977298,0.0033205212
+325.44,Silence,"Inside, small room",Writing,0.43176672,0.27508616,0.033787634
+325.92,Silence,"Inside, small room",Television,0.8815096,0.017004907,0.0024497258
+326.4,Silence,"Inside, small room",Speech,0.9464867,0.0073924954,0.00038780135
+326.88,Snoring,Breathing,Silence,0.95855385,0.9565801,0.07830399
+327.36,Breathing,Snoring,Silence,0.9975232,0.9974109,0.012038508
+327.84,Breathing,Snoring,Snort,0.9430767,0.9338276,0.08066289
+328.32,Snoring,Breathing,Snort,0.98015827,0.97785217,0.03173307
+328.8,Breathing,Snoring,Silence,0.7832904,0.77723974,0.099205755
+329.28,Silence,"Inside, small room",Breathing,0.6209883,0.18134888,0.0153751485
+329.76,Silence,"Inside, small room",Television,0.56140506,0.15198997,0.011985772
+330.24,Silence,"Inside, small room",Television,0.85213155,0.02110026,0.0042360746
+330.71999999999997,Silence,"Inside, small room",Television,0.7601413,0.036611605,0.0024435564
+331.2,Snoring,Breathing,"Inside, small room",0.92005026,0.9090223,0.06634392
+331.68,Breathing,Snoring,Snort,0.98537904,0.98090595,0.04970286
+332.15999999999997,Breathing,Snoring,Silence,0.9650103,0.9512337,0.042484768
+332.64,Breathing,Snoring,Silence,0.98874444,0.9846022,0.013136167
+333.12,"Inside, small room",Breathing,Silence,0.18491775,0.17714323,0.13323125
+333.59999999999997,Silence,"Inside, small room",Breathing,0.8653359,0.06784211,0.007140135
+334.08,Silence,"Inside, small room",Speech,0.9289418,0.016990691,0.0006761679
+334.56,Silence,"Inside, small room",Speech,0.79135025,0.062453534,0.0033736741
+335.03999999999996,Silence,"Inside, small room",Writing,0.5675542,0.14933042,0.119948216
+335.52,Breathing,Snoring,Snort,0.80915886,0.7597328,0.457246
+336.0,Breathing,Snoring,Silence,0.99603635,0.99461675,0.014895081
+336.47999999999996,Snoring,Breathing,Silence,0.99669755,0.99584734,0.02177845
+336.96,"Inside, small room",Silence,Breathing,0.16207346,0.09498901,0.07173107
+337.44,Silence,"Inside, small room",Television,0.85805374,0.010842448,0.0024354046
+337.91999999999996,Silence,"Inside, small room",Clicking,0.9527607,0.0075846096,0.0012441865
+338.4,Silence,"Inside, small room",Speech,0.98055106,0.008529454,0.00063123624
+338.88,Breathing,Snoring,"Inside, small room",0.5148624,0.3548299,0.22324474
+339.36,Breathing,Snoring,Snort,0.986479,0.9651533,0.3093751
+339.84,Snoring,Breathing,Silence,0.7884233,0.78126967,0.03828024
+340.32,Breathing,Snoring,Snort,0.66921145,0.63083476,0.08848637
+340.8,Snoring,Breathing,Silence,0.86470485,0.8527013,0.12301361
+341.28,Silence,"Inside, small room",Tick,0.71059257,0.091291144,0.014733139
+341.76,Silence,"Inside, small room",Tick,0.79142845,0.054347344,0.007235775
+342.24,Silence,"Inside, small room",Clicking,0.9756574,0.005795802,0.0007183642
+342.71999999999997,Silence,"Inside, small room",Speech,0.8502361,0.044828024,0.002512932
+343.2,Breathing,Snoring,Snort,0.9682757,0.9603395,0.042368162
+343.68,Breathing,Snoring,Silence,0.9996643,0.99922436,0.008392087
+344.15999999999997,Breathing,Snoring,"Inside, small room",0.99248576,0.9911087,0.01062218
+344.64,Breathing,Snoring,Snort,0.97737145,0.9579115,0.22180036
+345.12,Breathing,Snoring,"Inside, small room",0.55528957,0.49778154,0.08206364
+345.59999999999997,Silence,"Inside, small room",Breathing,0.832986,0.047128346,0.008366466
+346.08,Silence,"Inside, small room",Tick,0.7944259,0.04150312,0.008931538
+346.56,Silence,"Inside, small room",Speech,0.9663209,0.005942179,0.00034234973
+347.03999999999996,Silence,Speech,"Inside, small room",0.99906313,4.6041172e-05,5.7751854e-06
+347.52,Silence,"Inside, small room",Writing,0.4793214,0.17124411,0.032230955
+348.0,Breathing,Snoring,Silence,0.99711245,0.9951519,0.020850595
+348.47999999999996,Breathing,Snoring,Snort,0.996691,0.99389833,0.017965108
+348.96,Breathing,Snoring,Snort,0.9764523,0.96777403,0.04139077
+349.44,Snoring,Breathing,"Inside, small room",0.94806796,0.94595605,0.037072513
+349.91999999999996,"Inside, small room",Silence,Breathing,0.45434108,0.11969923,0.08156446
+350.4,Silence,"Inside, small room",Breathing,0.7567494,0.07294493,0.013442938
+350.88,Silence,"Inside, small room",Clicking,0.82712346,0.021490237,0.0017219711
+351.36,Silence,"Inside, small room",Speech,0.8901273,0.014738706,0.0005139325
+351.84,Silence,"Inside, small room",Writing,0.4390411,0.11000859,0.0093971
+352.32,Breathing,Snoring,Snort,0.93211025,0.8754569,0.51301855
+352.8,Breathing,Snoring,Snort,0.87429327,0.8191385,0.26961535
+353.28,Breathing,Snoring,Silence,0.97899866,0.9762196,0.019333465
+353.76,Breathing,Snoring,Snort,0.512741,0.32877016,0.22057556
+354.24,Silence,"Inside, small room",Television,0.55970824,0.08894174,0.0090724295
+354.71999999999997,Silence,"Inside, small room",Tick,0.8203266,0.051734604,0.005296591
+355.2,Silence,"Inside, small room",Wind,0.9215953,0.009029755,0.0005183825
+355.68,Silence,"Inside, small room",Speech,0.72932816,0.024353355,0.009847229
+356.15999999999997,Breathing,Snoring,Snort,0.97447383,0.9590797,0.07024954
+356.64,Breathing,Snoring,Snort,0.97978884,0.97644883,0.11646377
+357.12,Snoring,Breathing,Speech,0.49102768,0.46241555,0.14147891
+357.59999999999997,Breathing,Snoring,Snort,0.9302975,0.90028054,0.10451137
+358.08,Silence,Speech,"Inside, small room",0.15901618,0.07570714,0.047462918
+358.56,Silence,"Inside, small room",Writing,0.6998186,0.09063801,0.0094198305
+359.03999999999996,Silence,"Inside, small room",Tick,0.95683527,0.0096633695,0.0005861089
+359.52,Silence,"Inside, small room",Tick,0.96815336,0.010070358,0.00037863813
+360.0,Silence,"Inside, small room",Clicking,0.93007684,0.013813827,0.0013792397
+360.47999999999996,Snoring,Breathing,Silence,0.8740391,0.87021726,0.1259545
+360.96,Breathing,Snoring,Silence,0.9980237,0.9976556,0.010616815
+361.44,Snoring,Breathing,Snort,0.45157316,0.42637876,0.28141466
+361.91999999999996,Breathing,Snoring,Snort,0.9588787,0.93650573,0.118398026
+362.4,Silence,Speech,"Inside, small room",0.22820641,0.09408579,0.06688495
+362.88,Silence,"Inside, small room",Tick,0.7523539,0.05425303,0.018464101
+363.36,Silence,"Inside, small room",Tick,0.88745636,0.018624587,0.0022389786
+363.84,Silence,"Inside, small room",Wind,0.90445036,0.017300323,0.0015488481
+364.32,Breathing,Snoring,Snort,0.8815198,0.8605357,0.08124726
+364.8,Breathing,Snoring,Silence,0.9992154,0.9985829,0.011062245
+365.28,Breathing,Snoring,Silence,0.9976604,0.997626,0.003716578
+365.76,Snoring,Breathing,Silence,0.77173746,0.7611247,0.15560237
+366.24,Silence,"Inside, small room",Speech,0.9631394,0.0038944823,0.0002397344
+366.71999999999997,Silence,"Inside, small room",Tick,0.96400046,0.008005758,0.00041468517
+367.2,Silence,"Inside, small room","Narration, monologue",0.939662,0.016075224,0.00065593695
+367.68,Breathing,Snoring,Snort,0.73124534,0.6460309,0.27604866
+368.15999999999997,Snoring,Breathing,Silence,0.761756,0.71612257,0.13276075
+368.64,Breathing,Snoring,Snort,0.9471995,0.91912603,0.32045957
+369.12,Snoring,Breathing,Speech,0.6479642,0.63847697,0.030043906
+369.59999999999997,Silence,"Inside, small room",Tick,0.7972703,0.041276816,0.012288784
+370.08,Silence,"Inside, small room",Speech,0.94407356,0.013285283,0.0006963627
+370.56,Silence,"Inside, small room",Speech,0.9893764,0.0012430069,0.00012954841
+371.03999999999996,Silence,"Inside, small room",Speech,0.8874463,0.033892673,0.0019615476
+371.52,Breathing,Snoring,Snort,0.9263589,0.90113425,0.39740756
+372.0,Breathing,Snoring,Snort,0.924507,0.84817696,0.552966
+372.47999999999996,Breathing,Snoring,Snort,0.9333868,0.9300216,0.1933879
+372.96,Breathing,Snoring,"Inside, small room",0.9993021,0.9991794,0.0009324353
+373.44,Snoring,Breathing,"Domestic animals, pets",0.9994958,0.9993079,0.005792316
+373.91999999999996,Breathing,Snoring,"Inside, small room",0.9818775,0.9795952,0.01555968
+374.4,Snoring,Breathing,Silence,0.36424708,0.34595197,0.24435197
+374.88,Silence,"Inside, small room",Television,0.8137225,0.05549488,0.0034515597
+375.36,Silence,"Inside, small room",Speech,0.9625963,0.0032756794,0.00021831719
+375.84,Silence,Speech,Music,0.99894434,7.358377e-05,5.1543034e-06
+376.32,Breathing,Snoring,"Inside, small room",0.27090546,0.24498822,0.18127899
+376.8,Breathing,Snoring,Silence,0.9847687,0.98269534,0.032942634
+377.28,Snake,Spray,White noise,0.2584546,0.1732683,0.14401875
+377.76,Breathing,Snort,Snoring,0.54060507,0.37420255,0.28909233
+378.24,Breathing,Snort,"Inside, small room",0.29312894,0.28007764,0.1378827
+378.71999999999997,Silence,Speech,"Inside, small room",0.9966403,0.00025024806,0.00015285856
+379.2,Silence,"Inside, small room",Speech,0.8451207,0.00975827,0.006229877
+379.68,Silence,"Inside, small room",Noise,0.81475466,0.02056179,0.0025913208
+380.15999999999997,"Inside, small room",Breathing,Silence,0.26247504,0.13465555,0.13397937
+380.64,Breathing,Snoring,Silence,0.99598783,0.99390405,0.022101888
+381.12,Breathing,Snoring,Snake,0.85024536,0.81607103,0.09785014
+381.59999999999997,Breathing,Snoring,Silence,0.98524606,0.97099733,0.029848408
+382.08,Silence,"Inside, small room",Speech,0.49217698,0.0858775,0.01569335
+382.56,Silence,"Inside, small room",Writing,0.93332297,0.031198794,0.0018537157
+383.03999999999996,Silence,"Inside, small room",Speech,0.97985876,0.0058076233,0.00010780113
+383.52,Silence,"Inside, small room",Clicking,0.84299684,0.031052604,0.002295376
+384.0,Breathing,Snoring,Silence,0.9656064,0.9561865,0.20039086
+384.47999999999996,Breathing,Snoring,Snort,0.9524616,0.94639117,0.090831324
+384.96,Breathing,Snoring,Snort,0.97635186,0.9744133,0.09316742
+385.44,Breathing,Snoring,Silence,0.29408595,0.26505145,0.21182851
+385.91999999999996,Silence,"Inside, small room",Speech,0.9397822,0.0104959635,0.00072944764
+386.4,Silence,"Inside, small room",Tick,0.93363005,0.025534894,0.0021860693
+386.88,Silence,"Inside, small room",Tick,0.9599264,0.010269993,0.0009699257
+387.36,Silence,"Inside, small room",Speech,0.9480107,0.0050611096,0.00027648645
+387.84,Breathing,Snoring,Silence,0.98669434,0.9859654,0.035895642
+388.32,Breathing,Snoring,Silence,0.99468195,0.99264175,0.013199901
+388.8,Breathing,Snoring,Snort,0.97698706,0.9685571,0.15257438
+389.28,Breathing,Snoring,Snort,0.95467466,0.950679,0.048617397
+389.76,Silence,"Inside, small room",Writing,0.76104397,0.09332987,0.0093738865
+390.24,Silence,"Inside, small room",Tick,0.8967125,0.025402823,0.0018617
+390.71999999999997,Silence,"Inside, small room",Speech,0.95162696,0.00608565,0.0004708648
+391.2,Silence,"Inside, small room",Television,0.8787173,0.020983564,0.0016233936
+391.68,Silence,"Inside, small room","Domestic animals, pets",0.8803702,0.04483429,0.0030404837
+392.15999999999997,Breathing,Snoring,Silence,0.99212986,0.99183744,0.051097453
+392.64,Breathing,Snoring,Silence,0.9955466,0.99261945,0.027751684
+393.12,Breathing,Snoring,Silence,0.9992464,0.9982111,0.0020766032
+393.59999999999997,Snoring,Breathing,Silence,0.8240261,0.80323625,0.078545555
+394.08,Silence,"Inside, small room",Television,0.7361571,0.08652923,0.0053693233
+394.56,Silence,"Inside, small room",Television,0.93158203,0.018830733,0.0009959828
+395.03999999999996,Silence,"Inside, small room",Speech,0.98860544,0.0020199094,0.00015342336
+395.52,Silence,Speech,Music,0.9998637,3.1762425e-05,3.4110664e-07
+396.0,Silence,"Inside, small room",Television,0.8957679,0.016059108,0.0009915375
+396.47999999999996,Snoring,Breathing,Silence,0.99679095,0.9960764,0.024000121
+396.96,Breathing,Snoring,Snort,0.9937023,0.9922061,0.02265979
+397.44,Snoring,Breathing,Snort,0.9777203,0.9729206,0.026235096
+397.91999999999996,Snoring,Breathing,"Inside, small room",0.95306545,0.94075984,0.041162036
+398.4,Silence,"Inside, small room",Television,0.8852098,0.03473542,0.002251528
+398.88,Silence,"Inside, small room",Speech,0.9061818,0.019124167,0.0013354771
+399.36,Silence,"Inside, small room",Clicking,0.947421,0.007099822,0.0011919793
+399.84,Silence,"Inside, small room",Speech,0.9878143,0.0030093004,0.00016705497
+400.32,Breathing,Snoring,Silence,0.7530912,0.73475736,0.16486038
+400.8,Breathing,Snoring,Snort,0.99098915,0.98425794,0.05172534
+401.28,Breathing,Snoring,Snort,0.8756675,0.83843154,0.4784272
+401.76,Breathing,Snoring,Snort,0.9725317,0.9603676,0.06580837
+402.24,Speech,Silence,Breathing,0.1255016,0.07182397,0.050278742
+402.71999999999997,Silence,"Inside, small room",Television,0.8426751,0.03853696,0.004829181
+403.2,Silence,"Inside, small room",Tick,0.69603497,0.0635395,0.010672651
+403.68,Silence,"Inside, small room",Clicking,0.9391863,0.02226224,0.0007741629
+404.15999999999997,Silence,"Inside, small room",Breathing,0.26199776,0.16536255,0.13454032
+404.64,Breathing,Snoring,Snort,0.9692624,0.96258634,0.045135718
+405.12,Breathing,Spray,Snoring,0.26157436,0.13364124,0.10540361
+405.59999999999997,Breathing,Snoring,Snort,0.68287724,0.63410026,0.39921162
+406.08,Breathing,"Inside, small room",Snoring,0.3000833,0.23599656,0.19193286
+406.56,Silence,"Inside, small room",Writing,0.67618287,0.11511645,0.0159988
+407.03999999999996,Silence,"Inside, small room",Writing,0.6981505,0.06142111,0.022728115
+407.52,Silence,"Inside, small room",Speech,0.95101327,0.013299937,0.0007071533
+408.0,Silence,"Inside, small room",Snoring,0.3752427,0.23621698,0.11243545
+408.47999999999996,Breathing,Snoring,Snort,0.9885269,0.97638494,0.0770162
+408.96,Breathing,Snoring,Snort,0.9778529,0.9702623,0.09066543
+409.44,Snoring,Breathing,Snort,0.98063254,0.9791874,0.038972247
+409.91999999999996,Breathing,Snoring,"Inside, small room",0.28499737,0.16303116,0.109102726
+410.4,Silence,"Inside, small room",Breathing,0.47267783,0.18244983,0.03435043
+410.88,Silence,"Inside, small room",Speech,0.9212013,0.035977423,0.003122308
+411.35999999999996,Silence,"Inside, small room",Speech,0.9842141,0.001770149,7.5309654e-05
+411.84,Silence,"Inside, small room",Breathing,0.22575629,0.21680519,0.0947585
+412.32,Breathing,Snoring,Snort,0.9932709,0.9892019,0.04645481
+412.8,Breathing,Snoring,Snort,0.9299961,0.8957673,0.087066196
+413.28,Snoring,Breathing,Snort,0.95245045,0.94975966,0.06792464
+413.76,Breathing,Snoring,Silence,0.6404039,0.55767834,0.087863296
+414.24,Silence,"Inside, small room",Musical instrument,0.8899689,0.012578563,0.0011252627
+414.71999999999997,Silence,"Inside, small room","Narration, monologue",0.9752642,0.0044555906,0.00032668642
+415.2,Silence,"Inside, small room",Tick,0.8953273,0.015080771,0.001884686
+415.68,Snoring,Breathing,Silence,0.42456403,0.3946252,0.15999886
+416.15999999999997,Breathing,Snoring,Snort,0.96280944,0.94976896,0.16261558
+416.64,Breathing,Snoring,Snort,0.90715486,0.8893479,0.5331555
+417.12,Breathing,Snoring,Snort,0.983499,0.9784,0.044374444
+417.59999999999997,Snoring,Breathing,"Inside, small room",0.7749962,0.7730155,0.10297914
+418.08,Silence,"Inside, small room",Tick,0.70779896,0.09421385,0.019821215
+418.56,Silence,"Inside, small room",Tick,0.8646217,0.030996306,0.0033106236
+419.03999999999996,Silence,"Inside, small room",Musical instrument,0.9023928,0.006874151,0.0020500412
+419.52,Silence,"Inside, small room",Television,0.9031787,0.019572232,0.0015438044
+420.0,Silence,"Inside, small room",Writing,0.5573056,0.10983422,0.02019406
+420.47999999999996,Breathing,Snoring,Snort,0.97981054,0.973103,0.10795975
+420.96,Breathing,Snoring,"Inside, small room",0.45370275,0.38353884,0.114637725
+421.44,Breathing,Snoring,Snort,0.8791192,0.8783227,0.22040169
+421.91999999999996,"Inside, small room",Silence,Breathing,0.26280826,0.23084004,0.015557941
+422.4,Silence,"Inside, small room",Tick,0.69222295,0.12896813,0.01815574
+422.88,Silence,"Inside, small room",Speech,0.90903836,0.011753015,0.0010331097
+423.35999999999996,Silence,"Inside, small room",Television,0.953256,0.017034583,0.0008774909
+423.84,Snoring,Breathing,Silence,0.326356,0.31705058,0.2345083
+424.32,Breathing,Snoring,Snort,0.92576814,0.9014821,0.10516377
+424.8,Breathing,Snoring,Snort,0.98043454,0.9780774,0.02682164
+425.28,Breathing,Snoring,"Inside, small room",0.9791074,0.97587466,0.033550035
+425.76,Breathing,Snoring,Silence,0.9140248,0.892833,0.06002684
+426.24,Silence,"Inside, small room",Television,0.8685591,0.03098079,0.0021026365
+426.71999999999997,Silence,"Inside, small room","Inside, large room or hall",0.95796037,0.0050473944,0.0002887003
+427.2,Silence,"Inside, small room",Musical instrument,0.9737857,0.0037661295,0.00044832777
+427.68,Silence,"Inside, small room","Narration, monologue",0.9893268,0.0016148039,7.331473e-05
+428.15999999999997,Snoring,Breathing,Silence,0.75801057,0.7338761,0.22688612
+428.64,Breathing,Snoring,Snort,0.99245566,0.987129,0.034448873
+429.12,Breathing,Snoring,Snort,0.96182597,0.9523731,0.08907747
+429.59999999999997,Snoring,Breathing,"Inside, small room",0.97297055,0.96781564,0.03204257
+430.08,Silence,"Inside, small room",Speech,0.68790984,0.11996693,0.0045646615
+430.56,Silence,"Inside, small room",Clicking,0.87821597,0.022363948,0.0012552561
+431.03999999999996,Silence,"Inside, small room","Narration, monologue",0.96636456,0.007531033,0.00040494063
+431.52,Silence,"Inside, small room",Tick,0.8756021,0.032558933,0.0019405541
+432.0,"Inside, small room",Silence,Breathing,0.14861967,0.13971324,0.108586796
+432.47999999999996,Snoring,Breathing,"Inside, small room",0.608923,0.59784895,0.18706335
+432.96,Breathing,Snoring,Snort,0.88586706,0.8583276,0.21186768
+433.44,Breathing,Snoring,Silence,0.98114187,0.97767144,0.02974244
+433.91999999999996,Silence,"Inside, small room",Speech,0.16072862,0.103917524,0.07436112
+434.4,Silence,"Inside, small room",Speech,0.9192714,0.012164096,0.0007826963
+434.88,Silence,"Inside, small room",Mechanisms,0.94190794,0.008696968,0.00023341323
+435.35999999999996,Silence,"Inside, small room",Speech,0.98203284,0.0037710632,0.0001601747
+435.84,Breathing,Snoring,Snort,0.6300822,0.58097816,0.42504892
+436.32,Breathing,Snoring,Snort,0.9283312,0.8983642,0.42209306
+436.8,Breathing,Snoring,Snort,0.9548474,0.914429,0.46675768
+437.28,Breathing,Snoring,"Inside, small room",0.8117204,0.81023,0.07289099
+437.76,Silence,"Inside, small room",Television,0.8472834,0.037433032,0.0043077413
+438.24,Silence,"Inside, small room",Speech,0.9831909,0.0022910852,0.00029383303
+438.71999999999997,Silence,"Inside, small room",Speech,0.97033954,0.003703257,7.129184e-05
+439.2,Silence,"Inside, small room",Tick,0.7675285,0.050283056,0.003362636
+439.68,Breathing,Snoring,Silence,0.98876345,0.98847,0.093724914
+440.15999999999997,Breathing,Snoring,Snort,0.9417461,0.9354364,0.1810892
+440.64,Breathing,Snoring,Animal,0.14972372,0.11237363,0.10811568
+441.12,Breathing,Snoring,Snort,0.8988284,0.88084126,0.2541551
+441.59999999999997,Silence,"Inside, small room",Writing,0.31281337,0.18252294,0.045274995
+442.08,Silence,"Inside, small room",Breathing,0.9033277,0.04846321,0.0045165624
+442.56,Silence,"Inside, small room",Speech,0.8753925,0.013114999,0.0059951954
+443.03999999999996,Silence,"Inside, small room",Mechanisms,0.9143057,0.0111192595,0.00077785953
+443.52,Silence,"Inside, small room",Noise,0.85538334,0.015569088,0.0048927693
+444.0,Breathing,Snoring,Snort,0.6037786,0.5345584,0.267275
+444.47999999999996,Breathing,Snoring,Snort,0.5130522,0.45575574,0.19898312
+444.96,Liquid,Breathing,Spray,0.18119316,0.17743564,0.16829753
+445.44,Breathing,Snoring,Silence,0.9982621,0.997344,0.01469402
+445.91999999999996,Breathing,Snoring,Silence,0.5022308,0.41605827,0.108895384
+446.4,Silence,"Inside, small room",Breathing,0.71697044,0.11576104,0.020115606
+446.88,Silence,"Inside, small room",Writing,0.753694,0.052926484,0.011724035
+447.35999999999996,Silence,"Inside, small room",Musical instrument,0.99078286,0.002186654,0.00019931994
+447.84,Silence,"Inside, small room",Writing,0.88110775,0.028928861,0.0050342716
+448.32,Breathing,Snoring,Snort,0.9944336,0.988423,0.091438696
+448.8,Snoring,Breathing,Snort,0.93860614,0.93749577,0.27496338
+449.28,Breathing,Snoring,Snort,0.9800945,0.9752545,0.086918116
+449.76,Snoring,Breathing,Silence,0.9486479,0.9145347,0.07860744
+450.24,"Inside, small room",Silence,Writing,0.32622215,0.15413314,0.03885589
+450.71999999999997,Silence,"Inside, small room",Television,0.8275695,0.07781408,0.007405092
+451.2,Silence,"Inside, small room",Tick,0.7917351,0.055969127,0.010459088
+451.68,Silence,"Inside, small room",Clicking,0.97089857,0.0099962745,0.0015956009
+452.15999999999997,Breathing,Snoring,Silence,0.35554838,0.32182923,0.16901319
+452.64,Breathing,Snoring,Snort,0.9944407,0.99107534,0.037380334
+453.12,Breathing,Snoring,Snort,0.44786516,0.4167321,0.17614518
+453.59999999999997,Breathing,Snoring,Snort,0.9960411,0.9930906,0.04331911
+454.08,Breathing,Snoring,Snort,0.9745683,0.96324587,0.09057437
+454.56,Silence,"Inside, small room",Breathing,0.88056606,0.04030462,0.0026341772
+455.03999999999996,Silence,"Inside, small room",Television,0.8318212,0.030714046,0.0025682747
+455.52,Silence,"Inside, small room",Television,0.9001431,0.013373834,0.0018828757
+456.0,Silence,"Inside, small room",Tick,0.9600316,0.006990136,0.0003021922
+456.47999999999996,Snoring,Breathing,Silence,0.9721503,0.9686609,0.107863925
+456.96,Breathing,Snoring,Silence,0.9964355,0.9915178,0.02007305
+457.44,Breathing,Snoring,Spray,0.323325,0.20905113,0.17744951
+457.91999999999996,Breathing,Snoring,Snort,0.820882,0.64710706,0.4907612
+458.4,"Inside, small room",Silence,Writing,0.31092057,0.2259021,0.18486264
+458.88,Silence,"Inside, small room",Writing,0.4961299,0.20119339,0.017399462
+459.35999999999996,Silence,"Inside, small room",Speech,0.91695625,0.0107095195,0.00086398434
+459.84,Silence,"Inside, small room",Noise,0.89620364,0.0029436466,0.0023041966
+460.32,Silence,"Inside, small room",Writing,0.52674633,0.1245443,0.0112519795
+460.79999999999995,Breathing,Snoring,Snort,0.9777834,0.96652097,0.14633034
+461.28,Breathing,Snoring,Snort,0.9114342,0.891579,0.1845886
+461.76,Breathing,Snoring,Snort,0.9599665,0.94778574,0.18362945
+462.24,Breathing,Snoring,Snort,0.96842086,0.96397775,0.03853099
+462.71999999999997,Silence,"Inside, small room",Breathing,0.45665562,0.09730791,0.031169245
+463.2,Silence,"Inside, small room",Clicking,0.9138429,0.021513963,0.00094568747
+463.68,Silence,"Inside, small room",Wind,0.9229481,0.010614647,0.00059059303
+464.15999999999997,Silence,"Inside, small room",Musical instrument,0.9873684,0.0028743846,0.00012307471
+464.64,Silence,"Inside, small room",Speech,0.9768104,0.010986776,0.00035648045
+465.12,Snoring,Breathing,Silence,0.98971254,0.9889069,0.046844248
+465.59999999999997,Breathing,Snoring,Silence,0.9962567,0.9957093,0.037573725
+466.08,Breathing,Snoring,Snort,0.9520792,0.94843006,0.2796653
+466.56,Breathing,Snoring,Snort,0.94564664,0.92384815,0.28391984
+467.03999999999996,Breathing,Snoring,Snort,0.7427207,0.37709516,0.13427114
+467.52,Silence,"Inside, small room",Breathing,0.54382384,0.13971803,0.10399286
+468.0,Silence,"Inside, small room",Television,0.9430665,0.011636881,0.0013781709
+468.47999999999996,Silence,"Inside, small room",Wind,0.92098105,0.015813181,0.000893759
+468.96,Silence,"Inside, small room",Television,0.9330942,0.022920426,0.001483449
+469.44,Breathing,Snoring,Snort,0.78340024,0.7509114,0.5250006
+469.91999999999996,Breathing,Snoring,Silence,0.98785895,0.9858846,0.040996406
+470.4,Breathing,Snoring,Snort,0.9785484,0.97750795,0.06999048
+470.88,Breathing,Snoring,Silence,0.99730873,0.99693686,0.004259373
+471.35999999999996,Snoring,Breathing,Silence,0.89291203,0.8818208,0.094476044
+471.84,Silence,"Inside, small room",Speech,0.9263162,0.017368095,0.0010147701
+472.32,Silence,"Inside, small room",Speech,0.88249916,0.017351648,0.0019930832
+472.79999999999995,Silence,"Inside, small room",Speech,0.91181815,0.00734982,0.00068873185
+473.28,Silence,"Inside, small room",Breathing,0.3119899,0.13283733,0.02668044
+473.76,Breathing,Snoring,Snort,0.9583933,0.93315697,0.4467693
+474.24,Breathing,Snoring,Snort,0.800189,0.72042775,0.25641316
+474.71999999999997,Breathing,Snoring,Snort,0.93556654,0.9003119,0.30516842
+475.2,Snoring,Breathing,Silence,0.9806465,0.9759133,0.043888636
+475.68,Silence,"Inside, small room",Speech,0.5934419,0.10513274,0.006301336
+476.15999999999997,Silence,"Inside, small room",Writing,0.9002585,0.056433946,0.00283061
+476.64,Silence,"Inside, small room",Speech,0.9975725,0.00018666594,2.2455688e-05
+477.12,Silence,"Inside, small room",Snoring,0.4300203,0.11708996,0.11491089
+477.59999999999997,Breathing,Snoring,Silence,0.99858123,0.9972706,0.0045433654
+478.08,Breathing,Snoring,Snort,0.9756516,0.96406615,0.18988872
+478.56,Breathing,Snoring,"Inside, small room",0.3822817,0.30698386,0.1321508
+479.03999999999996,Snoring,Breathing,"Inside, small room",0.79065025,0.70299387,0.15459998
+479.52,Silence,"Inside, small room",Speech,0.3009279,0.13584954,0.025935141
+480.0,Silence,"Inside, small room",Writing,0.8280947,0.07583381,0.012701948
+480.47999999999996,Silence,"Inside, small room",Speech,0.99162817,0.0008585504,6.7269066e-05
+480.96,Silence,"Inside, small room",Mechanisms,0.93862784,0.0052507357,0.0006322231
+481.44,Breathing,Snoring,Snort,0.6847468,0.61221606,0.21356437
+481.91999999999996,Breathing,Snoring,Silence,0.9989401,0.99763215,0.014589076
+482.4,Breathing,Snoring,Snort,0.9954165,0.9921454,0.016612533
+482.88,Snoring,Breathing,"Inside, small room",0.76885647,0.7156793,0.13412209
+483.35999999999996,Snoring,Breathing,Silence,0.64342225,0.5940062,0.2632055
+483.84,Silence,"Inside, small room",Breathing,0.50898516,0.13023782,0.040572934
+484.32,Silence,"Inside, small room",Speech,0.9150391,0.026029048,0.001851239
+484.79999999999995,Silence,"Inside, small room",Musical instrument,0.953709,0.0043698256,0.0003909477
+485.28,Silence,"Inside, small room",Speech,0.9458178,0.019922689,0.0015723006
+485.76,Breathing,Snoring,Snort,0.9974426,0.9936799,0.07352884
+486.24,Breathing,Snoring,Snort,0.9933998,0.9847249,0.22578701
+486.71999999999997,Breathing,Snoring,Snort,0.9176008,0.91104406,0.07911792
+487.2,Breathing,Snoring,Snort,0.89723647,0.88137096,0.25527295
+487.68,Silence,"Inside, small room",Breathing,0.58374584,0.09086484,0.019389223
+488.15999999999997,Silence,"Inside, small room",Writing,0.80728483,0.073798664,0.0041839303
+488.64,Silence,"Inside, small room",Tick,0.9481255,0.018304173,0.0019728118
+489.12,Silence,"Inside, small room",Speech,0.836608,0.02892038,0.006202932
+489.59999999999997,Breathing,Snoring,Silence,0.988761,0.98251486,0.028006509
+490.08,Breathing,Snoring,Silence,0.98181504,0.97674525,0.017135086
+490.56,Breathing,Snoring,Silence,0.9999063,0.99980587,0.00088906114
+491.03999999999996,Snoring,Breathing,Silence,0.95146763,0.946618,0.010266383
+491.52,Silence,"Inside, small room",Mechanisms,0.8631987,0.03312728,0.0021376093
+492.0,Silence,"Inside, small room",Speech,0.99359745,0.0024772095,0.00011067901
+492.47999999999996,Silence,"Inside, small room",Television,0.96726245,0.0055357763,0.0005060768
+492.96,Breathing,Snoring,Silence,0.43568882,0.37573,0.21421628
+493.44,Breathing,Snoring,Snort,0.95147645,0.89360183,0.67488325
+493.91999999999996,Breathing,Snoring,Snort,0.99460584,0.9904776,0.0593416
+494.4,Breathing,Snoring,"Outside, rural or natural",0.8768888,0.8726551,0.011046096
+494.88,Breathing,Snoring,Snort,0.87702054,0.8639154,0.052538086
+495.35999999999996,Silence,"Inside, small room",Television,0.69423735,0.06964938,0.0044139675
+495.84,Silence,"Inside, small room",White noise,0.7478137,0.034861837,0.008433876
+496.32,Silence,"Inside, small room",Mechanisms,0.9336463,0.015377813,0.00061437796
+496.79999999999995,Silence,"Inside, small room",Tick,0.9575332,0.016076356,0.0008161453
+497.28,Silence,"Inside, small room",Breathing,0.27625912,0.24186249,0.1348969
+497.76,Breathing,Snoring,Snort,0.9890849,0.9767382,0.13196553
+498.24,Breathing,Snoring,Snort,0.98348266,0.9722124,0.15424655
+498.71999999999997,Breathing,Snoring,Silence,0.9994595,0.99893653,0.0015398662
+499.2,Breathing,Snoring,Silence,0.9974995,0.9963601,0.004854839
+499.68,Silence,"Inside, small room",Television,0.4009129,0.12077085,0.01621987
+500.15999999999997,Silence,"Inside, small room",Tick,0.7591509,0.047766697,0.005960535
+500.64,Silence,"Inside, small room","Narration, monologue",0.977473,0.0045006652,0.00016091471
+501.12,Silence,"Inside, small room",Musical instrument,0.97749865,0.0042771343,0.00055170426
+501.59999999999997,Silence,"Inside, small room",Breathing,0.3242828,0.123363845,0.056101266
+502.08,Breathing,Snoring,Snort,0.9852535,0.9647941,0.32565325
+502.56,Breathing,Snoring,Snort,0.9262116,0.91166455,0.18392272
+503.03999999999996,Breathing,Snoring,Snort,0.9819061,0.9770728,0.069852374
+503.52,Breathing,Snoring,"Inside, small room",0.91619796,0.89661926,0.043838285
+504.0,Silence,"Inside, small room",Television,0.7492068,0.078398004,0.0026953123
+504.47999999999996,Silence,"Inside, small room",White noise,0.7706317,0.045807727,0.004970219
+504.96,Silence,"Inside, small room",Television,0.90023154,0.02081512,0.001601084
+505.44,Silence,"Inside, small room",Writing,0.6009568,0.09473253,0.029601406
+505.91999999999996,Breathing,Snoring,Silence,0.9841056,0.97010237,0.052810848
+506.4,Breathing,Snoring,Snort,0.7410389,0.6465917,0.2252084
+506.88,Breathing,Snoring,Snort,0.97461045,0.965008,0.1011584
+507.35999999999996,Breathing,Snoring,"Inside, small room",0.9393003,0.9359513,0.047045916
+507.84,Silence,"Inside, small room",Television,0.5899515,0.14270209,0.019148353
+508.32,Silence,"Inside, small room",Mechanisms,0.8445473,0.030449416,0.0032910442
+508.79999999999995,Silence,"Inside, small room",Speech,0.9956196,0.0012978653,7.016047e-05
+509.28,Silence,"Inside, small room",Television,0.85862887,0.019927217,0.0024090104
+509.76,Breathing,Snoring,Silence,0.9932085,0.9901143,0.03703289
+510.24,Breathing,Snoring,Silence,0.99734855,0.99636245,0.020802911
+510.71999999999997,Breathing,Snoring,Snort,0.4844764,0.3587318,0.25307903
+511.2,Breathing,Snoring,Snort,0.95725805,0.9390321,0.22573017
+511.68,Breathing,Snoring,"Inside, small room",0.45001554,0.25541177,0.10120645
+512.16,Silence,"Inside, small room",Television,0.6314896,0.12142822,0.008744872
+512.64,Silence,"Inside, small room",Speech,0.8792948,0.025860356,0.0034638762
+513.12,Silence,"Inside, small room",Television,0.9638705,0.009612702,0.00066809496
+513.6,Silence,"Inside, small room",Breathing,0.28553155,0.15707059,0.06916754
+514.0799999999999,Breathing,Snoring,Snort,0.9946643,0.9893743,0.026333777
+514.56,Breathing,Snoring,Snort,0.88480693,0.8469316,0.18967083
+515.04,Breathing,Snoring,Snort,0.8953296,0.86525834,0.3572313
+515.52,Breathing,Snoring,Snort,0.7887515,0.7421032,0.32312968
+516.0,Silence,"Inside, small room",Speech,0.64129823,0.07419641,0.0029600286
+516.48,Silence,"Inside, small room",White noise,0.714396,0.05167009,0.0063763373
+516.96,Silence,"Inside, small room",Television,0.87291586,0.05009135,0.0022412988
+517.4399999999999,Silence,"Inside, small room",Musical instrument,0.9593065,0.012476522,0.0009174722
+517.92,Silence,"Inside, small room",Writing,0.4102287,0.22416045,0.024171952
+518.4,Breathing,Snoring,Snort,0.96036285,0.93630874,0.21886966
+518.88,Breathing,Snoring,Snort,0.756642,0.67636347,0.2951575
+519.36,Snoring,Breathing,Snort,0.72825277,0.7074955,0.16712913
+519.84,Snoring,Breathing,Snort,0.9046344,0.90051645,0.13614719
+520.3199999999999,Silence,"Inside, small room",Speech,0.8072564,0.022334741,0.0023638099
+520.8,Silence,"Inside, small room",Television,0.92669946,0.02475784,0.0015381529
+521.28,Silence,"Inside, small room",Mechanisms,0.94770694,0.007796876,0.0004987864
+521.76,Silence,"Inside, small room",Television,0.9660633,0.005430836,0.00027834607
+522.24,Breathing,Snoring,Snort,0.9539761,0.94269466,0.08688095
+522.72,Breathing,Snoring,Snort,0.99759513,0.99263835,0.05117356
+523.1999999999999,Breathing,Snoring,Snake,0.8446966,0.789844,0.036141425
+523.68,Breathing,Snoring,Silence,0.99818003,0.9979215,0.0024018611
+524.16,Snoring,Breathing,Silence,0.9355243,0.9242226,0.03661798
+524.64,Silence,"Inside, small room",Mechanisms,0.8232651,0.030757789,0.0055777454
+525.12,Silence,"Inside, small room",Speech,0.9728791,0.0026400252,0.000327465
+525.6,Silence,"Inside, small room","Narration, monologue",0.97211254,0.0043023815,0.0003476632
+526.0799999999999,Breathing,Snoring,Silence,0.9784514,0.9737147,0.047145154
+526.56,Breathing,Snoring,Snort,0.99680036,0.9942389,0.01535043
+527.04,Breathing,Snoring,Silence,0.9958951,0.99480134,0.009489948
+527.52,Breathing,Snoring,Silence,0.99987155,0.99966466,0.0012005011
+528.0,Breathing,Snoring,Silence,0.993762,0.9917911,0.009661078
+528.48,Silence,"Inside, small room",Writing,0.73785394,0.09438217,0.00432044
+528.96,Silence,"Inside, small room",Television,0.8286798,0.077774115,0.0059027057
+529.4399999999999,Silence,"Inside, small room",Speech,0.97534925,0.004990318,0.00015969829
+529.92,Snoring,Breathing,Silence,0.8250544,0.8172489,0.20389986
+530.4,Breathing,Snoring,Snort,0.99876463,0.9975226,0.011939175
+530.88,Snoring,Breathing,"Outside, rural or natural",0.6651186,0.6615475,0.03977065
+531.36,Breathing,Snoring,Snort,0.9742636,0.9562631,0.31460086
+531.84,Breathing,Snoring,Snort,0.9886685,0.98433554,0.011834163
+532.3199999999999,Silence,"Inside, small room",Snoring,0.692056,0.10976918,0.04236609
+532.8,Silence,"Inside, small room",Clicking,0.7805569,0.05106568,0.004462015
+533.28,Silence,"Inside, small room",Television,0.9251947,0.008614815,0.0007008283
+533.76,Silence,"Inside, small room",Speech,0.93703336,0.0055182218,0.00035047033
+534.24,Breathing,Snoring,Snort,0.9860728,0.9764835,0.04968675
+534.72,Breathing,Snoring,Snort,0.9862099,0.9841436,0.030792749
+535.1999999999999,Breathing,Snoring,Snort,0.9711904,0.96014893,0.023076614
+535.68,Breathing,Snoring,Snort,0.95990264,0.9481525,0.32873836
+536.16,Breathing,Snoring,Silence,0.99672884,0.99624556,0.0045470893
+536.64,Silence,"Inside, small room",Speech,0.4174755,0.24993992,0.0067809047
+537.12,Silence,"Inside, small room",White noise,0.78905404,0.07992065,0.0037059537
+537.6,Silence,"Inside, small room",White noise,0.9117699,0.012619708,0.0016442867
+538.0799999999999,Silence,"Inside, small room",Tick,0.8328785,0.040723033,0.009558014
+538.56,Breathing,Snoring,Snort,0.9736754,0.9532968,0.046134833
+539.04,Breathing,Snoring,Snort,0.9455961,0.8911114,0.55986345
+539.52,Breathing,Snoring,"Inside, small room",0.33611688,0.27378732,0.118489705
+540.0,Breathing,Snoring,Snort,0.61953646,0.5441127,0.25174028
+540.48,Breathing,Snoring,Snort,0.8649701,0.8533762,0.24124399
+540.96,"Inside, small room",Silence,Writing,0.32948565,0.32039398,0.029162014
+541.4399999999999,Silence,"Inside, small room",Writing,0.81665516,0.10282014,0.004883758
+541.92,Silence,"Inside, small room",Television,0.940968,0.016406018,0.0016340307
+542.4,Silence,"Inside, small room",Speech,0.9898959,0.000892031,5.948007e-05
+542.88,Breathing,Snoring,Snort,0.93853563,0.9369378,0.16048133
+543.36,Breathing,Snoring,Snort,0.9918907,0.9850984,0.087060034
+543.84,Breathing,Snoring,Snort,0.9866552,0.97001386,0.24439476
+544.3199999999999,Breathing,Snoring,Snort,0.91294134,0.89132077,0.14249954
+544.8,Breathing,Snoring,Snort,0.94618195,0.91944164,0.09705172
+545.28,Silence,Breathing,"Inside, small room",0.35611665,0.109618686,0.09080787
+545.76,Silence,"Inside, small room",Breathing,0.6600599,0.07186658,0.03179487
+546.24,Silence,"Inside, small room",Speech,0.9856352,0.0061161835,0.00018915262
+546.72,Silence,"Inside, small room",Speech,0.99765396,1.9377612e-05,1.9013503e-05
+547.1999999999999,Breathing,Snoring,Snort,0.96905994,0.96003765,0.113436274
+547.68,Breathing,Snoring,Snort,0.99676985,0.985611,0.32292238
+548.16,Breathing,Snoring,Snort,0.74217165,0.6608529,0.33940077
+548.64,Breathing,Snoring,Animal,0.6964419,0.6727909,0.11559368
+549.12,Breathing,Snoring,Snort,0.96684694,0.95487875,0.14353718
+549.6,Breathing,Snoring,"Inside, small room",0.42294148,0.30577743,0.13925382
+550.0799999999999,Silence,"Inside, small room",Writing,0.82760847,0.08495789,0.0059505412
+550.56,Silence,"Inside, small room",Speech,0.96343464,0.0104065705,0.0023917777
+551.04,Silence,"Inside, small room",Speech,0.99905264,3.640681e-05,1.7485208e-05
+551.52,Breathing,Snoring,Snort,0.8066405,0.7045306,0.6177753
+552.0,Breathing,Snoring,Snort,0.94202995,0.9173691,0.35504392
+552.48,Breathing,Snoring,Snort,0.9596956,0.9502122,0.14613986
+552.96,Breathing,Snoring,Snort,0.97547936,0.9534466,0.30458903
+553.4399999999999,Breathing,Snoring,Snort,0.86141956,0.8600832,0.13540274
+553.92,Silence,"Inside, small room",Breathing,0.5716748,0.112910435,0.010171031
+554.4,Silence,"Inside, small room",Writing,0.8575228,0.038433526,0.0033412026
+554.88,Silence,"Inside, small room",Musical instrument,0.9723289,0.0076295277,0.0002848124
+555.36,Silence,Speech,"Inside, small room",0.99772406,5.7420548e-05,1.2750899e-06
+555.84,Breathing,Snoring,Silence,0.99788994,0.9963179,0.03701271
+556.3199999999999,Breathing,Snoring,Silence,0.99467504,0.9916494,0.01705441
+556.8,Breathing,Snoring,Snort,0.98820955,0.9699787,0.17981154
+557.28,Snoring,Breathing,"Inside, small room",0.9080726,0.89206386,0.04365644
+557.76,"Inside, small room",Silence,Breathing,0.21151243,0.200006,0.18326578
+558.24,Silence,"Inside, small room",Television,0.9478315,0.009843213,0.0010571169
+558.72,Silence,"Inside, small room",Speech,0.9399496,0.008460766,0.00042730934
+559.1999999999999,Silence,"Inside, small room",Speech,0.98613954,0.0021421972,0.00018446225
+559.68,Silence,"Inside, small room",Musical instrument,0.9835547,0.0045267446,0.00057302864
+560.16,Breathing,Snoring,Snort,0.98508304,0.97683126,0.08830307
+560.64,Breathing,Snoring,Snort,0.9431286,0.92267406,0.2121553
+561.12,Spray,Liquid,Snake,0.39355373,0.25653237,0.16979359
+561.6,Breathing,Snoring,Snort,0.82002354,0.7495868,0.3064622
+562.0799999999999,Breathing,Snoring,"Inside, small room",0.7016289,0.6076375,0.053204563
+562.56,Silence,"Inside, small room",Breathing,0.7669116,0.060250122,0.008659986
+563.04,Silence,"Inside, small room",Speech,0.99024296,0.0020272338,0.00016196193
+563.52,Silence,"Inside, small room",Speech,0.9714528,0.007910165,0.00018926249
+564.0,Breathing,Snoring,Silence,0.9879806,0.9867806,0.028232679
+564.48,Breathing,Snoring,Silence,0.9976878,0.99752027,0.009698363
+564.9599999999999,Breathing,Snoring,Snort,0.73003924,0.7006371,0.17695563
+565.4399999999999,Breathing,Snoring,Snort,0.99649537,0.9961584,0.004555363
+565.92,Speech,Breathing,Snoring,0.24302834,0.06572443,0.02885853
+566.4,Silence,"Inside, small room",Television,0.9092745,0.023164991,0.0018096684
+566.88,Silence,"Inside, small room",Clicking,0.96804667,0.008360973,0.0002719313
+567.36,Silence,"Inside, small room",White noise,0.9352581,0.003023175,0.0004042067
+567.84,Silence,"Inside, small room",Writing,0.40781432,0.13112216,0.018469764
+568.3199999999999,Breathing,Snoring,Snort,0.96538955,0.87016994,0.71193767
+568.8,Breathing,Snoring,Snort,0.9953414,0.99179846,0.028883604
+569.28,Snoring,Breathing,"Inside, small room",0.9766364,0.974301,0.011629755
+569.76,Breathing,Snoring,Silence,0.99840546,0.9982418,0.0030672566
+570.24,Breathing,Snoring,"Inside, small room",0.8218639,0.8069401,0.038141064
+570.72,Silence,"Inside, small room",Television,0.8604742,0.033165943,0.001528847
+571.1999999999999,Silence,"Inside, small room",Television,0.96074545,0.0074269986,0.00036339258
+571.68,Silence,"Inside, small room",Speech,0.94337934,0.009393695,0.00024767243
+572.16,Snort,Breathing,"Inside, small room",0.31940353,0.31692326,0.29203016
+572.64,Breathing,Snoring,Snort,0.98286927,0.95916146,0.3338125
+573.12,Breathing,Snoring,Snort,0.7331879,0.61641407,0.073328994
+573.6,Breathing,Snoring,Snort,0.95059365,0.9400799,0.044875897
+574.0799999999999,Breathing,Snoring,Silence,0.9950805,0.9942289,0.01434199
+574.56,"Inside, small room",Silence,Speech,0.17656021,0.08018028,0.06829932
+575.04,Silence,"Inside, small room",Television,0.9167149,0.023708038,0.0022748597
+575.52,Silence,"Inside, small room",Speech,0.9844592,0.0014330429,0.000108723325
+576.0,Silence,"Inside, small room",Musical instrument,0.98993504,0.0018017098,0.000121959376
+576.48,Breathing,Snoring,Silence,0.9821063,0.9747272,0.029039158
+576.9599999999999,Breathing,Snoring,Silence,0.99933153,0.9991184,0.0022418075
+577.4399999999999,Breathing,Snoring,Snake,0.7548265,0.6925676,0.08304257
+577.92,Breathing,Snoring,Snort,0.82045126,0.80328727,0.12291269
+578.4,Snoring,Breathing,Silence,0.9930399,0.9928084,0.015228494
+578.88,Silence,"Inside, small room",Speech,0.77327645,0.073942505,0.0045609456
+579.36,Silence,"Inside, small room",Writing,0.8892418,0.021907954,0.0012402554
+579.84,Silence,"Inside, small room",Television,0.9086816,0.014536836,0.0010248594
+580.3199999999999,Silence,"Inside, small room",Tick,0.9573033,0.007458469,0.0008652849
+580.8,Breathing,Snoring,Snort,0.32883915,0.29129264,0.19614163
+581.28,Breathing,Snoring,Snort,0.98431844,0.9678721,0.18568225
+581.76,Snoring,Breathing,"Outside, rural or natural",0.7573893,0.757233,0.044936307
+582.24,Breathing,Snoring,Silence,0.99992454,0.9999072,0.0010812476
+582.72,Breathing,Snoring,Silence,0.99997735,0.99996513,0.00037935312
+583.1999999999999,Silence,"Inside, small room",Television,0.8934736,0.025872964,0.0019288083
+583.68,Silence,"Inside, small room",Speech,0.97015715,0.0036808897,0.00017583274
+584.16,Silence,Speech,Music,0.9987407,0.00010632317,1.7760472e-05
+584.64,Breathing,Snoring,Snort,0.5977692,0.52260125,0.27178138
+585.12,Breathing,Snoring,Snort,0.99674356,0.9901958,0.120905414
+585.6,Breathing,Snoring,Silence,0.9971571,0.99591184,0.0071046078
+586.0799999999999,Breathing,Snoring,Snort,0.970563,0.96657145,0.1600801
+586.56,Breathing,Snoring,Silence,0.9987705,0.997934,0.0018332119
+587.04,Breathing,Snoring,Speech,0.95931774,0.9592473,0.026119892
+587.52,Silence,"Inside, small room",Clicking,0.9015085,0.01867294,0.0024446438
+588.0,Silence,"Inside, small room",Speech,0.97104627,0.00596373,0.0003737454
+588.48,Silence,"Inside, small room",Speech,0.9112346,0.031812478,0.003232368
+588.9599999999999,Breathing,Snoring,Silence,0.9976724,0.9960939,0.006637826
+589.4399999999999,Breathing,Snoring,Snort,0.9743554,0.96618676,0.040806934
+589.92,Breathing,Snoring,Snort,0.9011073,0.85963196,0.30649862
+590.4,Breathing,Snoring,Snort,0.82969636,0.761198,0.3562716
+590.88,Breathing,Snoring,Silence,0.9993784,0.9992964,0.0051067574
+591.36,Speech,"Inside, small room",Silence,0.26546946,0.054198753,0.022534162
+591.84,Silence,"Inside, small room",Clicking,0.8760449,0.023372468,0.0026861147
+592.3199999999999,Silence,"Inside, small room",Television,0.8661034,0.01413211,0.0014465634
+592.8,Silence,"Inside, small room",Speech,0.60075456,0.06275685,0.010192864
+593.28,Breathing,Snoring,Silence,0.99785924,0.9965983,0.009844445
+593.76,Breathing,Snoring,Snort,0.99576217,0.9928362,0.019356832
+594.24,Snoring,Breathing,Snort,0.95897365,0.95470273,0.13118425
+594.72,Breathing,Snoring,Snort,0.998299,0.99543214,0.008759988
+595.1999999999999,Breathing,Snoring,"Inside, small room",0.9931323,0.99068713,0.008126623
+595.68,Silence,"Inside, small room",Breathing,0.6718681,0.046978086,0.01725973
+596.16,Silence,"Inside, small room",Television,0.9472612,0.013072747,0.0013886979
+596.64,Silence,"Inside, small room",Speech,0.9922121,0.0011929037,0.00010899364
+597.12,Silence,"Inside, small room",White noise,0.9389759,0.008191086,0.0011749998
+597.6,Breathing,Snoring,Silence,0.99968696,0.99966717,0.004006206
+598.0799999999999,Breathing,Snoring,Silence,0.9999749,0.9999507,0.00038559613
+598.56,Breathing,Snoring,Snort,0.99574643,0.992324,0.053406294
+599.04,Breathing,Snoring,Silence,0.9987679,0.99839777,0.0014166685
+599.52,Speech,Silence,Breathing,0.15971845,0.028046723,0.02693408
+600.0,Silence,"Inside, small room",Speech,0.97612596,0.009038745,0.00028230768
+600.48,Silence,"Inside, small room",Speech,0.99860334,0.00010527476,3.1692045e-05
+600.9599999999999,Silence,"Inside, small room",Speech,0.7611518,0.08457741,0.0053074374
+601.4399999999999,Breathing,Snoring,Silence,0.9949189,0.9933519,0.01887531
+601.92,Breathing,Snoring,Snort,0.97111326,0.94554484,0.265466
+602.4,Snake,Hiss,Spray,0.34129983,0.33410785,0.121660896
+602.88,Snort,Snake,Breathing,0.26087275,0.24775188,0.21646181
+603.36,Breathing,Snoring,Snort,0.9205019,0.89203864,0.12848972
+603.84,Silence,"Inside, small room",Breathing,0.2715169,0.13552943,0.08343158
+604.3199999999999,"Inside, small room",Silence,Mechanical fan,0.2847336,0.28271595,0.060714215
+604.8,Silence,"Inside, small room",Television,0.9646268,0.009712474,0.00042472628
+605.28,Silence,"Inside, small room",Breathing,0.5649293,0.08249383,0.080160536
+605.76,Breathing,Snoring,Snort,0.9752754,0.9380224,0.52732307
+606.24,Breathing,Snoring,Snort,0.97206837,0.95769966,0.23809353
+606.72,Breathing,Snoring,Snort,0.99772954,0.9954944,0.0059403456
+607.1999999999999,Breathing,Snoring,Silence,0.9992522,0.9992325,0.0008543289
+607.68,Breathing,Snoring,Speech,0.52603364,0.4877216,0.05702359
+608.16,Silence,"Inside, small room",Snoring,0.884341,0.024012126,0.004814859
+608.64,Silence,"Inside, small room",Speech,0.9647474,0.0046590134,0.000604049
+609.12,Silence,"Inside, small room",Speech,0.97704744,0.0027905102,0.00013327594
+609.6,Breathing,Snoring,Silence,0.9975337,0.9970965,0.014497256
+610.0799999999999,Breathing,Snoring,Snort,0.9989799,0.9973176,0.00316053
+610.56,Breathing,Snoring,Snort,0.9697878,0.95129627,0.066148646
+611.04,Breathing,Snoring,Snort,0.92291236,0.882097,0.10600372
+611.52,Breathing,Snoring,Snort,0.82189417,0.7235366,0.2425319
+612.0,Silence,"Inside, small room",Writing,0.65740967,0.07434862,0.006931804
+612.48,Silence,"Inside, small room",Television,0.911536,0.02020048,0.0018127891
+612.9599999999999,Silence,"Inside, small room",Speech,0.94354194,0.010672128,0.00048070145
+613.4399999999999,Breathing,Snoring,"Inside, small room",0.40655476,0.34800312,0.11171744
+613.92,Breathing,Snoring,Snort,0.9982214,0.99523765,0.008168239
+614.4,Breathing,Snoring,Silence,0.9996139,0.9994013,0.0013308738
+614.88,Breathing,Snoring,"Inside, small room",0.99813634,0.9971186,0.002639601
+615.36,Breathing,Snoring,Silence,0.9961588,0.99537605,0.0036912465
+615.84,"Inside, small room",Silence,Speech,0.18170592,0.15609378,0.033524334
+616.3199999999999,Silence,"Inside, small room",Mechanisms,0.92102545,0.009297017,0.0027346928
+616.8,Silence,"Inside, small room",Speech,0.99753565,0.00017777988,3.9969396e-05
+617.28,Silence,"Inside, small room",Breathing,0.7291806,0.081235334,0.006730148
+617.76,Breathing,Snoring,Snort,0.9958274,0.9919018,0.082225434
+618.24,Breathing,Snoring,Snort,0.95551187,0.9187233,0.15968807
+618.72,Breathing,Snoring,Snort,0.93807936,0.90765613,0.051897213
+619.1999999999999,Breathing,Snoring,Silence,0.99979234,0.99974746,0.00036426054
+619.68,Speech,"Inside, small room","Narration, monologue",0.8716243,0.02087742,0.0030658091
+620.16,Silence,"Inside, small room",Television,0.89658076,0.045027435,0.0039820713
+620.64,Silence,"Inside, small room",Speech,0.88658583,0.012684098,0.0009628724
+621.12,Silence,"Inside, small room",Speech,0.9757444,0.0023637211,0.00013287712
+621.6,Breathing,Snoring,Snort,0.882739,0.8455703,0.2636291
+622.0799999999999,Breathing,Snoring,Snort,0.9965133,0.99063635,0.0564955
+622.56,Breathing,Snoring,Snake,0.39106134,0.30127242,0.21694146
+623.04,Breathing,Snoring,Snort,0.97540265,0.9221007,0.62307143
+623.52,Snoring,Breathing,"Inside, small room",0.95532876,0.9429601,0.02842241
+624.0,Silence,"Inside, small room",Mechanisms,0.904,0.0289979,0.0025279112
+624.48,Silence,"Inside, small room",Television,0.90577954,0.01265007,0.0017751297
+624.9599999999999,Silence,"Inside, small room",Musical instrument,0.9576832,0.007403379,0.00029446094
+625.4399999999999,Snoring,Breathing,Snort,0.8692496,0.85193187,0.05905331
+625.92,Breathing,Snoring,Snort,0.99802774,0.9934831,0.11563785
+626.4,Snort,Breathing,Snake,0.4425655,0.42145967,0.34073588
+626.88,Breathing,Snoring,Snort,0.9920245,0.988707,0.03190461
+627.36,Breathing,Snoring,Silence,0.99899095,0.9984039,0.0019732106
+627.84,Breathing,Snoring,Silence,0.96336526,0.9538968,0.017102335
+628.3199999999999,Silence,"Inside, small room",Mechanical fan,0.7267221,0.06433349,0.009479676
+628.8,Silence,"Inside, small room",White noise,0.7266261,0.057336662,0.005974448
+629.28,Silence,"Inside, small room",Musical instrument,0.9805305,0.0025701686,0.00015920933
+629.76,Silence,"Inside, small room",Breathing,0.44282722,0.22058146,0.037894964
+630.24,Breathing,Snoring,Silence,0.9992993,0.99870646,0.01011685
+630.72,Breathing,Snoring,Snort,0.993567,0.9910063,0.05311838
+631.1999999999999,Breathing,Snake,Snoring,0.4490518,0.35130385,0.35106662
+631.68,Snoring,Breathing,Snort,0.94585824,0.9346097,0.062593184
+632.16,Silence,"Inside, small room",Speech,0.2890883,0.1280535,0.027071003
+632.64,Silence,"Inside, small room",Television,0.91533744,0.006405256,0.00068193953
+633.12,Silence,"Inside, small room",Musical instrument,0.96901464,0.004355597,0.00050452974
+633.6,Silence,"Inside, small room",Television,0.94469744,0.011279403,0.000894147
+634.0799999999999,Breathing,Snoring,Silence,0.99095315,0.98196286,0.022391442
+634.56,Breathing,Snoring,Snort,0.9961343,0.9896531,0.121728286
+635.04,Breathing,Snoring,Snort,0.8912096,0.8821561,0.06388112
+635.52,Breathing,Snoring,Snort,0.9770884,0.9461367,0.45164183
+636.0,Snoring,Breathing,Silence,0.9995796,0.9995733,0.0008728049
+636.48,Silence,"Inside, small room",Television,0.51870835,0.13340175,0.010701741
+636.9599999999999,Silence,"Inside, small room",Tick,0.9100452,0.03408229,0.001628245
+637.4399999999999,Silence,"Inside, small room",Speech,0.9819759,0.004465547,0.00022438727
+637.92,Silence,"Inside, small room",Breathing,0.789582,0.07265923,0.007440731
+638.4,Snoring,Breathing,Silence,0.99210143,0.9910607,0.043284502
+638.88,Snoring,Breathing,Hiss,0.765668,0.75883424,0.058701087
+639.36,Breathing,Snoring,"Inside, small room",0.95992935,0.9479072,0.010153677
+639.84,Breathing,Snoring,Silence,0.99996173,0.9999285,0.00047439465
+640.3199999999999,Snoring,Breathing,Silence,0.9998682,0.99985105,0.0021001438
+640.8,Silence,"Inside, small room",Television,0.76898557,0.032968424,0.0023367528
+641.28,Silence,"Inside, small room",Musical instrument,0.9721417,0.0029250307,0.00019683133
+641.76,Silence,"Inside, small room",Musical instrument,0.99460775,0.0006157799,0.00012117112
+642.24,Breathing,Snoring,Silence,0.99005455,0.9892278,0.045229543
+642.72,Breathing,Snoring,Silence,0.9999155,0.9998086,0.0017605025
+643.1999999999999,Breathing,Snoring,Snort,0.9983726,0.9960771,0.03165563
+643.68,Breathing,Snoring,Hiss,0.24309091,0.18658733,0.097043276
+644.16,Breathing,Snoring,Silence,0.99918824,0.9988585,0.0026374024
+644.64,Speech,"Inside, small room",Silence,0.519155,0.025026212,0.0054696198
+645.12,Silence,"Inside, small room",Mechanisms,0.9049258,0.009961293,0.0006660098
+645.6,Silence,"Inside, small room",Television,0.93240136,0.0080895545,0.0009841659
+646.0799999999999,Breathing,"Inside, small room",Snoring,0.2542208,0.19314748,0.17792086
+646.56,Breathing,Snoring,Snort,0.99480855,0.9794928,0.28280783
+647.04,Breathing,Snoring,Silence,0.988496,0.97838485,0.011841324
+647.52,Breathing,Snoring,Snort,0.9835061,0.97773767,0.103522986
+648.0,Breathing,Snoring,"Inside, small room",0.7738529,0.7529436,0.042451777
+648.48,Silence,"Inside, small room",Breathing,0.16601506,0.13209043,0.038120586
+648.9599999999999,Silence,"Inside, small room",Writing,0.6695489,0.14017816,0.019623198
+649.4399999999999,Silence,"Inside, small room",Television,0.9530419,0.0077127367,0.00032862532
+649.92,Breathing,Snoring,"Inside, small room",0.43323246,0.37406543,0.23988315
+650.4,Breathing,Snoring,Snort,0.9990779,0.99690694,0.10102129
+650.88,Breathing,Snoring,Snort,0.97051555,0.9484726,0.26397696
+651.36,Snoring,Breathing,Snake,0.44437867,0.4209023,0.19113393
+651.84,Snoring,Breathing,"Inside, small room",0.99736404,0.9968543,0.004407031
+652.3199999999999,Snoring,Breathing,"Inside, small room",0.9889895,0.9860062,0.012562476
+652.8,Silence,"Inside, small room",Television,0.94011277,0.014785741,0.0007189377
+653.28,Silence,"Inside, small room",Speech,0.96289766,0.0078062285,0.00020357329
+653.76,Silence,"Inside, small room",Speech,0.9113334,0.015164113,0.0011278673
+654.24,Breathing,Snoring,Silence,0.99474365,0.9897657,0.027700925
+654.72,Breathing,Snoring,Snort,0.97038007,0.96052647,0.11987636
+655.1999999999999,"Inside, small room",Snake,Hiss,0.11803459,0.11021837,0.07421853
+655.68,Snake,Animal,Wild animals,0.25208575,0.13691549,0.11031341
+656.16,Snoring,Breathing,Snort,0.936601,0.92719316,0.07460135
+656.64,Speech,"Inside, small room","Narration, monologue",0.5603473,0.025928052,0.0055259936
+657.12,Silence,"Inside, small room",Television,0.90194505,0.014717547,0.0018248867
+657.6,Silence,"Inside, small room",Television,0.9551552,0.0057011424,0.0007416819
+658.0799999999999,Silence,"Inside, small room",Speech,0.8285137,0.027759893,0.0047058905
+658.56,Breathing,Snoring,Silence,0.99689746,0.9947496,0.018302195
+659.04,Breathing,Snoring,Silence,0.9960862,0.99349666,0.005444847
+659.52,Breathing,Snoring,Snake,0.5665477,0.5028548,0.24358387
+660.0,Breathing,Snoring,Snort,0.7847657,0.7030299,0.22007719
+660.48,Breathing,Snoring,Snort,0.9823588,0.9823575,0.039883208
+660.9599999999999,Speech,Silence,"Inside, small room",0.22276987,0.050327215,0.047403228
+661.4399999999999,Silence,"Inside, small room",Television,0.89855903,0.013849951,0.0037492446
+661.92,Silence,"Inside, small room",Musical instrument,0.9871822,0.0014897359,0.0002051033
+662.4,Silence,"Inside, small room",Musical instrument,0.9669918,0.0030895306,0.00075054105
+662.88,Breathing,Snoring,Silence,0.9985313,0.99753696,0.014343616
+663.36,Breathing,Snoring,Silence,0.9983442,0.99675786,0.004853361
+663.84,Breathing,Snoring,Snake,0.957405,0.93249875,0.038848326
+664.3199999999999,Breathing,Snoring,Silence,0.9989142,0.99757004,0.0016577606
+664.8,Breathing,Snoring,Silence,0.9998543,0.999793,0.0005952215
+665.28,Silence,"Inside, small room",Speech,0.3063273,0.10559438,0.023243003
+665.76,Silence,"Inside, small room",Speech,0.8545836,0.020941675,0.0035061464
+666.24,Silence,"Inside, small room",Television,0.9628287,0.007766707,0.00056754664
+666.72,Silence,Breathing,Snoring,0.1988108,0.17587359,0.17042491
+667.1999999999999,Breathing,Snoring,Silence,0.99887484,0.99787474,0.004527258
+667.68,Breathing,Snoring,Silence,0.9996644,0.99892634,0.0021903527
+668.16,Breathing,Snoring,"Inside, small room",0.9960126,0.99426776,0.0063744737
+668.64,Breathing,Snoring,Snort,0.9972451,0.9965388,0.0059222314
+669.12,Breathing,Snoring,Silence,0.9995671,0.999411,0.0018482774
+669.6,"Inside, small room",Silence,Speech,0.124907285,0.12105421,0.052370835
+670.0799999999999,Silence,"Inside, small room",Speech,0.8657203,0.023224179,0.0013595943
+670.56,Silence,"Inside, small room",Speech,0.9724193,0.007972797,0.00036369046
+671.04,Silence,"Inside, small room",Speech,0.69621444,0.17455599,0.0048357756
+671.52,Breathing,Snoring,Silence,0.9997304,0.99950135,0.004912361
+672.0,Breathing,Snoring,Silence,0.99851316,0.9979241,0.0073986705
+672.48,Breathing,Snoring,Snort,0.9484679,0.8981278,0.15018423
+672.9599999999999,Breathing,Snoring,Snort,0.99743116,0.9920649,0.38754863
+673.4399999999999,Breathing,Snoring,Silence,0.9988948,0.99854773,0.00307833
+673.92,Silence,"Inside, small room",Television,0.80125785,0.02277892,0.0018533664
+674.4,Silence,"Inside, small room",Speech,0.9987019,2.6934244e-05,1.4413234e-05
+674.88,Silence,"Inside, small room",Tick,0.96144384,0.008890066,0.0012192944
+675.36,Breathing,Snoring,Snort,0.93876135,0.9254788,0.08918598
+675.8399999999999,Breathing,Snoring,Silence,0.9998596,0.9997319,0.00083182176
+676.3199999999999,Breathing,Snoring,Snort,0.9444198,0.93253416,0.03293214
+676.8,Breathing,Snoring,Snort,0.9934423,0.9889756,0.06371318
+677.28,Breathing,Snoring,Snort,0.89456254,0.8328097,0.45295525
+677.76,Breathing,Snoring,Snort,0.9538931,0.9421871,0.10562967
+678.24,Silence,"Inside, small room",Television,0.767905,0.024907093,0.0048872237
+678.72,Silence,"Inside, small room",Television,0.9669342,0.0046916986,0.00035087654
+679.1999999999999,Silence,"Inside, small room",Speech,0.963971,0.0035537316,0.00017654707
+679.68,Snoring,Breathing,Silence,0.39126033,0.38472125,0.25803325
+680.16,Breathing,Snoring,Silence,0.9990603,0.9983355,0.004325733
+680.64,Breathing,Snoring,Snort,0.9965204,0.9932556,0.023869708
+681.12,Breathing,Snoring,Hiss,0.28667724,0.23139305,0.12531486
+681.6,Breathing,Snoring,Snort,0.9669731,0.9420763,0.40302515
+682.0799999999999,Breathing,Snoring,"Inside, small room",0.98968256,0.9877968,0.004842738
+682.56,Silence,"Inside, small room",Speech,0.87029946,0.029164884,0.004185808
+683.04,Silence,"Inside, small room",Speech,0.8030999,0.011314351,0.0036502522
+683.52,Silence,"Inside, small room",Speech,0.69622105,0.055376675,0.0075024567
+684.0,Breathing,Snoring,Silence,0.993481,0.9917693,0.030544193
+684.48,Breathing,Snoring,Snort,0.9986856,0.99703157,0.03804875
+684.9599999999999,Breathing,Snoring,Snort,0.9987994,0.9976115,0.0042834543
+685.4399999999999,Snoring,Breathing,Snort,0.8933341,0.8916198,0.019022511
+685.92,Breathing,Snoring,Snort,0.9481097,0.9192095,0.40943938
+686.4,Breathing,"Inside, small room",Snort,0.2640707,0.21671195,0.17113823
+686.88,Silence,"Inside, small room",Television,0.869791,0.024343371,0.0032324078
+687.36,Silence,"Inside, small room",Musical instrument,0.9752855,0.0047668633,0.00030117348
+687.8399999999999,Silence,"Inside, small room",Television,0.88800347,0.02002906,0.0014431126
+688.3199999999999,Breathing,Snoring,Snort,0.99466866,0.9915867,0.031148916
+688.8,Breathing,Snoring,Snort,0.9957073,0.994707,0.01499436
+689.28,Animal,Breathing,Wild animals,0.24874733,0.24871172,0.19234887
+689.76,Breathing,Snoring,Snort,0.998858,0.9980269,0.0059112455
+690.24,Breathing,Snoring,"Inside, small room",0.9996855,0.9994511,0.0004111867
+690.72,Breathing,Snoring,Snort,0.87764037,0.80086684,0.19004905
+691.1999999999999,Silence,"Inside, small room",Breathing,0.75306,0.047020443,0.023302266
+691.68,Silence,"Inside, small room",Speech,0.9250594,0.019494014,0.0028526983
+692.16,Silence,"Inside, small room",Speech,0.98575586,0.002067296,0.00016177549
+692.64,Breathing,Snoring,Silence,0.9976416,0.99755496,0.012634125
+693.12,Breathing,Snoring,Snort,0.9972843,0.9906468,0.12521078
+693.6,Snake,Cricket,Insect,0.4105231,0.36057824,0.21758266
+694.0799999999999,Breathing,Snoring,Snake,0.6457452,0.6062301,0.10994241
+694.56,Breathing,Snoring,Snort,0.8006071,0.77897334,0.17399149
+695.04,"Inside, small room",Silence,Writing,0.22884513,0.2229786,0.044131648
+695.52,Silence,"Inside, small room",Television,0.8376376,0.02865468,0.0026499047
+696.0,Silence,"Inside, small room",Tick,0.9659736,0.011508019,0.00067524123
+696.48,Silence,"Inside, small room",Breathing,0.24890359,0.17662902,0.16683505
+696.9599999999999,Breathing,Snoring,Silence,0.99966466,0.99947584,0.0036475079
+697.4399999999999,Breathing,Snoring,Snort,0.9975239,0.9942502,0.026663914
+697.92,Breathing,Snoring,Snort,0.9422456,0.9019438,0.5604358
+698.4,Breathing,Snoring,Snort,0.96595544,0.92931527,0.5795373
+698.88,Breathing,Snoring,Snort,0.9144455,0.8803172,0.079138204
+699.36,Silence,"Inside, small room",Mechanical fan,0.6003931,0.0440301,0.01632015
+699.8399999999999,Silence,"Inside, small room",Musical instrument,0.908989,0.019845715,0.0015107761
+700.3199999999999,Silence,"Inside, small room",Musical instrument,0.9977259,0.0004381289,5.236501e-05
+700.8,Breathing,Snoring,Snort,0.9922226,0.98713094,0.04658468
+701.28,Breathing,Snoring,Silence,0.99971604,0.99891514,0.0035392817
+701.76,Breathing,Snoring,Snake,0.52527577,0.51504976,0.16590188
+702.24,Breathing,Snoring,Snort,0.95469886,0.92243135,0.1602007
+702.72,Breathing,Snoring,Snort,0.95838296,0.9298067,0.26229647
+703.1999999999999,Breathing,Snoring,"Inside, small room",0.41382164,0.119362,0.09177292
+703.68,Silence,"Inside, small room",Television,0.75908875,0.042685598,0.005011535
+704.16,Silence,"Inside, small room",Musical instrument,0.9086052,0.0061492873,0.00088872405
+704.64,Silence,"Inside, small room",Television,0.53421307,0.0694322,0.0062442003
+705.12,Breathing,Snoring,Silence,0.9987873,0.99771035,0.008465584
+705.6,Breathing,Snoring,Snort,0.9979486,0.9955137,0.03639836
+706.0799999999999,Breathing,Snoring,Snake,0.95525396,0.9374257,0.025156368
+706.56,Breathing,Snoring,"Inside, small room",0.9791933,0.97704715,0.026484136
+707.04,Snoring,Breathing,Speech,0.9420504,0.9259674,0.011394557
+707.52,Silence,"Inside, small room",Musical instrument,0.9226063,0.007504406,0.0012638301
+708.0,Silence,"Inside, small room",Musical instrument,0.9815564,0.002031104,0.00025982576
+708.48,Silence,Snoring,Breathing,0.16382422,0.15583995,0.14173086
+708.9599999999999,Breathing,Snoring,Snort,0.9866273,0.96264,0.52340037
+709.4399999999999,Breathing,Owl,Snake,0.5193614,0.4872456,0.40425706
+709.92,Breathing,Snoring,Hiss,0.76942396,0.6907038,0.027439581
+710.4,Breathing,Snoring,Snort,0.9975574,0.99399346,0.014722007
+710.88,Breathing,Snoring,Snort,0.9598662,0.9025143,0.46202356
+711.36,Silence,"Inside, small room",Snoring,0.4110053,0.11041191,0.072272934
+711.8399999999999,Silence,"Inside, small room",Television,0.8589307,0.02990519,0.0018304915
+712.3199999999999,Silence,"Inside, small room",Speech,0.926666,0.0060896263,0.00063857035
+712.8,Silence,"Inside, small room",Breathing,0.37865818,0.0884574,0.04500359
+713.28,Breathing,Snoring,Silence,0.99872637,0.99621403,0.010462538
+713.76,Breathing,Snoring,Snort,0.9989925,0.99792415,0.009894588
+714.24,Breathing,Snoring,Snake,0.75367093,0.7198719,0.055840112
+714.72,Breathing,Snort,Snoring,0.7426145,0.6163269,0.60459095
+715.1999999999999,Breathing,Snoring,Snort,0.9866723,0.9821495,0.03696988
+715.68,"Inside, small room",Breathing,Rub,0.31416714,0.17983282,0.09028867
+716.16,Speech,"Inside, small room",Breathing,0.41585824,0.08041256,0.036955606
+716.64,Silence,"Inside, small room",Mechanisms,0.7293108,0.03041768,0.0065184557
+717.12,Silence,"Inside, small room",Television,0.91274244,0.007270036,0.0017058842
+717.6,Silence,"Inside, small room",Television,0.92551327,0.009044437,0.0011198608
+718.0799999999999,Breathing,Snoring,Snort,0.8156105,0.7545624,0.24538235
+718.56,Breathing,Snoring,Snort,0.97284544,0.92304724,0.54796475
+719.04,Breathing,Snoring,Snort,0.90941554,0.8773502,0.5330074
+719.52,Breathing,Snoring,"Inside, small room",0.7766524,0.6066289,0.094739184
+720.0,Silence,"Inside, small room",Breathing,0.3352542,0.100963034,0.021510234
+720.48,Silence,"Inside, small room",Speech,0.84027493,0.011406045,0.0028201793
+720.9599999999999,Silence,"Inside, small room",Speech,0.870803,0.0244345,0.0013762986
+721.4399999999999,Silence,"Inside, small room",Breathing,0.52879727,0.15835999,0.047555767
+721.92,Silence,"Inside, small room",Mechanisms,0.80992943,0.05109011,0.003366267
+722.4,Silence,"Inside, small room",Writing,0.65726423,0.13268264,0.00804092
+722.88,Silence,"Inside, small room",Clicking,0.7753159,0.04686861,0.005431305
+723.36,Silence,"Inside, small room",Speech,0.9656802,0.004613867,0.0006098043
+723.8399999999999,Silence,"Inside, small room",Speech,0.9799656,0.0060018036,0.00031440592
+724.3199999999999,Silence,"Inside, small room",Television,0.852581,0.041576043,0.0021577927
+724.8,Breathing,Snoring,Silence,0.5753661,0.52976805,0.30585942
+725.28,Breathing,Snoring,Snort,0.73150146,0.59105504,0.43911815
+725.76,Breathing,Snoring,Silence,0.93520683,0.9160694,0.041334487
+726.24,Silence,Breathing,Snoring,0.40206498,0.3304847,0.26568627
+726.72,Silence,"Inside, small room",Speech,0.73311776,0.12967944,0.009295871
+727.1999999999999,Silence,"Inside, small room",Speech,0.9974102,0.00019304137,2.4550152e-05
+727.68,Silence,"Inside, small room",Musical instrument,0.9799408,0.002916413,0.00015046637
+728.16,Silence,"Inside, small room",Musical instrument,0.9083285,0.011475897,0.0011118551
+728.64,Snoring,Breathing,Silence,0.60351646,0.58092266,0.31119663
+729.12,Silence,Breathing,White noise,0.19307545,0.12719381,0.12506479
+729.6,Snoring,Breathing,"Inside, small room",0.62472457,0.5597453,0.097755514
+730.0799999999999,Silence,"Inside, small room",Breathing,0.23045906,0.157751,0.023007905
+730.56,Silence,"Inside, small room",Television,0.9021015,0.04574458,0.0014202569
+731.04,Silence,"Inside, small room",Tick,0.82770896,0.044553053,0.0035553628
+731.52,Silence,"Inside, small room",Mechanisms,0.97479874,0.0040353094,0.00018802065
+732.0,Silence,"Inside, small room",Musical instrument,0.9617489,0.0043682535,0.00036463822
+732.48,Silence,"Inside, small room",Television,0.47563377,0.03849654,0.010861918
+732.9599999999999,Breathing,Snoring,Snort,0.77243716,0.6806884,0.6537683
+733.4399999999999,Breathing,Snoring,Snort,0.8175228,0.7108313,0.54163826
+733.92,Breathing,Snoring,"Inside, small room",0.75497544,0.74847335,0.118334495
+734.4,Silence,"Inside, small room",Musical instrument,0.7674463,0.026009854,0.008296277
+734.88,Silence,"Inside, small room",Musical instrument,0.8971188,0.010532923,0.0010853312
+735.36,Silence,"Inside, small room",Musical instrument,0.97905844,0.0027302813,0.00027885445
+735.8399999999999,Silence,"Inside, small room",Speech,0.9975888,0.00042556136,4.4178785e-05
+736.3199999999999,Silence,"Inside, small room",Television,0.9362399,0.013321186,0.0010371638
+736.8,Silence,"Inside, small room",Mechanical fan,0.2939103,0.15157597,0.11016781
+737.28,Snoring,Breathing,"Inside, small room",0.5025447,0.4923587,0.16141407
+737.76,Snoring,Breathing,"Inside, small room",0.4790601,0.36202055,0.22326225
+738.24,Silence,"Inside, small room",Breathing,0.3757559,0.09258393,0.07968753
+738.72,Silence,"Inside, small room",Breathing,0.8937159,0.042834755,0.0044962363
+739.1999999999999,Silence,"Inside, small room",Mechanisms,0.965647,0.008600589,0.0004331539
+739.68,Silence,"Inside, small room",Speech,0.95583117,0.0027508512,0.00018407659
+740.16,Silence,"Inside, small room",Speech,0.87637615,0.014528396,0.002604394
+740.64,Silence,"Inside, small room",Breathing,0.6602558,0.10814142,0.02248722
+741.12,White noise,Noise,Hum,0.2550294,0.18569368,0.13574438
+741.6,Breathing,Snoring,"Inside, small room",0.24245898,0.18220624,0.13865897
+742.0799999999999,"Inside, small room",Silence,Writing,0.31185862,0.2638755,0.08501227
+742.56,Silence,"Inside, small room",Television,0.96470463,0.006211366,0.00049548096
+743.04,Silence,"Inside, small room",Television,0.965613,0.009350894,0.0006379557
+743.52,Silence,"Inside, small room",Speech,0.9418835,0.012406679,0.0014514889
+744.0,Silence,"Inside, small room",Television,0.93064904,0.01237863,0.0008993831
+744.48,Silence,"Inside, small room",Hum,0.88963234,0.020349197,0.0014220787
+744.9599999999999,Silence,Hum,"Inside, small room",0.35032773,0.10465757,0.08440354
+745.4399999999999,Silence,"Inside, small room",Mechanical fan,0.6156909,0.088646635,0.051119167
+745.92,Silence,"Inside, small room",Mechanical fan,0.6595644,0.16294429,0.011216646
+746.4,Silence,"Inside, small room",Mechanisms,0.7432079,0.14156756,0.003681063
+746.88,Silence,"Inside, small room",Television,0.6003021,0.091737516,0.017856061
+747.36,Silence,"Inside, small room",Tick,0.8189439,0.03634979,0.0048379195
+747.8399999999999,Silence,"Inside, small room",Speech,0.9719499,0.002199752,0.00012291064
+748.3199999999999,Silence,"Inside, small room",Musical instrument,0.97989285,0.0016453939,0.00018525173
+748.8,Silence,"Inside, small room",Musical instrument,0.9596968,0.006994963,0.00019027958
+749.28,Breathing,Silence,Snoring,0.19168907,0.16645977,0.12072585
+749.76,Buzz,Toothbrush,Snake,0.3396472,0.3169012,0.22694021
+750.24,"Inside, small room",Buzz,Mechanisms,0.18087548,0.12572594,0.11014904
+750.72,Breathing,Snoring,"Inside, small room",0.6293511,0.6043013,0.19641863
+751.1999999999999,Silence,"Inside, small room",Television,0.8427201,0.07437184,0.003184463
+751.68,Silence,"Inside, small room",Musical instrument,0.9448912,0.010971369,0.0014523953
+752.16,Silence,"Inside, small room",Speech,0.9830074,0.0021448468,9.891447e-05
+752.64,Silence,"Inside, small room",Speech,0.95266354,0.006149369,0.0004091047
+753.12,Silence,"Inside, small room",Mechanisms,0.90292436,0.012285154,0.0017649301
+753.6,"Inside, small room",Snoring,Breathing,0.2626395,0.1689047,0.13443144
+754.0799999999999,White noise,Noise,Buzz,0.33327234,0.23912498,0.21637277
+754.56,"Inside, small room",Mechanisms,Mechanical fan,0.35709563,0.12355386,0.06718248
+755.04,"Inside, small room",Silence,Writing,0.3009695,0.1316758,0.03473946
+755.52,Silence,"Inside, small room",Television,0.8058314,0.05560962,0.0032230755
+756.0,Silence,"Inside, small room",Noise,0.9372061,0.0027608292,0.00038613542
+756.48,Silence,"Inside, small room","Inside, large room or hall",0.93286365,0.009538276,0.00045914025
+756.9599999999999,Silence,"Inside, small room",Writing,0.41717532,0.32122225,0.033307143
+757.4399999999999,"Inside, small room",Silence,Writing,0.5570318,0.1342355,0.027863318
+757.92,Silence,"Inside, small room",Writing,0.79047924,0.15770386,0.012855007
+758.4,Silence,"Inside, small room",Writing,0.5859565,0.27250454,0.02671835
+758.88,"Inside, small room",Silence,Writing,0.3940756,0.22562538,0.1106188
+759.36,Silence,"Inside, small room",Television,0.75395775,0.17743589,0.007842128
+759.8399999999999,Silence,"Inside, small room",Speech,0.9619636,0.010501481,0.00090322
+760.3199999999999,Silence,"Inside, small room",Television,0.91018397,0.016714646,0.0020630017
+760.8,Silence,"Inside, small room",Musical instrument,0.9919167,0.0012555999,7.7419165e-05
+761.28,Silence,"Inside, small room",Speech,0.97513,0.003133756,0.00021512985
+761.76,Silence,"Inside, small room","Narration, monologue",0.9072789,0.0140685085,0.0010445382
+762.24,Silence,"Inside, small room",Musical instrument,0.96049863,0.0059524686,0.00056578504
+762.72,Silence,"Inside, small room",Speech,0.96925914,0.0042459094,0.0001209737
+763.1999999999999,Silence,"Inside, small room",Noise,0.9523934,0.0026447703,0.00035871507
+763.68,Silence,"Inside, small room",Television,0.9191486,0.005825806,0.000988596
+764.16,Silence,"Inside, small room",Musical instrument,0.9358389,0.0037554177,0.00054028933
+764.64,Silence,"Inside, small room",Speech,0.9970807,0.000269053,6.757665e-05
+765.12,Silence,"Inside, small room",Musical instrument,0.98042977,0.006333578,0.00033437996
+765.6,Silence,"Inside, small room",Speech,0.9982864,0.00010417299,2.2100092e-05
+766.0799999999999,Silence,"Inside, small room",Speech,0.9922305,0.0011889798,0.00010743805
+766.56,Silence,"Inside, small room",Speech,0.9811654,0.0013596573,9.238139e-05
+767.04,Silence,"Inside, small room",Speech,0.983884,0.004026702,0.0002461866
+767.52,Silence,"Inside, small room",Musical instrument,0.99705094,0.00038625026,3.9044582e-05
+768.0,Silence,"Inside, small room",Musical instrument,0.93193126,0.009390802,0.002120539
+768.48,Silence,"Inside, small room",Musical instrument,0.9877834,0.004257578,0.00027106982
+768.9599999999999,Silence,"Inside, small room",Speech,0.98565876,0.0026117521,9.378336e-05
+769.4399999999999,Silence,"Inside, small room",Television,0.96133024,0.008386725,0.0008340886
+769.92,Silence,"Inside, small room",Television,0.8490436,0.049533524,0.003265518
+770.4,Silence,"Inside, small room",White noise,0.52270967,0.15984383,0.014489098
+770.88,Silence,"Inside, small room",Writing,0.61014426,0.2119888,0.011980003
+771.36,Silence,"Inside, small room",Mechanisms,0.8616289,0.015111973,0.0012384569
+771.8399999999999,Silence,"Inside, small room",Musical instrument,0.9084506,0.010315011,0.0015382335
+772.3199999999999,Silence,"Inside, small room",Speech,0.95270157,0.006118115,0.000713163
+772.8,Silence,Speech,"Inside, small room",0.99915844,2.931534e-05,1.3085649e-05
+773.28,Silence,"Inside, small room",Musical instrument,0.9816773,0.002964424,0.00017699052
+773.76,Silence,"Inside, small room",Mechanisms,0.9708183,0.0100104315,0.00034625345
+774.24,Snoring,Breathing,Snort,0.6976113,0.6836545,0.12052453
+774.72,Snoring,Breathing,Silence,0.9887865,0.9870372,0.014413062
+775.1999999999999,Snoring,Breathing,"Domestic animals, pets",0.9121921,0.8760269,0.06306579
+775.68,Silence,Speech,"Inside, small room",0.28097117,0.10791386,0.039443035
+776.16,Silence,"Inside, small room",Mechanisms,0.9555492,0.003857646,0.0002199993
+776.64,Silence,"Inside, small room",Noise,0.96583515,0.003121538,0.00018683473
+777.12,Silence,Speech,"Inside, small room",0.9990824,4.7603327e-05,1.6906286e-05
+777.6,Silence,Speech,"Inside, small room",0.9982313,2.7133554e-05,1.4709467e-05
+778.0799999999999,Silence,"Inside, small room",White noise,0.82959616,0.01706359,0.0017074747
+778.56,Breathing,Snoring,"Inside, small room",0.41929406,0.34984037,0.27788505
+779.04,Snoring,Breathing,Dog,0.9998999,0.9998952,0.00047250433
+779.52,Breathing,Snoring,Silence,0.999991,0.9999841,0.00056595117
+780.0,Breathing,Snoring,"Domestic animals, pets",0.9952729,0.9928361,0.010021927
+780.48,Silence,"Inside, small room",Television,0.8791845,0.012895393,0.0015285829
+780.9599999999999,Silence,"Inside, small room",Noise,0.9592789,0.0064613377,0.0003478457
+781.4399999999999,Silence,"Inside, small room",Tick,0.9135541,0.032430787,0.0032070533
+781.92,Silence,"Inside, small room",Television,0.6079836,0.11064071,0.008544782
+782.4,Snoring,Breathing,Silence,0.9983992,0.99823135,0.0073080207
+782.88,Breathing,Snoring,Silence,0.999966,0.9999185,0.00025020778
+783.36,Breathing,Snoring,Silence,0.99992603,0.9998309,0.0009434273
+783.8399999999999,Silence,"Inside, small room",Writing,0.32718763,0.28217506,0.02216079
+784.3199999999999,Silence,"Inside, small room",Noise,0.91715777,0.0045112395,0.0006980653
+784.8,Silence,"Inside, small room",Noise,0.91112596,0.006097545,0.0010838825
+785.28,Silence,"Inside, small room",Television,0.9436389,0.0042319936,0.00048518405
+785.76,Silence,"Inside, small room",Speech,0.98082787,0.0029300079,0.00011451646
+786.24,Silence,"Inside, small room",Speech,0.9716964,0.0054383003,0.00023871941
+786.72,Silence,"Inside, small room",Breathing,0.53198963,0.1610076,0.108675934
+787.1999999999999,Silence,"Inside, small room",Writing,0.40657452,0.25019562,0.017459672
+787.68,Silence,"Inside, small room",Speech,0.98320067,0.0013985418,9.013313e-05
+788.16,Silence,"Inside, small room",Television,0.74947405,0.0086534675,0.003584243
+788.64,Silence,"Inside, small room",Mechanisms,0.7505365,0.04480535,0.0063315043
+789.12,Silence,"Inside, small room",Television,0.9069705,0.021713078,0.0017520598
+789.6,Silence,"Inside, small room",Mechanisms,0.29838797,0.20412242,0.01485117
+790.0799999999999,Breathing,Snoring,"Inside, small room",0.18996055,0.115283966,0.08926155
+790.56,Silence,"Inside, small room",Speech,0.38871297,0.111865565,0.032151304
+791.04,Silence,"Inside, small room",Television,0.8454754,0.011231961,0.0013842455
+791.52,Silence,"Inside, small room",Speech,0.9512661,0.00650939,0.0001868914
+792.0,Silence,"Inside, small room",Writing,0.5908502,0.14470962,0.012328463
+792.48,Silence,"Inside, small room",Writing,0.56105614,0.23408808,0.04945553
+792.9599999999999,Breathing,Snoring,Silence,0.9894479,0.98481274,0.027196834
+793.4399999999999,Breathing,Snoring,Silence,0.9917818,0.9903069,0.022652011
+793.92,"Inside, small room",Silence,Breathing,0.36708748,0.31977722,0.04469416
+794.4,Silence,"Inside, small room",Mechanical fan,0.37951252,0.28543776,0.017927794
+794.88,Silence,"Inside, small room",Noise,0.87808114,0.00934066,0.002481213
+795.36,Silence,"Inside, small room",Television,0.96157026,0.0057059294,0.00038179208
+795.8399999999999,Silence,"Inside, small room",Musical instrument,0.9172089,0.009937169,0.0012575968
+796.3199999999999,Silence,"Inside, small room",Mechanical fan,0.2716969,0.1626174,0.033309966
+796.8,Silence,"Inside, small room",Breathing,0.3651302,0.17309289,0.046005785
+797.28,Silence,Snoring,Breathing,0.51503307,0.22137347,0.18764098
+797.76,Silence,"Inside, small room",Writing,0.5378841,0.25272056,0.025778396
+798.24,Silence,"Inside, small room",Mechanisms,0.5234961,0.08973858,0.0075248545
+798.72,Silence,"Inside, small room",Musical instrument,0.8687649,0.021610705,0.0026797568
+799.1999999999999,Silence,"Inside, small room",Sound effect,0.9528535,0.004817101,0.0004117113
+799.68,Silence,"Inside, small room",Speech,0.93284214,0.004563962,0.0002781943
+800.16,Silence,"Inside, small room",Speech,0.9553643,0.004797227,0.00020218536
+800.64,Silence,"Inside, small room",Mechanical fan,0.46979475,0.16988403,0.024457308
+801.12,Silence,"Inside, small room",Writing,0.34655464,0.32469094,0.036079492
+801.6,Silence,"Inside, small room",Breathing,0.8406272,0.041955713,0.0010889553
+802.0799999999999,Silence,"Inside, small room",Mechanisms,0.46477398,0.15652202,0.009812509
+802.56,Silence,"Inside, small room",Writing,0.37087035,0.20740284,0.02463122
+803.04,Silence,"Inside, small room",Speech,0.80320567,0.039526414,0.0037462607
+803.52,Silence,"Inside, small room",Speech,0.9809714,0.0010515833,0.00019457756
+804.0,Silence,"Inside, small room",Noise,0.93945605,0.0038691084,0.0004706458
+804.48,Silence,"Inside, small room",Tick,0.633581,0.053421702,0.0144698955
+804.9599999999999,Silence,"Inside, small room",Tick,0.4808146,0.19475098,0.01505519
+805.4399999999999,Silence,"Inside, small room",Writing,0.60483897,0.22523692,0.011300177
+805.92,Silence,"Inside, small room",Writing,0.5988067,0.20998228,0.006391679
+806.4,Silence,"Inside, small room",Speech,0.5481449,0.07655804,0.008279347
+806.88,Silence,"Inside, small room",Television,0.9385654,0.014677799,0.00075136323
+807.36,Silence,"Inside, small room",Speech,0.9605901,0.0029771945,0.0001449493
+807.8399999999999,Silence,"Inside, small room",Television,0.92217296,0.0095139975,0.0014466007
+808.3199999999999,Silence,"Inside, small room",Speech,0.9865324,0.0034377037,0.00027454444
+808.8,Silence,"Inside, small room",Writing,0.7648801,0.111375965,0.006680971
+809.28,Silence,"Inside, small room",Writing,0.4655674,0.22073293,0.016762637
+809.76,Silence,"Inside, small room","Electric shaver, electric razor",0.2067574,0.17027856,0.14520831
+810.24,"Inside, small room",Silence,Mechanical fan,0.41838428,0.21104695,0.01737363
+810.7199999999999,Silence,"Inside, small room",Mechanisms,0.6225267,0.075123675,0.019339513
+811.1999999999999,Silence,"Inside, small room",Tick,0.8775214,0.0410006,0.0055492804
+811.68,Silence,"Inside, small room",Speech,0.984489,0.001545997,0.000104961415
+812.16,Silence,"Inside, small room","Narration, monologue",0.9786548,0.0025664456,0.00021658308
+812.64,Silence,"Inside, small room",Mechanical fan,0.47571644,0.12791938,0.025324814
+813.12,Silence,"Inside, small room",Mechanical fan,0.79467654,0.08981768,0.015212641
+813.6,Silence,"Inside, small room",Mechanical fan,0.50161606,0.122056685,0.07019638
+814.0799999999999,Silence,"Inside, small room",Writing,0.66699904,0.16273996,0.007796208
+814.56,Silence,"Inside, small room",Writing,0.8784725,0.095603704,0.0020414072
+815.04,"Inside, small room",Silence,Writing,0.28989568,0.28313717,0.093049295
+815.52,Breathing,Snoring,Silence,0.62125146,0.58801913,0.2544528
+816.0,Silence,"Inside, small room",Speech,0.9913769,0.0010386726,5.1768493e-05
+816.48,Silence,"Inside, small room",Speech,0.97772735,0.0023907847,9.9216675e-05
+816.9599999999999,Silence,"Inside, small room",Television,0.9432266,0.016272018,0.001182027
+817.4399999999999,Silence,"Inside, small room",Mechanical fan,0.7312207,0.16430435,0.021237563
+817.92,Silence,"Inside, small room",Mechanical fan,0.30764118,0.1932477,0.019159472
+818.4,"Inside, small room",Silence,Buzz,0.17350487,0.1467564,0.070878
+818.88,Silence,Hum,White noise,0.26804885,0.10118857,0.086099364
+819.36,"Inside, small room",Silence,Breathing,0.34440166,0.17316483,0.03278032
+819.8399999999999,Silence,"Inside, small room",Mechanical fan,0.36156622,0.16382922,0.02347768
+820.3199999999999,Silence,"Inside, small room",Tick,0.77252114,0.045563888,0.008352006
+820.8,Silence,"Inside, small room",Musical instrument,0.9782751,0.0036662226,0.00034493537
+821.28,Silence,"Inside, small room",Speech,0.99265516,0.0016363233,8.626077e-05
+821.76,Silence,"Inside, small room",Mechanical fan,0.52982056,0.14511558,0.02373672
+822.24,Breathing,Snoring,Silence,0.99915665,0.99878895,0.015129094
+822.7199999999999,Breathing,Snoring,Silence,0.98688644,0.985815,0.020886615
+823.1999999999999,Breathing,Snoring,Silence,0.99662626,0.9954737,0.0064640106
+823.68,Snoring,Breathing,Silence,0.95860803,0.9532002,0.062170602
+824.16,Silence,"Inside, small room",Writing,0.45295802,0.29462388,0.040890843
+824.64,Silence,"Inside, small room",Tick,0.912296,0.027432753,0.0021187337
+825.12,Silence,"Inside, small room",Television,0.89429206,0.026097395,0.0027875246
+825.6,Silence,"Inside, small room",Tick,0.6239191,0.18144232,0.019825222
+826.0799999999999,"Inside, small room",Silence,Breathing,0.21578124,0.18211597,0.058649033
+826.56,Snoring,Breathing,Silence,0.9901471,0.988843,0.02409005
+827.04,Snoring,Breathing,"Domestic animals, pets",0.9990943,0.9990584,0.0020245528
+827.52,Snoring,Breathing,"Domestic animals, pets",0.976612,0.9754862,0.020183368
+828.0,Silence,"Inside, small room",Musical instrument,0.95181566,0.0048721177,0.00090116425
+828.48,Silence,"Inside, small room",Tick,0.97437596,0.010979961,0.00052076165
+828.9599999999999,Silence,"Inside, small room",Mechanisms,0.96472704,0.0113491295,0.00042987854
+829.4399999999999,Silence,"Inside, small room",Speech,0.949438,0.0043577272,0.00022034778
+829.92,Silence,"Inside, small room",Television,0.9363468,0.008751012,0.0005852088
+830.4,Silence,"Inside, small room",Hum,0.830052,0.02266242,0.0025192196
+830.88,Silence,"Inside, small room",Mechanisms,0.85138464,0.03304077,0.0039473036
+831.36,Silence,"Inside, small room",Television,0.9575341,0.012523213,0.00068612205
+831.8399999999999,Silence,"Inside, small room",Speech,0.9867071,0.0014758419,0.00010366186
+832.3199999999999,Silence,"Inside, small room",Speech,0.9941883,0.00017924575,3.4827914e-05
+832.8,Silence,"Inside, small room",Television,0.91789615,0.008955822,0.0009978238
+833.28,Silence,"Inside, small room",Speech,0.896528,0.018151704,0.0013973867
+833.76,Silence,"Inside, small room",Television,0.94863987,0.01887386,0.0007947444
+834.24,Silence,"Inside, small room",Tick,0.90602356,0.022636134,0.004121016
+834.7199999999999,Silence,"Inside, small room",Tick,0.97297496,0.005956442,0.00050577516
+835.1999999999999,Silence,"Inside, small room",Television,0.90728724,0.021983001,0.0020684926
+835.68,Silence,"Inside, small room",Tick,0.8886908,0.01915803,0.0018551394
+836.16,Silence,"Inside, small room",Speech,0.94498485,0.005572802,0.00046035327
+836.64,Silence,"Inside, small room",Television,0.8832597,0.013456649,0.0023937002
+837.12,Silence,"Inside, small room",Speech,0.9703459,0.001784281,7.855991e-05
+837.6,Silence,"Inside, small room",Television,0.86513144,0.01083131,0.0022867422
+838.0799999999999,Silence,"Inside, small room",Musical instrument,0.96486515,0.0026028561,0.00021637256
+838.56,Silence,"Inside, small room",Speech,0.9828537,0.0014873305,0.00015997766
+839.04,Silence,"Inside, small room",Speech,0.9771164,0.006386021,0.00029875434
+839.52,Silence,"Inside, small room",Noise,0.8914482,0.0046602963,0.000808441
+840.0,Silence,"Inside, small room",Noise,0.88681436,0.0036552767,0.0017247268
+840.48,Silence,"Inside, small room","Narration, monologue",0.95661646,0.0077093584,0.0009001602
+840.9599999999999,Silence,"Inside, small room",Sound effect,0.9786104,0.0022442215,0.0002806259
+841.4399999999999,Silence,"Inside, small room",Television,0.83391404,0.018578693,0.0014435765
+841.92,Silence,"Inside, small room",Television,0.9264784,0.00886724,0.0007720852
+842.4,Silence,"Inside, small room",Television,0.9546487,0.006203118,0.0011662423
+842.88,Silence,"Inside, small room","Narration, monologue",0.99596256,0.0005257061,3.6352965e-05
+843.36,Silence,"Inside, small room",Speech,0.9481033,0.005087374,0.00051457604
+843.8399999999999,Silence,"Inside, small room",Television,0.92130625,0.006148675,0.001336383
+844.3199999999999,Silence,"Inside, small room",Speech,0.9726285,0.004477132,0.00027994023
+844.8,Silence,"Inside, small room",Noise,0.9372233,0.00793758,0.0006048405
+845.28,Silence,"Inside, small room",Speech,0.96628827,0.002895996,8.338512e-05
+845.76,Silence,"Inside, small room",Television,0.95213234,0.005808714,0.00044562452
+846.24,Silence,"Inside, small room",Musical instrument,0.95520866,0.0035305226,0.0003533264
+846.7199999999999,Silence,"Inside, small room",Noise,0.95622545,0.0073837116,0.00032411033
+847.1999999999999,Silence,"Inside, small room",Speech,0.9815413,0.0015408195,0.00014202173
+847.68,Silence,"Inside, small room",Speech,0.9930568,0.00055117713,6.0096685e-05
+848.16,Silence,"Inside, small room",Speech,0.97368306,0.0020687191,0.00011044191
+848.64,Silence,"Inside, small room",Speech,0.9348653,0.0046040667,0.0004994953
+849.12,Silence,"Inside, small room",Speech,0.97344947,0.0013959695,8.746587e-05
+849.6,Silence,"Inside, small room",Television,0.9628759,0.0025214266,0.0003205353
+850.0799999999999,Silence,"Inside, small room",Television,0.9815244,0.0025210956,0.00012954729
+850.56,Silence,"Inside, small room",Tick,0.93701047,0.015240088,0.0017610362
+851.04,Silence,"Inside, small room",Tick,0.96630067,0.006836745,0.0006154505
+851.52,Silence,"Inside, small room",Speech,0.9925957,0.00024257514,2.5505558e-05
+852.0,Silence,"Inside, small room",Musical instrument,0.963142,0.0026895367,0.0010743754
+852.48,Silence,"Inside, small room",White noise,0.91497046,0.012991935,0.0007858037
+852.9599999999999,Silence,"Inside, small room",Tick,0.9651931,0.008155137,0.00080782536
+853.4399999999999,Silence,"Inside, small room",Tick,0.9107858,0.019123698,0.001437452
+853.92,Silence,"Inside, small room",Musical instrument,0.9676672,0.00253121,0.0001094495
+854.4,Silence,"Inside, small room",Musical instrument,0.9497478,0.004008747,0.0005586807
+854.88,Silence,"Inside, small room",Television,0.9135402,0.0089238,0.0016873602
+855.36,Silence,"Inside, small room",Television,0.9275046,0.00654431,0.00037179497
+855.8399999999999,Silence,"Inside, small room",Speech,0.9622694,0.0034223981,0.00026926165
+856.3199999999999,Silence,"Inside, small room",Musical instrument,0.97674066,0.002751623,0.00018991526
+856.8,Silence,"Inside, small room",Noise,0.9605149,0.0047327266,0.00026355727
+857.28,Silence,"Inside, small room",Television,0.91640115,0.016437657,0.0011675868
+857.76,Silence,"Inside, small room",Television,0.8708812,0.016544571,0.0018465163
+858.24,Silence,"Inside, small room",Musical instrument,0.97558737,0.005531683,0.00028904705
+858.7199999999999,Silence,"Inside, small room",Tick,0.8651278,0.02307406,0.004294251
+859.1999999999999,Silence,"Inside, small room",Writing,0.6902784,0.11308706,0.01719144
+859.68,Silence,"Inside, small room",Mechanisms,0.9653029,0.010491576,0.000647183
+860.16,Silence,"Inside, small room",Television,0.9789004,0.0018776355,0.00020486914
+860.64,Silence,"Inside, small room",Speech,0.9761787,0.0019754223,6.583238e-05
+861.12,Silence,"Inside, small room",White noise,0.8491105,0.01733048,0.0013669144
+861.6,Silence,"Inside, small room",Mechanisms,0.89860773,0.021586742,0.0033653264
+862.0799999999999,Silence,"Inside, small room",Tick,0.93058646,0.03603508,0.0034679505
+862.56,Silence,"Inside, small room",Television,0.9563978,0.005094465,0.00026042096
+863.04,Silence,"Inside, small room",Musical instrument,0.8096817,0.018738847,0.0070673614
+863.52,Silence,"Inside, small room",Television,0.84155166,0.019124161,0.002773155
+864.0,Silence,"Inside, small room",Noise,0.92150563,0.0073815174,0.001014906
+864.48,Silence,"Inside, small room",Speech,0.9977069,0.00010379006,2.4573645e-05
+864.9599999999999,Silence,"Inside, small room",Mechanisms,0.9234258,0.009336328,0.0009476543
+865.4399999999999,Silence,"Inside, small room",Speech,0.9399474,0.008695957,0.00057058624
+865.92,Silence,"Inside, small room",Television,0.89972734,0.019823475,0.0016272468
+866.4,Silence,"Inside, small room",White noise,0.9129518,0.01052267,0.00061870134
+866.88,Silence,"Inside, small room",Mechanisms,0.92561775,0.009645707,0.0009930378
+867.36,Silence,"Inside, small room",Musical instrument,0.91073734,0.014796574,0.0014667859
+867.8399999999999,Silence,"Inside, small room",Television,0.9083794,0.014003997,0.000935557
+868.3199999999999,Silence,"Inside, small room",Speech,0.94660395,0.0049942406,0.00053547835
+868.8,Silence,"Inside, small room",Television,0.9188526,0.010957221,0.0017642681
+869.28,Silence,"Inside, small room",Television,0.9230427,0.01569676,0.001556233
+869.76,Silence,"Inside, small room",Speech,0.97739196,0.0041534603,0.00026445786
+870.24,Silence,"Inside, small room",Tick,0.96770304,0.006101199,0.00048451856
+870.7199999999999,Silence,"Inside, small room",White noise,0.9165564,0.028942412,0.0030583285
+871.1999999999999,Silence,"Inside, small room",White noise,0.88405234,0.016731558,0.0021040076
+871.68,Silence,"Inside, small room",Speech,0.9516063,0.003923416,0.00024261815
+872.16,Silence,"Inside, small room",Musical instrument,0.9684496,0.00447048,0.0003138019
+872.64,Silence,"Inside, small room",Speech,0.95197105,0.012933939,0.0008208917
+873.12,Silence,"Inside, small room",Television,0.9015221,0.01092495,0.001489455
+873.6,Silence,"Inside, small room",Television,0.86888343,0.031688757,0.0030784153
+874.0799999999999,Silence,"Inside, small room",Television,0.86438227,0.026264742,0.0040795794
+874.56,Silence,"Inside, small room",White noise,0.7875255,0.044891257,0.0068755676
+875.04,Silence,"Inside, small room",Writing,0.88104033,0.041336987,0.002276661
+875.52,Silence,"Inside, small room",Writing,0.4323816,0.3505834,0.07090184
+876.0,Silence,"Inside, small room",Writing,0.4017458,0.1997911,0.039339136
+876.48,Silence,"Inside, small room",Mechanisms,0.77885795,0.02965573,0.0052381856
+876.9599999999999,Silence,"Inside, small room",Television,0.97043246,0.007216778,0.00043853172
+877.4399999999999,Silence,"Inside, small room",Wind,0.9063092,0.03825089,0.0054607973
+877.92,Silence,"Inside, small room",Breathing,0.49003863,0.15695643,0.05744378
+878.4,Silence,"Inside, small room",Writing,0.31885043,0.19201788,0.15457657
+878.88,Silence,"Inside, small room",Breathing,0.36309856,0.18519613,0.09742153
+879.36,Silence,"Inside, small room",Breathing,0.42573026,0.14877763,0.13622966
+879.8399999999999,"Inside, small room",Silence,Writing,0.31994134,0.2732409,0.017389338
+880.3199999999999,Silence,"Inside, small room",Speech,0.7105324,0.053801306,0.005092505
+880.8,Silence,"Inside, small room","Narration, monologue",0.9609508,0.0059136422,0.00037814517
+881.28,Silence,"Inside, small room",Television,0.9374415,0.010651792,0.00067765394
+881.76,Silence,"Inside, small room",Television,0.9551406,0.008306237,0.0006475041
+882.24,Silence,"Inside, small room",Tick,0.6492656,0.15486199,0.027123045
+882.7199999999999,Silence,"Inside, small room",Mechanical fan,0.36072725,0.27508068,0.0496775
+883.1999999999999,Silence,"Inside, small room",Tick,0.2580535,0.24708581,0.0139100095
+883.68,Silence,"Inside, small room",Writing,0.35215434,0.32861182,0.007927896
+884.16,Silence,"Inside, small room",Television,0.7398108,0.07560172,0.004164267
+884.64,Silence,"Inside, small room",Television,0.90005463,0.0076515744,0.0014659112
+885.12,Silence,"Inside, small room",Tick,0.8998807,0.02814655,0.0046676784
+885.6,Silence,"Inside, small room",Tick,0.88998663,0.040935352,0.004717834
+886.0799999999999,Silence,"Inside, small room",Mechanical fan,0.4234241,0.2596261,0.04207688
+886.56,Breathing,Snoring,"Inside, small room",0.4876366,0.46382302,0.15134972
+887.04,Breathing,Snoring,Silence,0.5903649,0.5595596,0.19754043
+887.52,Snoring,Breathing,Silence,0.924056,0.88781077,0.29935294
+888.0,Silence,"Inside, small room",Writing,0.5675873,0.2075699,0.017792461
+888.48,Silence,"Inside, small room",Television,0.9384516,0.013215264,0.0007834153
+888.9599999999999,Silence,"Inside, small room",Mechanisms,0.91955966,0.017816901,0.0024165108
+889.4399999999999,Silence,"Inside, small room",Speech,0.8948737,0.04510804,0.002046307
+889.92,Silence,"Inside, small room",Breathing,0.4145125,0.1935524,0.16302311
+890.4,Snoring,Breathing,Silence,0.9693798,0.960832,0.06914126
+890.88,Breathing,Snoring,Silence,0.99994975,0.99993676,0.00014697082
+891.36,Breathing,Snoring,Silence,0.99958014,0.9995186,0.00040966802
+891.8399999999999,Silence,"Inside, small room",Tick,0.7477559,0.055646457,0.009546591
+892.3199999999999,Silence,"Inside, small room",Tick,0.8058797,0.03709341,0.0067000855
+892.8,Silence,"Inside, small room",Sound effect,0.96087956,0.005222543,0.0003984047
+893.28,Silence,"Inside, small room",Television,0.91466886,0.014413083,0.0016164391
+893.76,Silence,"Inside, small room",Mechanical fan,0.45543346,0.19237621,0.013864653
+894.24,"Inside, small room",Mechanical fan,Silence,0.19296265,0.109960064,0.10287479
+894.7199999999999,Silence,"Inside, small room",Breathing,0.4257018,0.22315037,0.031148786
+895.1999999999999,Silence,"Inside, small room",Snoring,0.68922484,0.112309754,0.09550551
+895.68,Silence,"Inside, small room",Writing,0.6320417,0.14946483,0.011400654
+896.16,Silence,"Inside, small room",Mechanical fan,0.32918817,0.3010428,0.023708023
+896.64,Silence,"Inside, small room",Speech,0.947117,0.0034580887,0.00014326273
+897.12,Silence,"Inside, small room",Musical instrument,0.98892534,0.0015884453,0.00046294858
+897.6,Silence,"Inside, small room",Tick,0.8611472,0.06463486,0.006277424
+898.0799999999999,Silence,"Inside, small room",Writing,0.42916137,0.2670829,0.034646466
+898.56,Silence,"Inside, small room",Hum,0.18025778,0.16473621,0.06738877
+899.04,Silence,Snoring,Breathing,0.34114784,0.22514196,0.19421406

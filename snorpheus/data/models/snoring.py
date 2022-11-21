@@ -9,7 +9,7 @@ class SleepSessionAudio(models.Model):
     """
 
     sleep_session = models.ForeignKey(
-        SleepSession, on_delete=models.CASCADE, related_name="sleep_session_audio"
+        SleepSession, on_delete=models.CASCADE, related_name="audio_files"
     )
 
     start_time = models.DateTimeField()
@@ -39,3 +39,27 @@ class SnoringEpisode(models.Model):
 
     def __str__(self):
         return f"{self.sleep_session.__str__()}: Episode {self.id}"
+
+
+class AudioLabel(models.Model):
+
+    audio_file = models.ForeignKey(
+        SleepSessionAudio, on_delete=models.CASCADE, related_name="labels"
+    )
+
+    timestamp = models.DecimalField(max_digits=10, decimal_places=2)
+
+    label_1 = models.CharField(max_length=50)
+    label_2 = models.CharField(max_length=50)
+    label_3 = models.CharField(max_length=50)
+
+    score_1 = models.DecimalField(max_digits=5, decimal_places=3)
+    score_2 = models.DecimalField(max_digits=5, decimal_places=3)
+    score_3 = models.DecimalField(max_digits=5, decimal_places=3)
+
+    class Meta:
+        verbose_name = "Audio Label"
+        app_label = "data"
+
+    # def __str__(self):
+    #     return f"{self.sleep_session.__str__()}: Episode {self.id}"

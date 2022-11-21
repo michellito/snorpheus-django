@@ -66,6 +66,9 @@ def get_patient_sessions(request, patient_id):
 def get_session_data(request, session_id):
 
     sleep_session = SleepSession.objects.get(id=session_id)
+    audio_files = sleep_session.audio_files.all()
+
+    print(audio_files[0].__dict__)
 
     session_data = {
         "id": sleep_session.id,
@@ -77,6 +80,10 @@ def get_session_data(request, session_id):
                 "position": event.position,
             }
             for event in sleep_session.positions.all()
+        ],
+        "audio_data": [
+            {"start_time": audio.start_time, "audio_file": audio.audio_file.name}
+            for audio in sleep_session.audio_files.all()
         ],
     }
 

@@ -1,2 +1,2 @@
 from .position import Position
-from .snoring import SleepSessionAudio, SnoringEpisode
+from .snoring import AudioLabel, SleepSessionAudio, SnoringEpisode
