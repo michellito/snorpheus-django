@@ -172,11 +172,8 @@ function setScales(data) {
   positionColorScale = d3.scaleOrdinal(
     d3.interpolatePurples)
     .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
-
-
-
-
 }
+
 
 function drawAxes(group, d) {
 
@@ -301,11 +298,26 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
 }
 
 
-function state() {
 
+
+  function playAndStop() {
+    let self = this;
+    if (self.currentlyPlaying) {
+      self.$refs.audio.pause();
+      self.$refs.audio.currentTime = 0;
+      self.currentlyPlaying = false;
+    } else {
+      self.$refs.audio.play();
+      self.currentlyPlaying = true;
+    }
+
+  }
+
+function state() {
   return {
     // vars
     sidebarOpen: true,
+    currentlyPlaying: false,
     patientId: "",
     patientName: "",
     patientPeriods: [],
@@ -315,6 +327,7 @@ function state() {
     toggleSidebar,
     getPatientPeriods,
     getSessionPosition,
+    playAndStop
   }
 }
 
