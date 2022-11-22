@@ -11,7 +11,7 @@
     <div
       class="flex"
       x-data="state()"
-      x-init="$watch('patientId', value => watchPatientId(value))"
+      x-init="$watch('patientId', value => watchPatientId(value)); $watch('sleepSessions', setupCanvas)"
     >
 
       <!-- start sidebar -->
@@ -123,7 +123,7 @@
       <!-- end sidebar -->
 
       <!-- d3 container -->
-      <div class="p-7" >
+      <div class="p-7 w-full" >
         <div
           @keydown.tab="playAndStop"
           @click="playAndStop"
@@ -147,11 +147,15 @@
             </svg>
           </div>
         </div>
-        <div id="main" style="overflow:scroll;"></div>
+        <template x-for="session in sleepSessions">
+          Session 1
+          <div :id="$id('sleep-session')" class="sleep-session w-4/5 h-80 m-5" style="overflow:scroll;">
+
+          </div>
+        </template>
+
       </div>
     </div>
-
-
 
   {% else %}
 

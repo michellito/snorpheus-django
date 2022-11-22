@@ -1,20 +1,35 @@
 
 let width = 1100;
-let height = window.innerWidth;
+let height = 100;
 let paddingLeft = 120;
 let paddingRight = 75;
 let sleepSessions;
+let svg;
 
-// set up svg canvas
-let svg = d3.select("#main")
-  .append("svg")
-  .attr("width", width)
-  .attr("height", height)
+function setupCanvas() {
+  // set up svg canvas
 
-let timelineGroup = d3.select("#main").select("svg")
-  .append("g")
-  .attr("id", "timeline")
-  .attr("transform", `translate (${0}, ${20})`);
+  svg = d3.select(".sleep-session")
+    .append("svg").attr("width", width).attr("height", height)
+    .append("g")
+
+  setScales(sleepSessions)
+
+  svg.data(sleepSessions).join('g')
+    .each(function(d) {
+      drawData(d3.select(this), d)
+      drawAxes(d3.select(this), d)
+    })
+
+
+
+  console.log(svg)
+}
+
+// let timelineGroup = d3.selectAll("#main").select("svg")
+//   .append("g")
+//   .attr("id", "timeline")
+//   .attr("transform", `translate (${0}, ${20})`);
 
 // timelineGroup.append("rect")
 //   .attr("x", paddingLeft)
@@ -55,9 +70,11 @@ function getSessionPosition(sessionId) {
       // handle success
       console.log(response)
       sleepSessions = [response.data];
+      self.sleepSessions = [response.data]
       console.log(sleepSessions)
-      setScales(sleepSessions)
-      setupCharts()
+      // setScales(sleepSessions)
+      // setupCanvas()
+      // setupCharts()
     })
     .catch(function (error) {
       // handle error
@@ -327,7 +344,8 @@ function state() {
     toggleSidebar,
     getPatientPeriods,
     getSessionPosition,
-    playAndStop
+    playAndStop,
+    setupCanvas
   }
 }
 
