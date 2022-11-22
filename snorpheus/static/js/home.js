@@ -16,14 +16,14 @@ let timelineGroup = d3.select("#main").select("svg")
   .attr("id", "timeline")
   .attr("transform", `translate (${0}, ${20})`);
 
-timelineGroup.append("rect")
-  .attr("x", paddingLeft)
-  .attr("y", 0)
-  .attr("height", 30)
-  .attr("width", width - paddingLeft - paddingRight)
-  .style("stroke", d3.rgb(169,169,169))
-  .style("stroke-width", "2")
-  .style("fill", d3.rgb(211,211,211))
+// timelineGroup.append("rect")
+//   .attr("x", paddingLeft)
+//   .attr("y", 0)
+//   .attr("height", 30)
+//   .attr("width", width - paddingLeft - paddingRight)
+//   .style("stroke", d3.rgb(169,169,169))
+//   .style("stroke-width", "2")
+//   .style("fill", d3.rgb(211,211,211))
 
 // ------------- State Functions ----------------- //
 
