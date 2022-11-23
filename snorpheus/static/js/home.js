@@ -1,17 +1,25 @@
 
-let width = 1100;
-let height = 100;
+let width = 1500;
+let height = 130;
 let paddingLeft = 120;
 let paddingRight = 75;
 let sleepSessions;
 let svg;
+let currentAudio = null
+
+console.log(media_url)
+
 
 function setupCanvas() {
   // set up svg canvas
-
   svg = d3.select(".sleep-session")
-    .append("svg").attr("width", width).attr("height", height)
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("class", "session-svg")
     .append("g")
+    .attr("transform", `translate(${0}, ${10})`)
+
 
   setScales(sleepSessions)
 
@@ -20,25 +28,7 @@ function setupCanvas() {
       drawData(d3.select(this), d)
       drawAxes(d3.select(this), d)
     })
-
-
-
-  console.log(svg)
 }
-
-// let timelineGroup = d3.selectAll("#main").select("svg")
-//   .append("g")
-//   .attr("id", "timeline")
-//   .attr("transform", `translate (${0}, ${20})`);
-
-// timelineGroup.append("rect")
-//   .attr("x", paddingLeft)
-//   .attr("y", 0)
-//   .attr("height", 30)
-//   .attr("width", width - paddingLeft - paddingRight)
-//   .style("stroke", d3.rgb(169,169,169))
-//   .style("stroke-width", "2")
-//   .style("fill", d3.rgb(211,211,211))
 
 // ------------- State Functions ----------------- //
 
@@ -68,13 +58,8 @@ function getSessionPosition(sessionId) {
   axios.get('data/sessions/' + sessionId + '/position')
     .then(function (response) {
       // handle success
-      console.log(response)
       sleepSessions = [response.data];
       self.sleepSessions = [response.data]
-      console.log(sleepSessions)
-      // setScales(sleepSessions)
-      // setupCanvas()
-      // setupCharts()
     })
     .catch(function (error) {
       // handle error
@@ -87,40 +72,6 @@ function watchPatientId(value) {
   if (!value.length) {
     self.patientPeriods = [];
   }
-}
-
-function setupCharts() {
-  let self = this;
-
-  svg.selectAll(".chart")
-    .data(sleepSessions, d => d.id)
-    .join(
-      function(enter) {
-        let group = enter.append("g")
-          .attr("class", "chart")
-          .attr("transform", function(d, i) {
-            return `translate(${0}, ${100 + (i * 80)})`
-          })
-          .each(function(d) {
-            drawData(d3.select(this), d)
-            drawAxes(d3.select(this), d)
-          })
-      },
-      // function(update) {
-      //   let group = update
-      //     .transition()
-      //     .duration(1000)
-      //     .attr('transform', (d,i) => `translate(${0}, ${100 + (i * 80)})`)
-      //     .each(function(d) {
-      //       updateData(d3.select(this), d)
-      //       updateAxes(d3.select(this), d)
-      //     })
-      // },
-      // function(exit) {
-      //   exit.remove();
-      // }
-    );
-
 }
 
 function getExtents(sleepSessions) {
@@ -314,9 +265,6 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .attr("d", line);
 }
 
-
-
-
   function playAndStop() {
     let self = this;
     if (self.currentlyPlaying) {
@@ -327,7 +275,6 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
       self.$refs.audio.play();
       self.currentlyPlaying = true;
     }
-
   }
 
 function state() {

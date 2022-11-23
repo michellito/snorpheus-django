@@ -2,6 +2,9 @@
 {% load static i18n %}
 
 {% block inline_javascript %}
+  <script>
+    var media_url = "{% get_media_prefix %}";
+  </script>
   <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
 {% endblock %}
 
@@ -123,7 +126,7 @@
       <!-- end sidebar -->
 
       <!-- d3 container -->
-      <div class="p-7 w-full" >
+      <div class="p-7 w-full" style="max-width: 65rem;">
         <div
           @keydown.tab="playAndStop"
           @click="playAndStop"
@@ -149,7 +152,7 @@
         </div>
         <template x-for="session in sleepSessions">
           Session 1
-          <div :id="$id('sleep-session')" class="sleep-session w-4/5 h-80 m-5" style="overflow:scroll;">
+          <div :id="$id('sleep-session')" class="sleep-session h-52 pt-3"  style="overflow-x:scroll;position:relative">
 
           </div>
         </template>
