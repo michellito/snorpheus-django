@@ -6,6 +6,7 @@ let paddingRight = 75;
 let sleepSessions;
 let svg;
 let currentAudio = null
+let patientId = null
 
 console.log(media_url)
 
@@ -19,7 +20,6 @@ function setupCanvas() {
     .attr("class", "session-svg")
     .append("g")
     .attr("transform", `translate(${0}, ${10})`)
-
 
   setScales(sleepSessions)
 
@@ -59,6 +59,7 @@ function getSessionPosition(sessionId) {
     .then(function (response) {
       // handle success
       sleepSessions = [response.data];
+      
       self.sleepSessions = [response.data]
     })
     .catch(function (error) {
@@ -286,6 +287,7 @@ function state() {
     patientName: "",
     patientPeriods: [],
     sleepSessions: [],
+    audioPath: media_url + 'audio/session1-01.wav',
     // functions
     watchPatientId,
     toggleSidebar,

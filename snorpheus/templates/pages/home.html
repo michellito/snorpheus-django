@@ -116,13 +116,9 @@
         </div>
       </div>
 
-
-
-
-
-        <audio  x-ref="audio">
-          <source src="{% get_media_prefix %}audio/session1-03.wav" type="audio/wav" />
-        </audio>
+      <audio x-ref="audio" x-effect="() => audioPath && $el.load()">
+        <source :src="audioPath" type="audio/wav" />
+      </audio>
       <!-- end sidebar -->
 
       <!-- d3 container -->
