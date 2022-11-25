@@ -1,12 +1,6 @@
 {% extends "base.html" %}
 {% load static i18n %}
 
-{% block inline_javascript %}
-  <script>
-    var media_url = "{% get_media_prefix %}";
-  </script>
-  <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
-{% endblock %}
 
 {% block content %}
 
@@ -116,7 +110,7 @@
         </div>
       </div>
 
-      <audio x-ref="audio" x-effect="() => audioPath && $el.load()">
+      <audio id="audioPlayer" x-ref="audio" x-effect="() => audioPath && $el.load()">
         <source :src="audioPath" type="audio/wav" />
       </audio>
       <!-- end sidebar -->
@@ -187,5 +181,14 @@
     </div>
 
   {% endif %}
+  
 
 {% endblock content %}
+
+{% block inline_javascript %}
+  <script>
+    var media_url = "{% get_media_prefix %}";
+  </script>
+  <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+

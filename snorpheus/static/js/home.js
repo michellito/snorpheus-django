@@ -7,13 +7,43 @@ let sleepSessions;
 let svg;
 let currentAudio = null
 let patientId = null
+var audioPlayer = document.getElementById("audioPlayer");
+
+
+function calculateTimestamp(seconds) {
+  let startTime = new Date(sleepSessions[0].start_time);
+  let currentTime = new Date(startTime.getTime() + (seconds*1000));
+  return currentTime
+
+}
+
+function drawAudioPosition() {
+  console.log(audioPlayer.currentTime)
+  let audioTime = audioPlayer.currentTime;
+  let realTime = calculateTimestamp(audioTime)
+  console.log(realTime)
+
+  d3.select('#group1')
+    .append('rect')
+    .attr("x", timeScale(realTime))
+    .attr("y", 0)
+    .attr("height", 30)
+    .attr("width", 10)
+    .style("fill", '#000');
+}
+
+audioPlayer.ontimeupdate = function() {
+  drawAudioPosition()
+};
+
 
 console.log(media_url)
 
 
+
 function setupCanvas() {
   // set up svg canvas
-  svg = d3.select(".sleep-session")
+  sessionCharts = d3.select(".sleep-session")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -23,7 +53,12 @@ function setupCanvas() {
 
   setScales(sleepSessions)
 
-  svg.data(sleepSessions).join('g')
+  sessionCharts.data(sleepSessions)
+    .join('g')
+    .attr("id", function (d) {
+      console.log(d)
+      return "group" + d.id
+    })
     .each(function(d) {
       drawData(d3.select(this), d)
       drawAxes(d3.select(this), d)
@@ -266,17 +301,17 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .attr("d", line);
 }
 
-  function playAndStop() {
-    let self = this;
-    if (self.currentlyPlaying) {
-      self.$refs.audio.pause();
-      self.$refs.audio.currentTime = 0;
-      self.currentlyPlaying = false;
-    } else {
-      self.$refs.audio.play();
-      self.currentlyPlaying = true;
-    }
+function playAndStop() {
+  let self = this;
+  if (self.currentlyPlaying) {
+    self.$refs.audio.pause();
+    self.$refs.audio.currentTime = 0;
+    self.currentlyPlaying = false;
+  } else {
+    self.$refs.audio.play();
+    self.currentlyPlaying = true;
   }
+}
 
 function state() {
   return {
