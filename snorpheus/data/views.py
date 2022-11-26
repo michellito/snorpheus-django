@@ -80,12 +80,15 @@ def get_session_data(request, session_id):
             audio_labels_response.append(
                 {
                     "timestamp": start_time + timedelta(seconds=float(label.timestamp)),
+                    "timestamp_seconds": label.timestamp,
                     "label_1": label.label_1,
                     "label_2": label.label_2,
                     "label_3": label.label_3,
                     "score_1": label.score_1,
                     "score_2": label.score_2,
                     "score_3": label.score_3,
+                    "audio_file": audio_file.audio_file.name,
+                    "audio_start_time": audio_file.start_time
                 }
             )
 
@@ -99,10 +102,6 @@ def get_session_data(request, session_id):
                 "position": event.position,
             }
             for event in sleep_session.positions.all()
-        ],
-        "audio_files": [
-            {"start_time": audio.start_time, "audio_file": audio.audio_file.name}
-            for audio in audio_files
         ],
         "audio_labels": audio_labels_response,
     }

@@ -6,6 +6,7 @@ let paddingRight = 75;
 let sleepSessions;
 let svg;
 let currentAudio = null
+let currentAudioTime = null
 let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
@@ -290,6 +291,9 @@ function drawAudioLabels(group, data) {
           html = d.label_1
         }
 
+        html = html + "<br/>" + d.audio_file
+        html = html + "<br/>" + d.timestamp_seconds
+
         tooltip
           .style("left", event.layerX + "px")
           .style("top", event.layerY + "px")
@@ -298,6 +302,11 @@ function drawAudioLabels(group, data) {
     })
     .on("mouseout", function(event, d) {
       tooltip.style("opacity", 0)
+    })
+    .on("click", function(event, d) {
+      currentAudio = d.audio_file
+      currentAudioTime = d.timestamp_seconds
+      startAudio()
     })
 }
 
@@ -331,6 +340,16 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .attr("stroke", lineColor)
     .attr("stroke-width", 2)
     .attr("d", line);
+}
+
+function startAudio() {
+  let self = this;
+  self.audioPath = media_url + currentAudio
+  console.log(self.audioPath)
+  console.log(self.$refs)
+  // self.$refs.audio.currentTime = currentAudioTime;
+  // self.$refs.audio.play();
+  // self.currentlyPlaying = true,;
 }
 
 function playAndStop() {

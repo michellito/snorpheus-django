@@ -9,6 +9,7 @@
       class="flex"
       x-data="state()"
       x-init="$watch('patientId', value => watchPatientId(value)); $watch('sleepSessions', setupCanvas)"
+      @audio-start-event.document="startAudio"
     >
 
       <!-- start sidebar -->
