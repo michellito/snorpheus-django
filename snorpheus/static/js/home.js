@@ -306,7 +306,9 @@ function drawAudioLabels(group, data) {
     .on("click", function(event, d) {
       currentAudio = d.audio_file
       currentAudioTime = d.timestamp_seconds
-      startAudio()
+      console.log('current audio time: ', currentAudioTime)
+      let audioEvent = new Event('audio-start-event');
+      document.dispatchEvent(audioEvent)
     })
 }
 
@@ -347,9 +349,9 @@ function startAudio() {
   self.audioPath = media_url + currentAudio
   console.log(self.audioPath)
   console.log(self.$refs)
-  // self.$refs.audio.currentTime = currentAudioTime;
-  // self.$refs.audio.play();
-  // self.currentlyPlaying = true,;
+  self.$refs.audio.currentTime = currentAudioTime;
+  self.$refs.audio.play();
+  self.currentlyPlaying = true;
 }
 
 function playAndStop() {
