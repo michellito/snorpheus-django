@@ -44,7 +44,9 @@ function updateAudioPosition() {
 }
 
 audioPlayer.onplay = function() {
-  drawAudioPosition()
+  if (!audioIndicator) {
+    drawAudioPosition()
+  }
 };
 
 audioPlayer.ontimeupdate = function() {
