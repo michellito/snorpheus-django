@@ -51,10 +51,7 @@ audioPlayer.ontimeupdate = function() {
   updateAudioPosition()
 }
 
-
 console.log(media_url)
-
-
 
 function setupCanvas() {
   // set up svg canvas
@@ -347,8 +344,6 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
 function startAudio() {
   let self = this;
   self.audioPath = media_url + currentAudio
-  console.log(self.audioPath)
-  console.log(self.$refs)
   self.$refs.audio.currentTime = currentAudioTime;
   self.$refs.audio.play();
   self.currentlyPlaying = true;
@@ -358,7 +353,6 @@ function playAndStop() {
   let self = this;
   if (self.currentlyPlaying) {
     self.$refs.audio.pause();
-    self.$refs.audio.currentTime = 0;
     self.currentlyPlaying = false;
   } else {
     self.$refs.audio.play();
