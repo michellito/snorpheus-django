@@ -278,21 +278,23 @@ function drawAudioLabels(group, data) {
   var tooltip = d3.select("#sleep-session-1").append("div")
     .attr("id", "tooltip")
     .attr("class", "tooltip-custom")
-    .style("opacity", 1)
-    // .attr("class", "tooltip_arrow")
-    .html('Hi!!!')
-    // .append('div')
-    // .attr("class", "tooltip-arrow")
-    // .property("data-popper-arrow", null)
+    .style("opacity", 0)
 
   rects
     .on("mouseover", function(event, d) {
-        console.log(event)
+        let html;
+
+        if (d.label_1 === 'Snoring' || d.label_2 === 'Snoring') {
+          html = "Snoring"
+        } else {
+          html = d.label_1
+        }
+
         tooltip
-        .style("left", (event.layerX) + "px")
-        .style("top", (event.layerY) + "px")
-        .style("opacity", 1)
-        .html(d.label_1)
+          .style("left", event.layerX + "px")
+          .style("top", event.layerY + "px")
+          .style("opacity", 1)
+          .html(d.label_1)
     })
     .on("mouseout", function(event, d) {
       tooltip.style("opacity", 0)
