@@ -3,24 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    .tooltip {
-        @apply inline-block;
-        @apply absolute;
-        @apply invisible;
-        @apply z-10;
-        @apply py-2;
-        @apply px-3;
-        @apply text-sm;
-        @apply font-medium;
-        @apply text-white;
-        @apply bg-gray-900;
-        @apply rounded-lg;
-        @apply shadow-sm;
-        @apply opacity-0;
-        @apply transition-opacity;
-        @apply duration-300;
-        @apply tooltip;
-        @apply dark:bg-gray-700;      
-    }
+/* @layer utilities { */
+    
+/* } */
+
+.tooltip-custom {
+    position: absolute;
+    pointer-events: none;
+    background: #000;
+    color: #fff;
+    z-index: 10;
+    left: 50px;
+    top: 50px;
 }

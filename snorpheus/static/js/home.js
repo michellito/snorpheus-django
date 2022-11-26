@@ -62,6 +62,7 @@ function setupCanvas() {
     .attr("width", width)
     .attr("height", height)
     .attr("class", "session-svg")
+    .style("z-index", -1)
     .append("g")
     .attr("transform", `translate(${0}, ${10})`)
 
@@ -276,14 +277,21 @@ function drawAudioLabels(group, data) {
 
   var tooltip = d3.select("#sleep-session-1").append("div")
     .attr("id", "tooltip")
-    .attr("class", "tooltip")
-    .attr("class", "tooltip_arrow")
+    .attr("class", "tooltip-custom")
+    .style("opacity", 1)
+    // .attr("class", "tooltip_arrow")
     .html('Hi!!!')
+    // .append('div')
+    // .attr("class", "tooltip-arrow")
+    // .property("data-popper-arrow", null)
 
   rects
     .on("mouseover", function(event, d) {
-        console.log(d)
-        tooltip.style("opacity", 1)
+        console.log(event)
+        tooltip
+        .style("left", (event.layerX) + "px")
+        .style("top", (event.layerY) + "px")
+        .style("opacity", 1)
         .html(d.label_1)
     })
     .on("mouseout", function(event, d) {
