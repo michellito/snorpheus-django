@@ -8,33 +8,47 @@ let svg;
 let currentAudio = null
 let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
+var audioIndicator
 
 
 function calculateTimestamp(seconds) {
   let startTime = new Date(sleepSessions[0].start_time);
   let currentTime = new Date(startTime.getTime() + (seconds*1000));
   return currentTime
-
 }
 
 function drawAudioPosition() {
-  console.log(audioPlayer.currentTime)
+  
+  let audioTime = audioPlayer.currentTime;
+  let realTime = calculateTimestamp(audioTime)
+
+
+  audioIndicator = d3.select('#group1')
+    .append('rect')
+    .attr("id", "audio-indicator")
+    .attr("x", timeScale(realTime))
+    .attr("y", 0)
+    .attr("height", height)
+    .attr("width", 2)
+    .style("fill", '#b3b3cc');
+}
+
+function updateAudioPosition() {
+
   let audioTime = audioPlayer.currentTime;
   let realTime = calculateTimestamp(audioTime)
   console.log(realTime)
 
-  d3.select('#group1')
-    .append('rect')
-    .attr("x", timeScale(realTime))
-    .attr("y", 0)
-    .attr("height", 30)
-    .attr("width", 10)
-    .style("fill", '#000');
+  audioIndicator.attr("x", timeScale(realTime))
 }
 
-audioPlayer.ontimeupdate = function() {
+audioPlayer.onplay = function() {
   drawAudioPosition()
 };
+
+audioPlayer.ontimeupdate = function() {
+  updateAudioPosition()
+}
 
 
 console.log(media_url)
@@ -240,6 +254,7 @@ function drawData(group, d) {
 }
 
 function drawAudioLabels(group, data) {
+
   let rects = group.selectAll("rect")
     .data(data)
     .enter()
@@ -259,14 +274,21 @@ function drawAudioLabels(group, data) {
       return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? 'red' : 'blue'
     });
 
-  // call tooltip only if data exists for participant (other throws error)
-  // if (data.length) {
-  //   rects.call(tooltip)
-  //   .on('mouseover', function(event,d) {
-  //     tooltip.show(event, d)
-  //   })
-  //   .on('mouseout', tooltip.hide)
-  // }
+  var tooltip = d3.select("#sleep-session-1").append("div")
+    .attr("id", "tooltip")
+    .attr("class", "tooltip")
+    .attr("class", "tooltip_arrow")
+    .html('Hi!!!')
+
+  rects
+    .on("mouseover", function(event, d) {
+        console.log(d)
+        tooltip.style("opacity", 1)
+        .html(d.label_1)
+    })
+    .on("mouseout", function(event, d) {
+      tooltip.style("opacity", 0)
+    })
 }
 
 function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor) {
