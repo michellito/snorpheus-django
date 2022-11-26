@@ -62,7 +62,7 @@ function setupCanvas() {
     .attr("width", width)
     .attr("height", height)
     .attr("class", "session-svg")
-    .style("z-index", -1)
+    // .style("z-index", -1)
     .append("g")
     .attr("transform", `translate(${0}, ${10})`)
 
@@ -294,7 +294,7 @@ function drawAudioLabels(group, data) {
           .style("left", event.layerX + "px")
           .style("top", event.layerY + "px")
           .style("opacity", 1)
-          .html(d.label_1)
+          .html(html)
     })
     .on("mouseout", function(event, d) {
       tooltip.style("opacity", 0)
