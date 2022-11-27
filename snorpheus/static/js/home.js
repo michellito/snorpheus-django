@@ -5,15 +5,18 @@ let paddingLeft = 120;
 let paddingRight = 75;
 let sleepSessions;
 let svg;
+
 let currentAudio = null
 let currentAudioTime = null
+let audioStartTime = null
+
 let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
 
 
 function calculateTimestamp(seconds) {
-  let startTime = new Date(sleepSessions[0].start_time);
+  let startTime = new Date(audioStartTime);
   let currentTime = new Date(startTime.getTime() + (seconds*1000));
   return currentTime
 }
@@ -35,11 +38,8 @@ function drawAudioPosition() {
 }
 
 function updateAudioPosition() {
-
   let audioTime = audioPlayer.currentTime;
   let realTime = calculateTimestamp(audioTime)
-  console.log(realTime)
-
   audioIndicator.attr("x", timeScale(realTime))
 }
 
@@ -305,6 +305,7 @@ function drawAudioLabels(group, data) {
     .on("click", function(event, d) {
       currentAudio = d.audio_file
       currentAudioTime = d.timestamp_seconds
+      audioStartTime = d.audio_start_time
       console.log('current audio time: ', currentAudioTime)
       let audioEvent = new Event('audio-start-event');
       document.dispatchEvent(audioEvent)
@@ -346,6 +347,7 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
 function startAudio() {
   let self = this;
   self.audioPath = media_url + currentAudio
+  console.log('startAudio: ', currentAudioTime)
   self.$refs.audio.currentTime = currentAudioTime;
   self.$refs.audio.play();
   self.currentlyPlaying = true;
@@ -371,7 +373,7 @@ function state() {
     patientName: "",
     patientPeriods: [],
     sleepSessions: [],
-    audioPath: media_url + 'audio/session1-01.wav',
+    audioPath: "",
     // functions
     watchPatientId,
     toggleSidebar,
