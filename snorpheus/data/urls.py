@@ -11,6 +11,11 @@ urlpatterns = [
         name="get_session_data",
     ),
     path(
+        "periods/<int:period_id>",
+        views.get_period_sessions,
+        name="get_period_sessions",
+    ),
+    path(
         "patients/<int:patient_id>",
         views.get_patient_sessions,
         name="get_patient_sessions",

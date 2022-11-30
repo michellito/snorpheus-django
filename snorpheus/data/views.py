@@ -107,3 +107,51 @@ def get_session_data(request, session_id):
     }
 
     return JsonResponse(status=200, data=session_data, safe=False)
+
+
+def get_period_sessions(request, period_id):
+
+    period_data = []
+
+    period = CollectionPeriod.objects.get(id=period_id)
+    
+    for sleep_session in period.sleep_sessions.all():
+
+        audio_files = sleep_session.audio_files.all()
+        audio_labels_response = []
+
+        for audio_file in audio_files:
+            labels = audio_file.labels.all()
+            start_time = audio_file.start_time
+            print(start_time)
+            for label in labels:
+                audio_labels_response.append(
+                    {
+                        "timestamp": start_time + timedelta(seconds=float(label.timestamp)),
+                        "timestamp_seconds": label.timestamp,
+                        "label_1": label.label_1,
+                        "label_2": label.label_2,
+                        "label_3": label.label_3,
+                        "score_1": label.score_1,
+                        "score_2": label.score_2,
+                        "score_3": label.score_3,
+                        "audio_file": audio_file.audio_file.name,
+                        "audio_start_time": audio_file.start_time
+                    }
+                )
+
+        period_data.append({
+            "id": sleep_session.id,
+            "start_time": sleep_session.start_time,
+            "end_time": sleep_session.end_time,
+            "position_data": [
+                {
+                    "timestamp": event.timestamp,
+                    "position": event.position,
+                }
+                for event in sleep_session.positions.all()
+            ],
+            "audio_labels": audio_labels_response,
+        })
+
+    return JsonResponse(status=200, data=period_data, safe=False)

@@ -57,7 +57,7 @@ console.log(media_url)
 
 function setupCanvas() {
   // set up svg canvas
-  sessionCharts = d3.select(".sleep-session")
+  sessionCharts = d3.selectAll(".sleep-session")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -105,12 +105,12 @@ function getPatientPeriods(clientId) {
 
 function getSessionPosition(sessionId) {
   let self = this;
-  axios.get('data/sessions/' + sessionId + '/position')
+  axios.get('data/periods/1')
     .then(function (response) {
       // handle success
-      sleepSessions = [response.data];
+      sleepSessions = response.data;
       
-      self.sleepSessions = [response.data]
+      self.sleepSessions = response.data
     })
     .catch(function (error) {
       // handle error
@@ -181,7 +181,7 @@ function setScales(data) {
 
   // daily steps scale
   positionScale = d3.scaleOrdinal()
-    .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
+    .domain(['Left', 'Supine', 'Right', 'Prone', 'Missing'])
     .range([100, 75, 50, 25, 0]);
 
   positionAxis = d3.axisLeft()
