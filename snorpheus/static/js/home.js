@@ -14,6 +14,7 @@ let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
 const formatTime = d3.timeFormat("%H:%M");
+const formatDisplayTime = d3.timeFormat("%I:%M %p")
 const parseTime = d3.timeParse("%H:%M")
 
 
@@ -159,8 +160,6 @@ function getExtents(sleepSessions) {
 
   console.log(max_length)
 
-  
-  
   end_time = d3.timeMinute.offset(parseTime(max_start_time), 495)
   console.log(end_time)
       
@@ -182,7 +181,8 @@ function setScales(data) {
     .range([paddingLeft, width - paddingRight])
 
   timeAxis = d3.axisBottom()
-    .scale(timeScale);
+    .scale(timeScale)
+    .tickFormat(formatDisplayTime);
 
   // daily steps scale
   positionScale = d3.scaleOrdinal()
