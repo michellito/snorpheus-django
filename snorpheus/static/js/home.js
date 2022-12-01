@@ -13,6 +13,8 @@ let audioStartTime = null
 let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
+const formatTime = d3.timeFormat("%H:%M");
+const parseTime = d3.timeParse("%H:%M")
 
 
 function calculateTimestamp(seconds) {
@@ -30,7 +32,7 @@ function drawAudioPosition() {
   audioIndicator = d3.select('#group1')
     .append('rect')
     .attr("id", "audio-indicator")
-    .attr("x", timeScale(realTime))
+    .attr("x", timeScale(formatTime(realTime)))
     .attr("y", 0)
     .attr("height", height)
     .attr("width", 2)
@@ -40,7 +42,7 @@ function drawAudioPosition() {
 function updateAudioPosition() {
   let audioTime = audioPlayer.currentTime;
   let realTime = calculateTimestamp(audioTime)
-  audioIndicator.attr("x", timeScale(realTime))
+  audioIndicator.attr("x", timeScale(formatTime(realTime)))
 }
 
 audioPlayer.onplay = function() {
@@ -54,7 +56,7 @@ audioPlayer.ontimeupdate = function() {
 }
 
 console.log(media_url)
-
+ 
 function setupCanvas() {
   // set up svg canvas
   sessionCharts = d3.selectAll(".sleep-session")
@@ -127,42 +129,43 @@ function watchPatientId(value) {
 
 function getExtents(sleepSessions) {
 
-  function getExtent(extents) {
-    let min = extents[0][0]
-    let max = extents[0][1]
+  min_start_time = d3.min(sleepSessions.map(
+    function(d) {
+      return formatTime(new Date(d.start_time));
+    }
+  ))
 
-    extents.forEach(extent => {
-      if (extent[0] < min) {
-        min = extent[0];
-      }
+  max_start_time = d3.max(sleepSessions.map(
+    function(d) {
+      return formatTime(new Date(d.start_time));
+    }
+  ))
 
-      if (extent[1] > max) {
-        max = extent[1]
-      }
-    });
+  // get max end time
+  // get time duration between min and max
+  // att time to start time
 
-    return [min, max];
-  }
+  // max_end_time = d3.max(sleepSessions.map(
+  //   function(d) {
+  //     return formatTime(new Date(d.end_time));
+  //   }
+  // ))
 
-  let timeExtents = [];
 
-  console.log(sleepSessions)
 
-  sleepSessions.forEach( session => {
-    console.log(session)
-    timeExtents.push(
-      d3.extent(session.position_data.map(
-        function(d) {
-          return new Date(d.timestamp);
-        }
-      ))
-    )
-  })
+  max_length = d3.max(sleepSessions.map(function(d) {
+    return d3.timeMinute.count(new Date(d.start_time), new Date(d.end_time))
+  }))
 
-  timeRange = getExtent(timeExtents);
+  console.log(max_length)
 
+  
+  
+  end_time = d3.timeMinute.offset(parseTime(max_start_time), 495)
+  console.log(end_time)
+      
   return {
-    time: timeRange,
+    time:[parseTime(min_start_time), end_time],
   }
 }
 
@@ -170,6 +173,8 @@ function setScales(data) {
 
   let extents = getExtents(data);
   let timeDomain = extents.time;
+
+  console.log('timeDomain:', timeDomain)
 
   // time scales
   timeScale = d3.scaleTime()
@@ -262,7 +267,7 @@ function drawAudioLabels(group, data) {
     .append("rect")
     .attr("x", function(d, i) {
       // console.log(timeScale(new Date(d.timestamp)))
-      return timeScale(new Date(d.timestamp));
+      return timeScale(formatTime(new Date(d.timestamp)));
     })
     .attr("y", function(d, i) {
       return 15;
@@ -321,7 +326,7 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .x(function(d) {
       // console.log(d.timestamp)
       // console.log(timeScale(d.timestamp))
-      return timeScale(new Date(d.timestamp))
+      return timeScale(formatTime(new Date(d.timestamp)))
     })
     .y(function(d) {
       // console.log(scale(d[attrib_name]))
