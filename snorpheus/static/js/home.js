@@ -35,7 +35,7 @@ function drawAudioPosition() {
   audioIndicator = d3.select('#group1')
     .append('rect')
     .attr("id", "audio-indicator")
-    .attr("x", timeScale(formatTime(realTime)))
+    .attr("x", (formatTime(realTime)))
     .attr("y", 0)
     .attr("height", height)
     .attr("width", 2)
@@ -45,7 +45,7 @@ function drawAudioPosition() {
 function updateAudioPosition() {
   let audioTime = audioPlayer.currentTime;
   let realTime = calculateTimestamp(audioTime)
-  audioIndicator.attr("x", timeScale(formatTime(realTime)))
+  audioIndicator.attr("x", (formatTime(realTime)))
 }
 
 audioPlayer.onplay = function() {
@@ -237,13 +237,13 @@ function drawData(group, d) {
   colorScale = positionColorScale;
   // tooltip = stepsTooltip;
   attrib_name = 'position';
-  dataLocation = 'position_data';
+  dataLocation = 'position_events';
   chartType = 'line'
   lineColor = 'darkslateblue';
 
   let data = d[dataLocation];
 
-  // drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
+  drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
   // drawAudioLabels(group, d['audio_labels'])
 
 }
@@ -255,8 +255,7 @@ function drawAudioLabels(group, data) {
     .enter()
     .append("rect")
     .attr("x", function(d, i) {
-      // console.log(timeScale(new Date(d.timestamp)))
-      return timeScale(formatTime(new Date(d.timestamp)));
+      return (d.seconds_elapsed);
     })
     .attr("y", function(d, i) {
       return 15;
@@ -308,14 +307,14 @@ function drawAudioLabels(group, data) {
 
 function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor) {
 
-  // console.log('line chart: ', data)
+  console.log('line chart: ', data)
 
   let line = d3.line()
     // .defined(d => !isNaN(d[attrib_name]))
     .x(function(d) {
-      // console.log(d.timestamp)
-      // console.log(timeScale(d.timestamp))
-      return timeScale(d.seconds_elapsed)
+      console.log('seconds:', d.seconds_elapsed)
+      // console.log((d.timestamp))
+      return (timeScale(d.seconds_elapsed))
     })
     .y(function(d) {
       // console.log(scale(d[attrib_name]))
