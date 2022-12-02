@@ -6,7 +6,7 @@ from . import views
 
 urlpatterns = [
     path(
-        "sessions/<int:session_id>/position",
+        "sessions/<int:session_id>",
         views.get_session_data,
         name="get_session_data",
     ),

@@ -30,7 +30,7 @@ def get_session_position(request, session_id):
 def get_patient_sessions(request, patient_id):
 
     try:
-        patient = Patient.objects.get(patient_id=patient_id)
+        patient = Patient.objects.get(id=patient_id)
     except ObjectDoesNotExist:
         return JsonResponse(
             status=500, data={"error": "No patient found with this ID."}, safe=False
@@ -47,7 +47,7 @@ def get_patient_sessions(request, patient_id):
                 "sleep_sessions": [
                     {
                         "session_id": session.id,
-                        "device_start_time": session.device_end_time,
+                        "device_start_time": session.device_start_time,
                         "device_end_time": session.device_end_time,
                         "true_start_time": session.true_start_time
                     }
