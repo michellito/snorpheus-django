@@ -87,7 +87,7 @@ def get_session_data(request, session_id):
 
     session_data = {
         "id": sleep_session.id,
-        "start_time": sleep_session.device_start_time,
+        "device_start_time": sleep_session.device_start_time,
         "position_events": [
             {
                 "seconds_elapsed": event.seconds_elapsed,
@@ -127,7 +127,8 @@ def get_period_data(request, period_id):
 
         period_data.append({
             "id": sleep_session.id,
-            "start_time": sleep_session.device_start_time,
+            "device_start_time": sleep_session.device_start_time,
+            "device_end_time": sleep_session.device_end_time,
             "position_events": [
                 {
                     "seconds_elapsed": event.seconds_elapsed,

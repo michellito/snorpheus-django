@@ -6,6 +6,7 @@ let paddingRight = 75;
 let sleepSessions;
 let svg;
 
+// audio indicator variables
 let currentAudio = null
 let currentAudioTime = null
 let audioStartTime = null
@@ -13,9 +14,10 @@ let audioStartTime = null
 let patientId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
+
 const formatTime = d3.timeFormat("%H:%M");
-const formatDisplayTime = d3.timeFormat("%I:%M %p")
-const parseTime = d3.timeParse("%H:%M")
+const formatDisplayTime = d3.timeFormat("%I:%M %p");
+const parseTime = d3.timeParse("%H:%M");
 
 
 function calculateTimestamp(seconds) {
@@ -55,8 +57,6 @@ audioPlayer.onplay = function() {
 audioPlayer.ontimeupdate = function() {
   updateAudioPosition()
 }
-
-console.log(media_url)
  
 function setupCanvas() {
   // set up svg canvas
@@ -132,36 +132,25 @@ function getExtents(sleepSessions) {
 
   min_start_time = d3.min(sleepSessions.map(
     function(d) {
-      return formatTime(new Date(d.start_time));
+      return formatTime(new Date(d.device_start_time));
     }
   ))
 
   max_start_time = d3.max(sleepSessions.map(
     function(d) {
-      return formatTime(new Date(d.start_time));
+      return formatTime(new Date(d.device_start_time));
     }
   ))
 
-  // get max end time
-  // get time duration between min and max
-  // att time to start time
+  max_length_minutes = d3.max(sleepSessions.map(
+    function(d) {
+      let device_start_time = new Date(d.device_start_time)
+      let device_end_time = new Date(d.device_end_time)
+      return d3.timeMinute.count(device_start_time, device_end_time)
+    }
+  ))
 
-  // max_end_time = d3.max(sleepSessions.map(
-  //   function(d) {
-  //     return formatTime(new Date(d.end_time));
-  //   }
-  // ))
-
-
-
-  max_length = d3.max(sleepSessions.map(function(d) {
-    return d3.timeMinute.count(new Date(d.start_time), new Date(d.end_time))
-  }))
-
-  console.log(max_length)
-
-  end_time = d3.timeMinute.offset(parseTime(max_start_time), 495)
-  console.log(end_time)
+  end_time = d3.timeMinute.offset(parseTime(max_start_time), max_length_minutes)
       
   return {
     time:[parseTime(min_start_time), end_time],
@@ -173,16 +162,16 @@ function setScales(data) {
   let extents = getExtents(data);
   let timeDomain = extents.time;
 
-  console.log('timeDomain:', timeDomain)
+  let secondsDiff = d3.timeSecond.count(timeDomain[0], timeDomain[1])
 
-  // time scales
-  timeScale = d3.scaleTime()
-    .domain(timeDomain)
+  // scale from 0 to num seconds between time extents
+  timeScale = d3.scaleLinear()
+    .domain([0, secondsDiff])
     .range([paddingLeft, width - paddingRight])
 
   timeAxis = d3.axisBottom()
     .scale(timeScale)
-    .tickFormat(formatDisplayTime);
+    .ticks(10)
 
   // daily steps scale
   positionScale = d3.scaleOrdinal()
@@ -254,8 +243,8 @@ function drawData(group, d) {
 
   let data = d[dataLocation];
 
-  drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
-  drawAudioLabels(group, d['audio_labels'])
+  // drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
+  // drawAudioLabels(group, d['audio_labels'])
 
 }
 
@@ -326,7 +315,7 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .x(function(d) {
       // console.log(d.timestamp)
       // console.log(timeScale(d.timestamp))
-      return timeScale(formatTime(new Date(d.timestamp)))
+      return timeScale(d.seconds_elapsed)
     })
     .y(function(d) {
       // console.log(scale(d[attrib_name]))
