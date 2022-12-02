@@ -66,6 +66,6 @@ class SleepSession(models.Model):
     def __str__(self):
         return "Sleep Session {}: {} - {}".format(
             self.id,
-            self.start_time.strftime("%d-%m-%Y %H:%M"),
-            self.end_time.strftime("%d-%m-%Y %H:%M"),
+            self.device_start_time.strftime("%d-%m-%Y %H:%M"),
+            self.device_end_time.strftime("%d-%m-%Y %H:%M"),
         )
