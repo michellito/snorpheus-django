@@ -12,8 +12,8 @@ urlpatterns = [
     ),
     path(
         "periods/<int:period_id>",
-        views.get_period_sessions,
-        name="get_period_sessions",
+        views.get_period_data,
+        name="get_period_data",
     ),
     path(
         "patients/<int:patient_id>",

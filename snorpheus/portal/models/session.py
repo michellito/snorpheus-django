@@ -52,8 +52,8 @@ class SleepSession(models.Model):
     )
 
     # start/end time according to device
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
+    device_start_time = models.DateTimeField()
+    device_end_time = models.DateTimeField()
 
     # device time may be unreliable, allow patient to specify true start time
     true_start_time = models.DateTimeField(blank=True, null=True)

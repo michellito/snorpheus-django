@@ -4,8 +4,8 @@ from .models import Clinician, CollectionPeriod, Patient, SleepSession
 
 
 class PatientAdmin(admin.ModelAdmin):
-    list_display = ("patient_id", "first_name", "last_name")
-    search_fields = ("patient_id", "first_name", "last_name")
+    list_display = ("id", "first_name", "last_name")
+    search_fields = ("id", "first_name", "last_name")
 
     # def folder_display(self, obj):
     #     return ", ".join([
@@ -16,8 +16,8 @@ class PatientAdmin(admin.ModelAdmin):
 
 
 class ClinicianAdmin(admin.ModelAdmin):
-    list_display = ("clinician_id", "user")
-    search_fields = ("clinician_id", "user")
+    list_display = ("id", "user")
+    search_fields = ("id", "user")
 
 
 class CollectionPeriodAdmin(admin.ModelAdmin):
@@ -26,8 +26,8 @@ class CollectionPeriodAdmin(admin.ModelAdmin):
 
 
 class SleepSessionAdmin(admin.ModelAdmin):
-    list_display = ("collection_period", "start_time", "end_time", "true_start_time")
-    search_fields = ("collection_period", "start_time", "end_time", "true_start_time")
+    list_display = ("collection_period", "device_start_time", "device_end_time", "true_start_time")
+    search_fields = ("collection_period", "device_start_time", "device_end_time", "true_start_time")
 
 
 admin.site.register(Patient, PatientAdmin)

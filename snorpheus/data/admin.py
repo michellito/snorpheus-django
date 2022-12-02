@@ -1,15 +1,15 @@
 from django.contrib import admin
 
-from .models import AudioLabel, Position, SleepSessionAudio, SnoringEpisode
+from .models import AudioLabel, PositionEvent, AudioFile, SnoringEpisode
 
 
-class SleepSessionAudioAdmin(admin.ModelAdmin):
-    list_display = ("id", "sleep_session", "audio_file", "start_time")
+class AudioFileAdmin(admin.ModelAdmin):
+    list_display = ("id", "sleep_session", "audio_file", "start_time", "seconds_elapsed")
     search_fields = ("sleep_session", "audio_file")
 
 
-class SnoringEdpisodeAdmin(admin.ModelAdmin):
-    list_display = ("id", "sleep_session", "start_time", "end_time")
+class SnoringEpisodeAdmin(admin.ModelAdmin):
+    list_display = ("id", "sleep_session", "start_seconds_elapsed", "end_seconds_elapsed")
     search_fields = ("sleep_session",)
 
 
@@ -17,21 +17,18 @@ class AudioLabelAdmin(admin.ModelAdmin):
     list_display = (
         "id",
         "audio_file",
-        "timestamp",
+        "seconds_elapsed",
         "label_1",
         "label_2",
         "label_3",
-        "score_1",
-        "score_2",
-        "score_3",
     )
 
 
-class PositionAdmin(admin.ModelAdmin):
-    list_display = ("id", "timestamp", "x", "y", "z", "angle", "position")
+class PositionEventAdmin(admin.ModelAdmin):
+    list_display = ("id", "timestamp", "seconds_elapsed", "angle", "position")
 
 
-admin.site.register(SleepSessionAudio, SleepSessionAudioAdmin)
-admin.site.register(SnoringEpisode, SnoringEdpisodeAdmin)
+admin.site.register(AudioFile, AudioFileAdmin)
+admin.site.register(SnoringEpisode, SnoringEpisodeAdmin)
 admin.site.register(AudioLabel, AudioLabelAdmin)
-admin.site.register(Position, PositionAdmin)
+admin.site.register(PositionEvent, PositionEventAdmin)

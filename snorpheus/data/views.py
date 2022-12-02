@@ -3,12 +3,11 @@ from datetime import timedelta
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 
-from snorpheus.data.models import Position
+from snorpheus.data.models import PositionEvent
 from snorpheus.portal.models import CollectionPeriod, Patient, SleepSession
 
 # from django.shortcuts import get_object_or_404, render
 # from django.views.decorators.csrf import csrf_exempt
-
 
 # def index(request):
 #     return render(request, 'index.html')
@@ -18,12 +17,11 @@ def get_session_position(request, session_id):
 
     position_data = [
         {
-            "x": position_event.x,
-            "y": position_event.y,
-            "z": position_event.z,
+            "seconds_elapsed": position_event.seconds_elapsed,
+            "angle": position_event.angle,
             "position": position_event.position,
         }
-        for position_event in Position.objects.filter(sleep_session_id=session_id)
+        for position_event in PositionEvent.objects.filter(sleep_session_id=session_id)
     ]
 
     return JsonResponse(status=200, data=position_data, safe=False)
@@ -49,8 +47,9 @@ def get_patient_sessions(request, patient_id):
                 "sleep_sessions": [
                     {
                         "session_id": session.id,
-                        "start_time": session.start_time,
-                        "end_time": session.end_time,
+                        "device_start_time": session.device_end_time,
+                        "device_end_time": session.device_end_time,
+                        "true_start_time": session.true_start_time
                     }
                     for session in period.get_sleep_sessions()
                 ],
@@ -70,71 +69,57 @@ def get_session_data(request, session_id):
     sleep_session = SleepSession.objects.get(id=session_id)
     audio_files = sleep_session.audio_files.all()
 
-    audio_labels_response = []
+    audio_labels = []
 
     for audio_file in audio_files:
-        labels = audio_file.labels.all()
-        start_time = audio_file.start_time
-        print(start_time)
-        for label in labels:
-            audio_labels_response.append(
+        for label in audio_file.labels.all():
+            audio_labels.append(
                 {
-                    "timestamp": start_time + timedelta(seconds=float(label.timestamp)),
-                    "timestamp_seconds": label.timestamp,
+                    "timestamp_seconds": audio_file.seconds_elapsed + label.seconds_elapsed,
+                    "seconds_elapsed": label.seconds_elapsed,
                     "label_1": label.label_1,
                     "label_2": label.label_2,
                     "label_3": label.label_3,
-                    "score_1": label.score_1,
-                    "score_2": label.score_2,
-                    "score_3": label.score_3,
                     "audio_file": audio_file.audio_file.name,
-                    "audio_start_time": audio_file.start_time
+                    "audio_start_seconds_elapsed": audio_file.seconds_elapsed
                 }
             )
 
     session_data = {
         "id": sleep_session.id,
-        "start_time": sleep_session.start_time,
-        "end_time": sleep_session.end_time,
-        "position_data": [
+        "start_time": sleep_session.device_start_time,
+        "position_events": [
             {
-                "timestamp": event.timestamp,
+                "seconds_elapsed": event.seconds_elapsed,
                 "position": event.position,
             }
-            for event in sleep_session.positions.all()
+            for event in sleep_session.position_events.all()
         ],
-        "audio_labels": audio_labels_response,
+        "audio_labels": audio_labels,
     }
 
     return JsonResponse(status=200, data=session_data, safe=False)
 
 
-def get_period_sessions(request, period_id):
+def get_period_data(request, period_id):
 
     period_data = []
-
     period = CollectionPeriod.objects.get(id=period_id)
     
     for sleep_session in period.sleep_sessions.all():
 
-        audio_files = sleep_session.audio_files.all()
-        audio_labels_response = []
+        audio_labels = []
 
-        for audio_file in audio_files:
-            labels = audio_file.labels.all()
-            start_time = audio_file.start_time
-            print(start_time)
-            for label in labels:
-                audio_labels_response.append(
+        for audio_file in sleep_session.audio_files.all():
+
+            for label in audio_file.labels.all():
+                audio_labels.append(
                     {
-                        "timestamp": start_time + timedelta(seconds=float(label.timestamp)),
-                        "timestamp_seconds": label.timestamp,
+                        "timestamp_seconds": audio_file.seconds_elapsed + label.seconds_elapsed,
+                        "seconds_elapsed": label.seconds_elapsed,
                         "label_1": label.label_1,
                         "label_2": label.label_2,
                         "label_3": label.label_3,
-                        "score_1": label.score_1,
-                        "score_2": label.score_2,
-                        "score_3": label.score_3,
                         "audio_file": audio_file.audio_file.name,
                         "audio_start_time": audio_file.start_time
                     }
@@ -142,16 +127,15 @@ def get_period_sessions(request, period_id):
 
         period_data.append({
             "id": sleep_session.id,
-            "start_time": sleep_session.start_time,
-            "end_time": sleep_session.end_time,
-            "position_data": [
+            "start_time": sleep_session.device_start_time,
+            "position_events": [
                 {
-                    "timestamp": event.timestamp,
+                    "seconds_elapsed": event.seconds_elapsed,
                     "position": event.position,
                 }
-                for event in sleep_session.positions.all()
+                for event in sleep_session.position_events.all()
             ],
-            "audio_labels": audio_labels_response,
+            "audio_labels": audio_labels,
         })
 
     return JsonResponse(status=200, data=period_data, safe=False)

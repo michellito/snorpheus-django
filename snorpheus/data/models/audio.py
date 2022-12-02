@@ -3,7 +3,7 @@ from django.db import models
 from snorpheus.portal.models import SleepSession
 
 
-class SleepSessionAudio(models.Model):
+class AudioFile(models.Model):
     """A Collection Period occurs when a patient is assigned by the clinician
     to wear the device for one or more nights of sleep.
     """
@@ -12,16 +12,17 @@ class SleepSessionAudio(models.Model):
         SleepSession, on_delete=models.CASCADE, related_name="audio_files"
     )
 
-    start_time = models.DateTimeField()
+    start_time = models.DateTimeField(blank=True, null=True)
+    seconds_elapsed = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
     audio_file = models.FileField(upload_to="audio/")
 
     class Meta:
         ordering = ("-pk",)
-        verbose_name = "Sleep Session Audio File"
+        verbose_name = "Audio File"
         app_label = "data"
 
-    def __str__(self):
-        return self.sleep_session.__str__()
+    # def __str__(self):
+    #     return self.sleep_session.__str__()
 
 
 class SnoringEpisode(models.Model):
@@ -30,24 +31,27 @@ class SnoringEpisode(models.Model):
         SleepSession, on_delete=models.CASCADE, related_name="snoring_episode"
     )
 
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
+    start_time = models.DateTimeField(blank=True, null=True)
+    end_time = models.DateTimeField(blank=True, null=True)
+
+    start_seconds_elapsed = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
+    end_seconds_elapsed = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
 
     class Meta:
         verbose_name = "Snoring Episode"
         app_label = "data"
 
-    def __str__(self):
-        return f"{self.sleep_session.__str__()}: Episode {self.id} - {self.start_time}"
+    # def __str__(self):
+    #     return f"{self.sleep_session.__str__()}: Episode {self.id} - {self.start_time}"
 
 
 class AudioLabel(models.Model):
 
     audio_file = models.ForeignKey(
-        SleepSessionAudio, on_delete=models.CASCADE, related_name="labels"
+        AudioFile, on_delete=models.CASCADE, related_name="audio_labels"
     )
 
-    timestamp = models.DecimalField(max_digits=10, decimal_places=2)
+    seconds_elapsed = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
 
     label_1 = models.CharField(max_length=50)
     label_2 = models.CharField(max_length=50)

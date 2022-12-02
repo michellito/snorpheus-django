@@ -270,6 +270,7 @@ tags
 
 ### Project template
 snorpheus/media/
+snorpheus/data/sample_data
 
 .pytest_cache/
 .ipython/
