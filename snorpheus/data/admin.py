@@ -25,7 +25,7 @@ class AudioLabelAdmin(admin.ModelAdmin):
 
 
 class PositionEventAdmin(admin.ModelAdmin):
-    list_display = ("id", "timestamp", "seconds_elapsed", "angle", "position")
+    list_display = ("id", "sleep_session", "timestamp", "seconds_elapsed", "angle", "position")
 
 
 admin.site.register(AudioFile, AudioFileAdmin)

@@ -319,7 +319,7 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
     .y(function(d) {
       // console.log(scale(d[attrib_name]))
       return scale(d[attrib_name]);
-    }).curve(d3.curveStepBefore)
+    }).curve(d3.curveStepAfter)
 
   // group.append("path")
   //   .datum(data.filter(line.defined()))

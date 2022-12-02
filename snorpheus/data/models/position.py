@@ -29,5 +29,5 @@ class PositionEvent(models.Model):
 
     class Meta:
         ordering = ("-pk",)
-        verbose_name = "Position"
+        verbose_name = "Position Event"
         app_label = "data"

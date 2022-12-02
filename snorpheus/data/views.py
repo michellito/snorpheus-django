@@ -93,7 +93,7 @@ def get_session_data(request, session_id):
                 "seconds_elapsed": event.seconds_elapsed,
                 "position": event.position,
             }
-            for event in sleep_session.position_events.all()
+            for event in sleep_session.position_events.all().order_by('seconds_elapsed')
         ],
         "audio_labels": audio_labels,
     }
@@ -134,7 +134,7 @@ def get_period_data(request, period_id):
                     "seconds_elapsed": event.seconds_elapsed,
                     "position": event.position,
                 }
-                for event in sleep_session.position_events.all()
+                for event in sleep_session.position_events.all().order_by('seconds_elapsed')
             ],
             "audio_labels": audio_labels,
         })

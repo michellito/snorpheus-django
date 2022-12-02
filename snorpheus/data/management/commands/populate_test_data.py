@@ -51,9 +51,17 @@ class Command(BaseCommand):
                 device_end_time=s['device_end_time'],
             )
 
-            print(new_sleep_session)
-
             current_seconds = 0
+
+            # get random position for time 0 aand create PositionEvent
+            position_index = randrange(4)
+            
+            PositionEvent.objects.create(
+                sleep_session=new_sleep_session,
+                seconds_elapsed=current_seconds,
+                position=position
+            )
+
             session_duration_seconds = (s['device_end_time'] - s['device_start_time']).total_seconds()
 
             while current_seconds < session_duration_seconds:
