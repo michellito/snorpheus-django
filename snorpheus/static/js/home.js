@@ -244,7 +244,7 @@ function drawData(group, d) {
   let data = d[dataLocation];
 
   drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
-  // drawAudioLabels(group, d['audio_labels'])
+  drawAudioLabels(group, d['audio_labels'])
 
 }
 
@@ -255,7 +255,7 @@ function drawAudioLabels(group, data) {
     .enter()
     .append("rect")
     .attr("x", function(d, i) {
-      return (d.seconds_elapsed);
+      return (timeScale(d.seconds_elapsed));
     })
     .attr("y", function(d, i) {
       return 15;

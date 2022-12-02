@@ -23,7 +23,7 @@ class Command(BaseCommand):
         session_id = options["session_id"][0]
 
         try:
-            patient = Patient.objects.get(patient_id=patient_id)
+            patient = Patient.objects.get(id=patient_id)
         except ObjectDoesNotExist:
             raise CommandError('No patient found with ID "%s".' % patient_id)
 
@@ -59,7 +59,7 @@ class Command(BaseCommand):
             for row in csvFile:
                 audio_events.append(
                     {
-                        "timestamp": row["timestamp"],
+                        "seconds_elapsed": row["timestamp"],
                         "label_1": row["class1"],
                         "label_2": row["class2"],
                         "label_3": row["class3"],
@@ -78,7 +78,7 @@ class Command(BaseCommand):
         for event in audio_events:
             AudioLabel.objects.create(
                 audio_file_id=audio_id,
-                timestamp=event["timestamp"],
+                seconds_elapsed=event["seconds_elapsed"],
                 label_1=event["label_1"],
                 label_2=event["label_2"],
                 label_3=event["label_3"],

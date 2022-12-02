@@ -48,7 +48,7 @@ class SnoringEpisode(models.Model):
 class AudioLabel(models.Model):
 
     audio_file = models.ForeignKey(
-        AudioFile, on_delete=models.CASCADE, related_name="audio_labels"
+        AudioFile, on_delete=models.CASCADE, related_name="labels"
     )
 
     seconds_elapsed = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
