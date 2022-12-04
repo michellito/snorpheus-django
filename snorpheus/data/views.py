@@ -3,7 +3,7 @@ from datetime import timedelta
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 
-from snorpheus.data.models import PositionEvent
+from snorpheus.data.models import PositionEvent, AudioLabel
 from snorpheus.portal.models import CollectionPeriod, Patient, SleepSession
 
 # from django.shortcuts import get_object_or_404, render
@@ -138,5 +138,33 @@ def get_period_data(request, period_id):
             ],
             "audio_labels": audio_labels,
         })
+
+    return JsonResponse(status=200, data=period_data, safe=False)
+
+
+def get_joined_period_data(request, period_id):
+
+    period_data = []
+    period = CollectionPeriod.objects.get(id=period_id)
+    
+    for sleep_session in period.sleep_sessions.all():
+        
+        audio_labels = AudioLabel.objects.filter(audio_file__sleep_session__id=sleep_session.id)
+        audio_labels_list = list(audio_labels)
+
+        if len(audio_labels_list):
+            print(audio_labels_list[0].total_seconds_elapsed)
+            
+        
+        # # get session duration
+        # duration_seconds = (sleep_session.device_end_time - sleep_session.device_start_time).total_seconds()
+        # print(duration_seconds)
+
+        # f
+
+        # # for each second, get sound and position
+        # for s in range(0, duration_seconds, 1):
+        #     # get audio events between [s, s+1]
+            
 
     return JsonResponse(status=200, data=period_data, safe=False)

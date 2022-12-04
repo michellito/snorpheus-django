@@ -61,6 +61,10 @@ class AudioLabel(models.Model):
     score_2 = models.DecimalField(max_digits=5, decimal_places=3)
     score_3 = models.DecimalField(max_digits=5, decimal_places=3)
 
+    @property
+    def total_seconds_elapsed(self):
+        return self.audio_file.seconds_elapsed + self.seconds_elapsed
+
     class Meta:
         verbose_name = "Audio Label"
         app_label = "data"
