@@ -46,12 +46,12 @@ def get_patient_sessions(request, patient_id):
                 "end_date": period.end_date,
                 "sleep_sessions": [
                     {
-                        "session_id": session.id,
+                        "id": session.id,
                         "device_start_time": session.device_start_time,
                         "device_end_time": session.device_end_time,
                         "true_start_time": session.true_start_time
                     }
-                    for session in period.get_sleep_sessions()
+                    for session in period.get_sleep_sessions().order_by('device_start_time')
                 ],
             }
         )

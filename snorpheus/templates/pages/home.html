@@ -57,7 +57,8 @@
 
         <div
           id="session-list"
-          class="max-w-md mx-auto grid grid-cols-1 gap-2 mt-6"
+          class="max-w-md mx-auto grid grid-cols-1 gap-2 mt-6 duration-300"
+          x-show="sidebarOpen"
         >
 
           <template x-if="patientPeriods.length > 0">
@@ -68,18 +69,23 @@
             <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700">
           </div>
 
-
           <template x-if="patientPeriods.length > 0">
             <span>Collection Periods</span>
           </template>
 
-          <div class="pt-4">
+          <div class="pt-2">
             <template x-for="period in patientPeriods">
 
               <div class="flex-row pt-4">
-                <span x-text="period.start_date"></span> - <span x-text="period.end_date"></span>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" style="display:inline-block; margin-right:2px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>
+                
+                <span x-text="new Date(period.start_date).toLocaleDateString()"></span> - <span x-text="new Date(period.end_date).toLocaleDateString()"></span>
 
-                <div>
+                <div class="pt-2 pl-5">
+                  <!-- <div class="pb-2">Sessions</div> -->
                   <template x-for="session in period.sleep_sessions">
                     <div class="flex mb-4">
                       <input
@@ -93,7 +99,9 @@
                         for="default-checkbox"
                         class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                       >
-                        <span x-text="session.start_time"></span>
+                        <span x-text="'Session ' + session.id"></span><br>
+
+                        <span x-text="new Date(session.device_start_time).toLocaleString()"></span>
                       </label>
                     </div>
                   </template>
@@ -121,9 +129,9 @@
         <div
           @keydown.tab="playAndStop"
           @click="playAndStop"
-          class="flex items-center justify-center transition duration-200 ease-in-out bg-black"
+          class="flex items-center justify-center transition duration-200 ease-in-out"
         >
-          <div x-show="!currentlyPlaying" class="bg-black bg-opacity-50 rounded-full p-0.5">
+          <div x-show="!currentlyPlaying" class="bg-opacity-50 rounded-full p-0.5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -135,7 +143,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
               </svg>
           </div>
-          <div x-show="currentlyPlaying" class="bg-black bg-opacity-50 rounded-full p-0.5">
+          <div x-show="currentlyPlaying" class="bg-opacity-50 rounded-full p-0.5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-amber-300 fill-white w-8 h-8 p-1 rounded cursor-pointer block float-left mr-3 ml-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
             </svg>
