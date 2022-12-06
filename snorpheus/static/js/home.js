@@ -258,14 +258,14 @@ function drawAudioLabels(group, data) {
       return (timeScale(d.seconds_elapsed));
     })
     .attr("y", function(d, i) {
-      return 15;
+      return positionScale(d.position);
     })
     .attr("width", 2)
     .attr("height", function(d, i) {
       return 10;
     })
     .attr("fill", function(d, i) {
-      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? 'red' : 'blue'
+      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '#ff6666' : 'blue'
     });
 
   var tooltip = d3.select("#sleep-session-1").append("div")

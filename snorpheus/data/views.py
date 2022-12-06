@@ -6,6 +6,8 @@ from django.http import JsonResponse
 from snorpheus.data.models import PositionEvent, AudioLabel
 from snorpheus.portal.models import CollectionPeriod, Patient, SleepSession
 
+from django.core.cache import cache
+
 # from django.shortcuts import get_object_or_404, render
 # from django.views.decorators.csrf import csrf_exempt
 
@@ -103,41 +105,60 @@ def get_session_data(request, session_id):
 
 def get_period_data(request, period_id):
 
-    period_data = []
-    period = CollectionPeriod.objects.get(id=period_id)
+    period_data = cache.get('period:%s' % period_id)
     
-    for sleep_session in period.sleep_sessions.all():
+    if not period_data:
+        
+        period_data = []
+        period = CollectionPeriod.objects.get(id=period_id)
+        
+        for sleep_session in period.sleep_sessions.all():
 
-        audio_labels = []
+            audio_labels = []
+            position_events = sleep_session.position_events.all().order_by('seconds_elapsed')
+            position_events_list = list(position_events)
 
-        for audio_file in sleep_session.audio_files.all():
+            for audio_file in sleep_session.audio_files.all():
 
-            for label in audio_file.labels.all():
-                audio_labels.append(
+                for label in audio_file.labels.all():
+
+                    timestamp_seconds = audio_file.seconds_elapsed + label.seconds_elapsed
+                    position_seconds = max([event.seconds_elapsed for event in position_events_list if event.seconds_elapsed <= timestamp_seconds])
+                    position = position_events.get(seconds_elapsed=position_seconds).position
+                    
+                    audio_labels.append(
+                        {
+                            "timestamp_seconds": timestamp_seconds,
+                            "seconds_elapsed": label.seconds_elapsed,
+                            "label_1": label.label_1,
+                            "label_2": label.label_2,
+                            "label_3": label.label_3,
+                            "audio_file": audio_file.audio_file.name,
+                            "audio_start_time": audio_file.start_time,
+                            "position": position
+                        }
+                    )
+
+            period_data.append({
+                "id": sleep_session.id,
+                "device_start_time": sleep_session.device_start_time,
+                "device_end_time": sleep_session.device_end_time,
+                "position_events": [
                     {
-                        "timestamp_seconds": audio_file.seconds_elapsed + label.seconds_elapsed,
-                        "seconds_elapsed": label.seconds_elapsed,
-                        "label_1": label.label_1,
-                        "label_2": label.label_2,
-                        "label_3": label.label_3,
-                        "audio_file": audio_file.audio_file.name,
-                        "audio_start_time": audio_file.start_time
+                        "seconds_elapsed": event.seconds_elapsed,
+                        "position": event.position,
                     }
-                )
+                    for event in position_events
+                ],
+                "audio_labels": audio_labels,
+            })
 
-        period_data.append({
-            "id": sleep_session.id,
-            "device_start_time": sleep_session.device_start_time,
-            "device_end_time": sleep_session.device_end_time,
-            "position_events": [
-                {
-                    "seconds_elapsed": event.seconds_elapsed,
-                    "position": event.position,
-                }
-                for event in sleep_session.position_events.all().order_by('seconds_elapsed')
-            ],
-            "audio_labels": audio_labels,
-        })
+        cache.set(
+            'period:%s' % period_id,
+            period_data,
+            timeout=None
+        )
+
 
     return JsonResponse(status=200, data=period_data, safe=False)
 

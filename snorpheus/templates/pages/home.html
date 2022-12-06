@@ -15,7 +15,7 @@
       <!-- start sidebar -->
       <div
         id="sidebar"
-        class="bg-dark-purple h-screen p-5 pt-8 relative duration-300"
+        class="bg-lt-blue h-screen p-5 pt-8 relative duration-300"
         :class="sidebarOpen ? 'w-72' : 'w-20'"
       >
         <svg
@@ -62,27 +62,28 @@
         >
 
           <template x-if="patientPeriods.length > 0">
-            <h4 x-text="patientName"></h4>
+            <h4 x-text="patientName" class="text-snorpheus-dk-blue font-semibold font-sans"></h4>
           </template>
 
           <div x-show="patientPeriods.length > 0">
             <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700">
           </div>
 
-          <template x-if="patientPeriods.length > 0">
+          <!-- <template x-if="patientPeriods.length > 0">
             <span>Collection Periods</span>
-          </template>
+          </template> -->
 
           <div class="pt-2">
             <template x-for="period in patientPeriods">
 
-              <div class="flex-row pt-4">
+              <div class="flex-row pt-1">
                 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" style="display:inline-block; margin-right:2px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4" style="display:inline-block; margin-right:2px;">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                 </svg>
                 
-                <span x-text="new Date(period.start_date).toLocaleDateString()"></span> - <span x-text="new Date(period.end_date).toLocaleDateString()"></span>
+                <span x-text="new Date(period.start_date).toLocaleDateString() + ' - ' + new Date(period.end_date).toLocaleDateString()"
+                  class="font-medium text-sm text-snorpheus-dk-blue"></span>
 
                 <div class="pt-2 pl-5">
                   <!-- <div class="pb-2">Sessions</div> -->
@@ -97,10 +98,9 @@
                       >
                       <label
                         for="default-checkbox"
-                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        class="ml-2 text-sm font-medium text-dk-gray"
                       >
                         <span x-text="'Session ' + session.id"></span><br>
-
                         <span x-text="new Date(session.device_start_time).toLocaleString()"></span>
                       </label>
                     </div>
