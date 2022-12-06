@@ -105,9 +105,10 @@ def get_session_data(request, session_id):
 
 def get_period_data(request, period_id):
 
+    reload_cache = request.GET.get('reload_cache', "")
     period_data = cache.get('period:%s' % period_id)
     
-    if not period_data:
+    if reload_cache == 'true' or not period_data:
         
         period_data = []
         period = CollectionPeriod.objects.get(id=period_id)

@@ -265,7 +265,7 @@ function drawAudioLabels(group, data) {
       return 10;
     })
     .attr("fill", function(d, i) {
-      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '#ff6666' : 'blue'
+      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '#ff6666' : '#c2c2d6'
     });
 
   var tooltip = d3.select("#sleep-session-1").append("div")
