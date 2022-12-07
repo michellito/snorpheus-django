@@ -255,7 +255,7 @@ function drawAudioLabels(group, data) {
     .enter()
     .append("rect")
     .attr("x", function(d, i) {
-      return (timeScale(d.seconds_elapsed));
+      return (timeScale(d.timestamp_seconds));
     })
     .attr("y", function(d, i) {
       return positionScale(d.position);
