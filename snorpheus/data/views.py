@@ -130,9 +130,12 @@ def get_period_data(request, period_id):
                 for label in audio_file.labels.all():
 
                     timestamp_seconds = audio_file.seconds_elapsed + label.seconds_elapsed
-                    if timestamp_seconds > position_events_list[last_position_index + 1].seconds_elapsed:
+                    
+                    # if current audio label's seconds_elapsed becomes greater or equal to next position's seconds_elapsed
+                    if timestamp_seconds >= position_events_list[last_position_index + 1].seconds_elapsed:
                         position = position_events_list[last_position_index + 1].position
                         last_position_index += 1
+                        last_position = position
                     else:
                         position = last_position
                     

@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.9-slim-bullseye
+ARG PYTHON_VERSION=3.9
 
 # define an alias for the specfic python version used in this file.
 FROM python:${PYTHON_VERSION} as python
@@ -13,7 +13,9 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   # dependencies for building Python packages
   build-essential \
   # psycopg2 dependencies
-  libpq-dev
+  libpq-dev 
+  # graphviz \
+  # graphviz-dev
 
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements .
@@ -41,6 +43,12 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   libpq-dev \
   # Translations dependencies
   gettext \
+  # pygraphviz
+  graphviz \
+  graphviz-dev \
+  libgraphviz-dev \
+  pkg-config \
+  python3-dev \ 
   # cleaning up unused files
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
@@ -52,6 +60,11 @@ COPY --from=python-build-stage /usr/src/app/wheels  /wheels/
 # use wheels to install python dependencies
 RUN pip install --no-cache-dir --no-index --find-links=/wheels/ /wheels/* \
 	&& rm -rf /wheels/
+
+RUN pip install --global-option=build_ext \
+  --global-option="-L/usr/share/" \
+  --global-option="-R/usr/share/" \
+  pygraphviz
 
 COPY ./compose/production/django/entrypoint /entrypoint
 RUN sed -i 's/\r$//g' /entrypoint

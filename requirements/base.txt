@@ -24,3 +24,6 @@ drf-spectacular==0.24.2  # https://github.com/tfranzel/drf-spectacular
 # ------------------------------------------------------------------------------
 django-htmx==1.12.2
 crispy-tailwind==0.5.0
+# pygraphviz==1.10
+pyparsing==3.0.9
+pydot==1.4.2
