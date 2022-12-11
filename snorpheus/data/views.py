@@ -121,11 +121,10 @@ def get_period_data(request, period_id):
             position_events = sleep_session.position_events.all().order_by('seconds_elapsed')
             position_events_list = list(position_events)
 
+            last_position_index = 0
+            last_position = position_events_list[0].position
 
-            for audio_file in sleep_session.audio_files.all():
-
-                last_position_index = 0
-                last_position = position_events_list[0].position
+            for audio_file in sleep_session.audio_files.all().order_by('seconds_elapsed'):
 
                 for label in audio_file.labels.all():
 
@@ -133,9 +132,10 @@ def get_period_data(request, period_id):
                     
                     # if current audio label's seconds_elapsed becomes greater or equal to next position's seconds_elapsed
                     if timestamp_seconds >= position_events_list[last_position_index + 1].seconds_elapsed:
-                        position = position_events_list[last_position_index + 1].position
                         last_position_index += 1
+                        position = position_events_list[last_position_index].position
                         last_position = position
+                        
                     else:
                         position = last_position
                     
@@ -146,6 +146,7 @@ def get_period_data(request, period_id):
                             "label_1": label.label_1,
                             "label_2": label.label_2,
                             "label_3": label.label_3,
+                            "score_1": label.score_1,
                             "audio_file": audio_file.audio_file.name,
                             "audio_start_time": audio_file.start_time,
                             "position": position

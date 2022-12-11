@@ -258,15 +258,24 @@ function drawAudioLabels(group, data, session_id) {
       return (timeScale(d.timestamp_seconds));
     })
     .attr("y", function(d, i) {
-      return positionScale(d.position);
+      return positionScale(d.position) - 5;
     })
     .attr("width", 2)
     .attr("height", function(d, i) {
       return 10;
     })
     .attr("fill", function(d, i) {
-      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '#ff6666' : '#c2c2d6'
-    });
+      if (d['label_1'] == 'Snoring' ||  d['label_2'] === 'Snoring') {
+        return '#ff6666'
+      } else if ((d['label_1'] === 'Speech' &&  d['score_1'] > 0.8) || (d['label_1' === 'Conversation'] &&  d['score_1'] > 0.8)) {
+        return 'green'
+      } else {
+        return '#c2c2d6'
+      }
+    })
+    .style("opacity", function(d, i) {
+      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '1.0' : '.2'
+    })
 
   let tooltip = d3.select("#sleep-session-" + session_id).append("div")
     .attr("id", "tooltip")
