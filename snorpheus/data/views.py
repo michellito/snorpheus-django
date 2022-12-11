@@ -148,8 +148,9 @@ def get_period_data(request, period_id):
                             "label_3": label.label_3,
                             "score_1": label.score_1,
                             "audio_file": audio_file.audio_file.name,
-                            "audio_start_time": audio_file.start_time,
-                            "position": position
+                            "audio_start_seconds_elapsed": audio_file.seconds_elapsed,
+                            "position": position,
+                            "session": sleep_session.id
                         }
                     )
 

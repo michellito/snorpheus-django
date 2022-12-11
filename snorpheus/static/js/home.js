@@ -7,12 +7,17 @@ let sleepSessions;
 let svg;
 let paddingTop = 10
 
-// audio indicator variables
-let currentAudio = null
-let currentAudioTime = null
-let audioStartTime = null
+// currently playing audio file path
+let currentAudioFile = null
+
+// current seconds from start of current audio file
+let currentAudioSeconds = null
+
+// start seconds_elapsed for current audio file
+let currentAudioStartSeconds = null
 
 let patientId = null
+let audioSessionId = null
 var audioPlayer = document.getElementById("audioPlayer");
 var audioIndicator
 
@@ -20,43 +25,24 @@ const formatTime = d3.timeFormat("%H:%M");
 const formatDisplayTime = d3.timeFormat("%I:%M %p");
 const parseTime = d3.timeParse("%H:%M");
 
-
 function calculateTimestamp(seconds) {
-  let startTime = new Date(audioStartTime);
-  let currentTime = new Date(startTime.getTime() + (seconds*1000));
-  return currentTime
+  return parseFloat(currentAudioStartSeconds) + seconds;
 }
 
 function drawAudioPosition() {
+
+  let audioTime = audioPlayer.currentTime;  
+  let realTime = calculateTimestamp(audioTime)
   
-  let audioTime = audioPlayer.currentTime;
-  let realTime = calculateTimestamp(audioTime)
-
-
-  audioIndicator = d3.select('#group1')
-    .append('rect')
-    .attr("id", "audio-indicator")
-    .attr("x", (formatTime(realTime)))
+  d3.select('#audio-indicator-' + audioSessionId)
+    .attr("x", timeScale(realTime)) 
     .attr("y", 0)
-    .attr("height", height)
-    .attr("width", 2)
-    .style("fill", '#b3b3cc');
-}
+    .attr("opacity", 1);
 
-function updateAudioPosition() {
-  let audioTime = audioPlayer.currentTime;
-  let realTime = calculateTimestamp(audioTime)
-  audioIndicator.attr("x", (formatTime(realTime)))
 }
-
-audioPlayer.onplay = function() {
-  if (!audioIndicator) {
-    drawAudioPosition()
-  }
-};
 
 audioPlayer.ontimeupdate = function() {
-  updateAudioPosition()
+  drawAudioPosition()
 }
  
 function setupCanvas() {
@@ -87,10 +73,25 @@ function setupCanvas() {
           let tick_time = new Date(start.getTime() + (x*1000))
           return formatDisplayTime(tick_time)
         })
+      
       drawData(d3.select(this), d)
-      drawAxes(d3.select(this), d, timeAxis)
+      drawAxes(d3.select(this), timeAxis)
+      drawIndicator(d3.select(this), d.id)
     })
 }
+
+function drawIndicator(group, sessionId) {
+
+  group.append('rect')
+  .attr("id", "audio-indicator-" + sessionId)
+  .attr("x", timeScale(0)) 
+  .attr("y", 0)
+  .attr("height", height)
+  .attr("width", 2)
+  .style("fill", '#b3b3cc')
+  .attr("opacity", 0);
+}
+
 
 // ------------- State Functions ----------------- //
 
@@ -104,9 +105,10 @@ function getPatientPeriods(clientId) {
   axios.get('data/patients/' + clientId)
     .then(function (response) {
       // handle success
-      console.log(response)
+      // console.log(response)
       self.patientPeriods = response.data.collection_periods;
       self.patientName = response.data.patient_name;
+      
 
     })
     .catch(function (error) {
@@ -121,8 +123,8 @@ function getSessionPosition(sessionId) {
     .then(function (response) {
       // handle success
       sleepSessions = response.data;
-      
       self.sleepSessions = response.data
+      self.audioPath = media_url + sleepSessions[0].audio_labels[0].audio_file;
     })
     .catch(function (error) {
       // handle error
@@ -173,16 +175,11 @@ function setScales(data) {
 
   let secondsDiff = d3.timeSecond.count(timeDomain[0], timeDomain[1])
 
-  // scale from 0 to num seconds between time extents
+  // scale from 0 to max num seconds between time extents
   timeScale = d3.scaleLinear()
     .domain([0, secondsDiff])
     .range([paddingLeft, width - paddingRight])
 
-  // timeAxis = d3.axisBottom()
-  //   .scale(timeScale)
-  //   .ticks(10)
-
-  // daily steps scale
   positionScale = d3.scaleOrdinal()
     .domain(['Prone', 'Left', 'Supine', 'Right',])
     .range([paddingTop + 75, paddingTop + 50, paddingTop + 25, paddingTop]);
@@ -193,35 +190,8 @@ function setScales(data) {
 }
 
 
-function drawAxes(group, d, timeAxis) {
 
-  let axis, label;
-
-  axis = positionAxis;
-  className = 'positionAxis';
-  label = 'Position';
-
-  // group.append("text")
-  //   .text(function(d) {
-  //     return d.id
-  //   })
-  //   .attr("transform", `translate(${0}, ${15})`)
-  //   .attr("class", "participant-label")
-
-  // group.append("text")
-  //   .text(function(d) {
-  //     return label
-  //   })
-  //   .attr("transform", `translate(${0}, ${38})`)
-  //   .attr("class", "attribute-label")
-
-  // group.append("text")
-  //   .text(function(d) {
-  //     return units
-  //   })
-  //   .attr("transform", `translate(${0}, ${53})`)
-  //   .attr("class", "unit-label")
-
+function drawAxes(group, timeAxis) {
 
   group.append("g")
     .attr("class", "timeAxis")
@@ -229,8 +199,8 @@ function drawAxes(group, d, timeAxis) {
     .attr("transform", `translate(${0}, ${paddingTop + 90})`)
 
   group.append("g")
-    .attr("class", className)
-    .call(axis)
+    .attr("class", 'positionAxis')
+    .call(positionAxis)
     .attr("transform", `translate(${paddingLeft}, ${0})`)
 }
 
@@ -309,10 +279,15 @@ function drawAudioLabels(group, data, session_id) {
       tooltip.style("opacity", 0)
     })
     .on("click", function(event, d) {
-      currentAudio = d.audio_file
-      currentAudioTime = d.timestamp_seconds
-      audioStartTime = d.audio_start_time
-      console.log('current audio time: ', currentAudioTime)
+      currentAudioFile = d.audio_file
+      currentAudioSeconds = d.seconds_elapsed
+      currentAudioStartSeconds = d.audio_start_seconds_elapsed
+      // if swapping session ID, make old audio indicator invisible
+      if (d.session !== audioSessionId) {
+        d3.select('#audio-indicator-' + audioSessionId)
+          .attr("opacity", 0);
+      }
+      audioSessionId = d.session
       let audioEvent = new Event('audio-start-event');
       document.dispatchEvent(audioEvent)
     })
@@ -351,10 +326,10 @@ function drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lin
 }
 
 function startAudio() {
+  console.log('start audio')
   let self = this;
-  self.audioPath = media_url + currentAudio
-  console.log('startAudio: ', currentAudioTime)
-  self.$refs.audio.currentTime = currentAudioTime;
+  self.audioPath = media_url + currentAudioFile;
+  self.$refs.audio.currentTime = currentAudioSeconds;
   self.$refs.audio.play();
   self.currentlyPlaying = true;
 }
