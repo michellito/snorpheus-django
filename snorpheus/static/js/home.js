@@ -266,10 +266,10 @@ function drawAudioLabels(group, data, session_id, device_start_time) {
           html = d.label_1
         }
 
-        // get time in HH:mm format
+        // get time in HH:mm
         let start = new Date(device_start_time)
-        formatDisplayTime(new Date(start.getTime() + (d.timestamp_seconds * 1000)))
-        html = html + "<br/>" + formatDisplayTime(tick_time)
+        html = html + "<br/>" + formatDisplayTime(new Date(start.getTime() + (d.timestamp_seconds * 1000)))
+
 
         tooltip
           .style("left", event.layerX + "px")
