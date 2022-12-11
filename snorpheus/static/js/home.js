@@ -218,11 +218,11 @@ function drawData(group, d) {
   let data = d[dataLocation];
 
   drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
-  drawAudioLabels(group, d['audio_labels'], d['id'])
+  drawAudioLabels(group, d['audio_labels'], d['id'], d['device_start_time'])
 
 }
 
-function drawAudioLabels(group, data, session_id) {
+function drawAudioLabels(group, data, session_id, device_start_time) {
 
   let rects = group.selectAll("rect")
     .data(data)
@@ -266,8 +266,10 @@ function drawAudioLabels(group, data, session_id) {
           html = d.label_1
         }
 
-        html = html + "<br/>" + d.audio_file
-        html = html + "<br/>" + d.timestamp_seconds
+        // get time in HH:mm format
+        let start = new Date(device_start_time)
+        formatDisplayTime(new Date(start.getTime() + (d.timestamp_seconds * 1000)))
+        html = html + "<br/>" + formatDisplayTime(tick_time)
 
         tooltip
           .style("left", event.layerX + "px")
