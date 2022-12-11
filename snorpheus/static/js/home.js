@@ -1,5 +1,5 @@
 
-let width = 1500;
+let width = 1300;
 let height = 150;
 let paddingLeft = 60;
 let paddingRight = 75;
@@ -67,12 +67,12 @@ function setupCanvas() {
     .each(function(d) {
       let timeAxis = d3.axisBottom()
         .scale(timeScale)
-        // .ticks(10)
         .tickFormat(x => {
           let start = new Date(d.device_start_time)
           let tick_time = new Date(start.getTime() + (x*1000))
           return formatDisplayTime(tick_time)
         })
+        
       
       drawData(d3.select(this), d)
       drawAxes(d3.select(this), timeAxis)
@@ -86,7 +86,7 @@ function drawIndicator(group, sessionId) {
   .attr("id", "audio-indicator-" + sessionId)
   .attr("x", timeScale(0)) 
   .attr("y", 0)
-  .attr("height", height)
+  .attr("height", 100)
   .attr("width", 2)
   .style("fill", '#b3b3cc')
   .attr("opacity", 0);
@@ -270,11 +270,13 @@ function drawAudioLabels(group, data, session_id, device_start_time) {
         let start = new Date(device_start_time)
         html = html + "<br/>" + formatDisplayTime(new Date(start.getTime() + (d.timestamp_seconds * 1000)))
 
-
         tooltip
           .style("left", event.layerX + "px")
           .style("top", event.layerY + "px")
-          .style("opacity", 1)
+          .style("opacity", .5)
+          .style("border-radius", "5px")
+          .style("background-color", "#36454F")
+          .style("padding", "6px")
           .html(html)
     })
     .on("mouseout", function(event, d) {

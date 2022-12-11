@@ -105,6 +105,7 @@ def get_session_data(request, session_id):
 
 def get_period_data(request, period_id):
 
+    session_ids = request.GET.get('session_ids', "")
     reload_cache = request.GET.get('reload_cache', "")
     period_data = cache.get('period:%s' % period_id)
     
@@ -130,14 +131,17 @@ def get_period_data(request, period_id):
 
                     timestamp_seconds = audio_file.seconds_elapsed + label.seconds_elapsed
                     
-                    # if current audio label's seconds_elapsed becomes greater or equal to next position's seconds_elapsed
-                    if timestamp_seconds >= position_events_list[last_position_index + 1].seconds_elapsed:
-                        last_position_index += 1
-                        position = position_events_list[last_position_index].position
-                        last_position = position
-                        
-                    else:
+                    if last_position_index == len(position_events_list)-1:
                         position = last_position
+                    else:
+                        # if current audio label's seconds_elapsed becomes greater or equal to next position's seconds_elapsed
+                        if timestamp_seconds >= position_events_list[last_position_index + 1].seconds_elapsed:
+                            last_position_index += 1
+                            position = position_events_list[last_position_index].position
+                            last_position = position
+                            
+                        else:
+                            position = last_position
                     
                     audio_labels.append(
                         {
