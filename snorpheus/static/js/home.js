@@ -239,7 +239,7 @@ function drawData(group, d) {
   attrib_name = 'position';
   dataLocation = 'position_events';
   chartType = 'line'
-  lineColor = 'darkslateblue';
+  lineColor = '#C0C0C0';
 
   let data = d[dataLocation];
 
@@ -266,15 +266,15 @@ function drawAudioLabels(group, data, session_id) {
     })
     .attr("fill", function(d, i) {
       if (d['label_1'] == 'Snoring' ||  d['label_2'] === 'Snoring') {
-        return '#ff6666'
+        return '#ee442f' 
       } else if ((d['label_1'] === 'Speech' &&  d['score_1'] > 0.8) || (d['label_1' === 'Conversation'] &&  d['score_1'] > 0.8)) {
-        return 'green'
+        return '#63acbe'
       } else {
-        return '#c2c2d6'
+        return '#E0E0E0'
       }
     })
-    .style("opacity", function(d, i) {
-      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '1.0' : '.2'
+    .attr("opacity", function(d, i) {
+      return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '1.0' : '.1'
     })
 
   let tooltip = d3.select("#sleep-session-" + session_id).append("div")
