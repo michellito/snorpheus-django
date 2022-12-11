@@ -113,7 +113,7 @@ def get_period_data(request, period_id):
         period_data = []
         period = CollectionPeriod.objects.get(id=period_id)
         
-        for sleep_session in period.sleep_sessions.all():
+        for sleep_session in period.sleep_sessions.all().order_by('device_start_time'):
 
             print(sleep_session)
 

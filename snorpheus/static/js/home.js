@@ -244,11 +244,11 @@ function drawData(group, d) {
   let data = d[dataLocation];
 
   drawLineChart(group, data, scale, colorScale, tooltip, attrib_name, lineColor);
-  drawAudioLabels(group, d['audio_labels'])
+  drawAudioLabels(group, d['audio_labels'], d['id'])
 
 }
 
-function drawAudioLabels(group, data) {
+function drawAudioLabels(group, data, session_id) {
 
   let rects = group.selectAll("rect")
     .data(data)
@@ -268,7 +268,7 @@ function drawAudioLabels(group, data) {
       return d['label_1'] === 'Snoring' || d['label_2'] === 'Snoring' ? '#ff6666' : '#c2c2d6'
     });
 
-  var tooltip = d3.select("#sleep-session-1").append("div")
+  let tooltip = d3.select("#sleep-session-" + session_id).append("div")
     .attr("id", "tooltip")
     .attr("class", "tooltip-custom")
     .style("opacity", 0)
