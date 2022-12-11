@@ -150,9 +150,11 @@
           </div>
         </div>
         <template x-for="session in sleepSessions">
-          Session 1
-          <div :id="$id('sleep-session')" class="sleep-session h-[48] pt-3"  style="overflow-x:scroll;position:relative">
-
+          <div>
+            <div><span x-text="'Session ' +  session.id + ': ' + new Date(session.device_start_time).toLocaleDateString()"></span></div>
+            <div :id="$id('sleep-session')" class="sleep-session h-[48] pt-1"  style="overflow-x:scroll;position:relative">
+            
+            </div>
           </div>
         </template>
 

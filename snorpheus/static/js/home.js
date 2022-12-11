@@ -1,10 +1,11 @@
 
 let width = 1500;
-let height = 130;
-let paddingLeft = 120;
+let height = 150;
+let paddingLeft = 60;
 let paddingRight = 75;
 let sleepSessions;
 let svg;
+let paddingTop = 10
 
 // audio indicator variables
 let currentAudio = null
@@ -78,8 +79,16 @@ function setupCanvas() {
       return "group" + d.id
     })
     .each(function(d) {
+      let timeAxis = d3.axisBottom()
+        .scale(timeScale)
+        // .ticks(10)
+        .tickFormat(x => {
+          let start = new Date(d.device_start_time)
+          let tick_time = new Date(start.getTime() + (x*1000))
+          return formatDisplayTime(tick_time)
+        })
       drawData(d3.select(this), d)
-      drawAxes(d3.select(this), d)
+      drawAxes(d3.select(this), d, timeAxis)
     })
 }
 
@@ -169,26 +178,22 @@ function setScales(data) {
     .domain([0, secondsDiff])
     .range([paddingLeft, width - paddingRight])
 
-  timeAxis = d3.axisBottom()
-    .scale(timeScale)
-    .ticks(10)
+  // timeAxis = d3.axisBottom()
+  //   .scale(timeScale)
+  //   .ticks(10)
 
   // daily steps scale
   positionScale = d3.scaleOrdinal()
-    .domain(['Left', 'Supine', 'Right', 'Prone', 'Missing'])
-    .range([100, 75, 50, 25, 0]);
+    .domain(['Prone', 'Left', 'Supine', 'Right',])
+    .range([paddingTop + 75, paddingTop + 50, paddingTop + 25, paddingTop]);
 
   positionAxis = d3.axisLeft()
     .scale(positionScale)
     .ticks(3);
-
-  positionColorScale = d3.scaleOrdinal(
-    d3.interpolatePurples)
-    .domain(['Left', 'Supine', 'Right', 'Other', 'Missing'])
 }
 
 
-function drawAxes(group, d) {
+function drawAxes(group, d, timeAxis) {
 
   let axis, label;
 
@@ -196,19 +201,19 @@ function drawAxes(group, d) {
   className = 'positionAxis';
   label = 'Position';
 
-  group.append("text")
-    .text(function(d) {
-      return d.id
-    })
-    .attr("transform", `translate(${0}, ${15})`)
-    .attr("class", "participant-label")
+  // group.append("text")
+  //   .text(function(d) {
+  //     return d.id
+  //   })
+  //   .attr("transform", `translate(${0}, ${15})`)
+  //   .attr("class", "participant-label")
 
-  group.append("text")
-    .text(function(d) {
-      return label
-    })
-    .attr("transform", `translate(${0}, ${38})`)
-    .attr("class", "attribute-label")
+  // group.append("text")
+  //   .text(function(d) {
+  //     return label
+  //   })
+  //   .attr("transform", `translate(${0}, ${38})`)
+  //   .attr("class", "attribute-label")
 
   // group.append("text")
   //   .text(function(d) {
@@ -221,7 +226,7 @@ function drawAxes(group, d) {
   group.append("g")
     .attr("class", "timeAxis")
     .call(timeAxis)
-    .attr("transform", `translate(${0}, ${50})`)
+    .attr("transform", `translate(${0}, ${paddingTop + 90})`)
 
   group.append("g")
     .attr("class", className)
@@ -234,12 +239,11 @@ function drawData(group, d) {
   let scale, colorScale, tooltip;
 
   scale = positionScale;
-  colorScale = positionColorScale;
   // tooltip = stepsTooltip;
   attrib_name = 'position';
   dataLocation = 'position_events';
   chartType = 'line'
-  lineColor = '#C0C0C0';
+  lineColor = '#E0E0E0';
 
   let data = d[dataLocation];
 
@@ -260,7 +264,7 @@ function drawAudioLabels(group, data, session_id) {
     .attr("y", function(d, i) {
       return positionScale(d.position) - 5;
     })
-    .attr("width", 2)
+    .attr("width", 1)
     .attr("height", function(d, i) {
       return 10;
     })
