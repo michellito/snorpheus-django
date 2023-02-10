@@ -318,3 +318,8 @@ CACHES = {
         'LOCATION': '127.0.0.1:11211',
     }
 }
+
+GRAPH_MODELS = {
+  'app_labels': ["data", "portal"],
+#   'group_models': True, .
+}
