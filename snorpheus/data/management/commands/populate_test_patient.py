@@ -35,10 +35,6 @@ class Command(BaseCommand):
                 'device_start_time': datetime.datetime(2022, 11, 20, 21, 15, tzinfo=phx_tz),
                 'device_end_time': datetime.datetime(2022, 11, 21, 5, 9, tzinfo=phx_tz)
             },
-            {
-                'device_start_time': datetime.datetime(2022, 11, 21, 23, 25, tzinfo=phx_tz),
-                'device_end_time': datetime.datetime(2022, 11, 22, 7, 15, tzinfo=phx_tz)
-            },
         ]
 
         positions = ['Supine', 'Prone', 'Left', 'Right']
@@ -55,6 +51,7 @@ class Command(BaseCommand):
 
             # get random position for time 0 aand create PositionEvent
             position_index = randrange(4)
+            position = positions[position_index]
             
             PositionEvent.objects.create(
                 sleep_session=new_sleep_session,

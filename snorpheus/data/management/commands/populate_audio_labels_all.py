@@ -66,7 +66,7 @@ class Command(BaseCommand):
                     for row in csv_dict:
                         audio_events.append(
                             {
-                                "seconds_elapsed": row["timestamp"],
+                                "seconds_elapsed": row["seconds_elapsed"],
                                 "label_1": row["class1"],
                                 "label_2": row["class2"],
                                 "label_3": row["class3"],
