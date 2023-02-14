@@ -142,7 +142,7 @@ This script creates a Patient object in the database, as well as a CollectionPer
 docker-compose -f local.yml run --rm django python manage.py populate_test_patient
 ```
 
-1. **populate_audio_files.py**
+2. **populate_audio_files.py**
 
 This command creates AudioFile objects for all audio files located in the specified directory and links them to the specified **Patient** and **SleepSession**. The arguments for this command are as follows:
 
@@ -167,7 +167,7 @@ docker-compose -f local.yml run --rm django python manage.py populate_audio_file
 - We use `patient_id` of 1, since the test patient created in step 1 has an ID of 1, since they are the first patient in the database.
 - We use `session_id` of 1, since we want to load the audio files to the first night of sleep for this patient, which happens to be the first SleepSession in the database.
 
-1. **populate_audio_labels_all.py**
+3. **populate_audio_labels_all.py**
 
 Finally, we can import the audio labels for the audio files.  This script created AudioLabel objects for the YAMNet labels that are currently in CSV format.  This command operates similarly to **populate_audio_files.py** where the arguments are:
 
