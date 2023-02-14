@@ -167,17 +167,33 @@ docker-compose -f local.yml run --rm django python manage.py populate_audio_file
 - We use `patient_id` of 1, since the test patient created in step 1 has an ID of 1, since they are the first patient in the database.
 - We use `session_id` of 1, since we want to load the audio files to the first night of sleep for this patient, which happens to be the first SleepSession in the database.
 
-3. **populate_audio_labels_all.py**
+1. **populate_audio_labels_all.py**
 
-Finally, we can import the audio labels for the audio files.  This script created AudioLabel objects for the YAMNet labels that are currently in CSV format.  This command operates similarly to **populate_audio_files.py** where the arguments are:
+Finally, we can import the audio labels for the audio files.  This script creates AudioLabel objects for the YAMNet labels that are currently in CSV format.  This command operates similarly to **populate_audio_files.py** where the arguments are:
 
-- The directory to the CSV files to load
+- The directory containing the CSV files to load
 - Patient ID
-- SleepSession ID to load AudioLabel objects to
+- SleepSession ID to load YAMNet labels to
 
 ```bash
-docker-compose -f local.yml run --rm django python manage.py populate_audio_labels_all  snorpheus/data/sample_data/audio_labels/session2/ 1 1
+docker-compose -f local.yml run --rm django python manage.py populate_audio_labels_all  snorpheus/data/sample_data/audio_labels/session1/ 1 1
 ```
+
+### Visualize the Data
+
+After importing the position and audio data, we can now run the web app again to visualize it:
+
+```bash
+docker-compose local.yml up
+```
+
+Navigate to [localhost:8000](http://localhost:8000) in your web browser, and login with the superuser credentials. The visualization portal is located at localhost:8000
+
+Here you can use the sidebar to search patient ID, and select SleepSessions to visualize.
+
+![Visualization Portal](./snorpheus_portal.png?raw=true "Visualization Portal")
+
+
 
 
 
