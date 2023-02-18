@@ -73,7 +73,6 @@ function setupCanvas() {
           return formatDisplayTime(tick_time)
         })
         
-      
       drawData(d3.select(this), d)
       drawAxes(d3.select(this), timeAxis)
       drawIndicator(d3.select(this), d.id)
@@ -105,11 +104,8 @@ function getPatientPeriods(clientId) {
   axios.get('data/patients/' + clientId)
     .then(function (response) {
       // handle success
-      // console.log(response)
       self.patientPeriods = response.data.collection_periods;
       self.patientName = response.data.patient_name;
-      
-
     })
     .catch(function (error) {
       // handle error
@@ -119,14 +115,17 @@ function getPatientPeriods(clientId) {
 
 function getSessionPosition(sessionId) {
   let self = this;
+  self.loadingSleepSessions = true
   axios.get('data/periods/1')
     .then(function (response) {
       // handle success
       sleepSessions = response.data;
       self.sleepSessions = response.data
       self.audioPath = media_url + sleepSessions[0].audio_labels[0].audio_file;
+      self.loadingSleepSessions = false
     })
     .catch(function (error) {
+      self.loadingSleepSessions = false
       // handle error
       console.log(error);
     })
@@ -188,7 +187,6 @@ function setScales(data) {
     .scale(positionScale)
     .ticks(3);
 }
-
 
 
 function drawAxes(group, timeAxis) {
@@ -359,6 +357,7 @@ function state() {
     patientPeriods: [],
     sleepSessions: [],
     audioPath: "",
+    loadingSleepSessions: false,
     // functions
     watchPatientId,
     toggleSidebar,
