@@ -69,11 +69,8 @@
             <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700">
           </div>
 
-          <!-- <template x-if="patientPeriods.length > 0">
-            <span>Collection Periods</span>
-          </template> -->
-
           <div class="pt-2">
+            
             <template x-for="period in patientPeriods">
 
               <div class="flex-row pt-1">
@@ -111,15 +108,34 @@
           </div>
         </div>
       </div>
+      <!-- end sidebar -->
 
+
+      <!-- audio player -->
       <audio id="audioPlayer" x-ref="audio" x-effect="() => audioPath && $el.load()">
         <source :src="audioPath" type="audio/wav" />
       </audio>
-      <!-- end sidebar -->
+      <!-- end audio player -->
 
-      <!-- d3 container -->
+      
+      <!--  start main container -->
+      <!-- <div class="container mx-auto justify-center mt-12"> -->
       <div class="p-8 w-full" style="max-width: 70rem;">
+        
+        <div x-show="!patientName || !sleepSessions.length" class="mx-auto justify-center w-1/2 mt-12">
+
+          <div class="w-44 mx-auto">
+            <img src="{% static 'images/snoring_emoji.png' %}" alt="mockup">
+          </div>
+
+          <p class="text-2xl mt-12 text-center text-slate-600">No sleep sessions selected.</p>
+          <p class="mt-8 text-center text-slate-600">Use the search bar to search by Patient ID and select sleep sessions to view.</p>
+          
+        </div>
+
+        <!-- audio controls -->
         <div
+          x-show="sleepSessions.length"
           @keydown.tab="playAndStop"
           @click="playAndStop"
           class="flex items-center justify-center transition duration-200 ease-in-out"
@@ -136,52 +152,62 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
               </svg>
           </div>
-          <div x-show="currentlyPlaying" class="bg-opacity-50 rounded-full p-0.5">
+          <div
+            x-show="currentlyPlaying"
+            class="bg-opacity-50 rounded-full p-0.5"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-amber-300 fill-white w-8 h-8 p-1 rounded cursor-pointer block float-left mr-3 ml-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
             </svg>
           </div>
         </div>
+        <!-- end audio controls -->
+
+        <!-- start sleep session graphs -->
         <template x-for="session in sleepSessions">
           <div>
-            <div><span x-text="'Session ' +  session.id + ': ' + new Date(session.device_start_time).toLocaleDateString()"></span></div>
-            <div :id="$id('sleep-session')" class="sleep-session h-[48] pt-1"  style="overflow-x:scroll;position:relative">
-            
+            <div>
+              <span x-text="'Session ' +  session.id + ': ' + new Date(session.device_start_time).toLocaleDateString()"></span>
+            </div>
+            <div
+              :id="$id('sleep-session')"
+              class="sleep-session h-[48] pt-1" 
+              style="overflow-x:scroll;position:relative">
             </div>
           </div>
         </template>
+        <!-- end sleep session graphs -->
 
       </div>
+      <!-- end main container -->
+
     </div>
 
   {% else %}
 
-    <div class="flex">
-      <div class="p-7">
-        <section class="bg-white dark:bg-gray-900">
-          <div class="grid max-w-screen-xl px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div class="mr-auto place-self-center lg:col-span-7">
-              <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                Understand your patients' snoring behavior
-              </h1>
-              <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                Collect data using the Snorpheus system and visualize the results in an easy to use online portal.
-              </p>
+    <div class="flex container mx-auto">
+      <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+              Understand your patients' snoring behavior
+            </h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              Collect data using the Snorpheus system and visualize the results in an easy to use online portal.
+            </p>
 
-              <a
-                href="{% url 'account_login' %}"
-                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-              >
-                {% translate "Sign In" %}
-              </a>
-            </div>
-            <div class="lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="{% static 'images/snoring-blue.png' %}" alt="mockup">
-            </div>
+            <a
+              href="{% url 'account_login' %}"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              {% translate "Sign In" %}
+            </a>
           </div>
-        </section>
-
-      </div>
+          <div class="lg:mt-0 lg:col-span-5 lg:flex">
+              <img src="{% static 'images/snoring-blue.png' %}" alt="mockup">
+          </div>
+        </div>
+      </section>
     </div>
 
   {% endif %}
