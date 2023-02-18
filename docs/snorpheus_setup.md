@@ -80,7 +80,7 @@ NOTE: While the device can measure position hundreds of times per second, it wou
 
 The diagram below illustrates the relations between the database tables.
 
-![Database Tables](./database.png?raw=true "Database Tables")
+![Database Tables](./images/database.png?raw=true "Database Tables")
 
 ### Data Requirements
 
@@ -125,10 +125,16 @@ docker-compose -f local.yml run --rm django python manage.py createsuperuser
 Now, before we import any data, let’s check if we can run the web app:
 
 ```bash
-docker-compose local.yml up
+docker-compose -f local.yml up
 ```
 
-Navigate to [localhost:8000](http://localhost:8000) in your web browser, and you should see the site!  Login with the superuser credentials you just created.  The visualization portal is located at localhost:8000 and the Admin section where you can add Patients and CollectionPeriods is located at localhost:8000/admin.
+Navigate to [localhost:8000](http://localhost:8000) in your web browser, and you should see the site! Login with the superuser credentials you just created.
+
+The first time you login, you'll be asked to verify your email address by clicking an emailed confirmation link. Since we're running locally on our machine, the email does not actually get sent, but instead will be printed to the console/terminal where the `docker-compose -f local.yml up` command is running. You should see something like below, and you can copy the confirmation link and paste it into your browser to confirm your email.
+
+![Email Confirmation](./images/confirm_email.png?raw=true "Email Confirmation")
+
+The visualization portal is located at localhost:8000 and the Admin section where you can add Patients and CollectionPeriods is located at localhost:8000/admin.
 
 ### Import SleepSession data
 
@@ -191,7 +197,7 @@ Navigate to [localhost:8000](http://localhost:8000) in your web browser, and log
 
 Here you can use the sidebar to search patient ID, and select SleepSessions to visualize.
 
-![Visualization Portal](./snorpheus_portal.png?raw=true "Visualization Portal")
+![Visualization Portal](./images/snorpheus_portal.png?raw=true "Visualization Portal")
 
 
 
